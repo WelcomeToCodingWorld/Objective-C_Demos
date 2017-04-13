@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1FB8781E94D22E00E74263 /* BusinessCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1FB8761E94D22E00E74263 /* BusinessCardTableViewCell.swift */; };
+		3A1FB8791E94D22E00E74263 /* BusinessCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1FB8771E94D22E00E74263 /* BusinessCardTableViewCell.xib */; };
+		3A806C2F1E9F213F0048C733 /* TapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A806C2E1E9F213F0048C733 /* TapeCollectionViewCell.swift */; };
 		3A97428F1E82843800D3201B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97428E1E82843800D3201B /* AppDelegate.swift */; };
 		3A9742911E82843800D3201B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9742901E82843800D3201B /* ViewController.swift */; };
 		3A9742941E82843800D3201B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742921E82843800D3201B /* Main.storyboard */; };
@@ -15,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1FB8761E94D22E00E74263 /* BusinessCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewCell.swift; sourceTree = "<group>"; };
+		3A1FB8771E94D22E00E74263 /* BusinessCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessCardTableViewCell.xib; sourceTree = "<group>"; };
+		3A806C2C1E9F09C50048C733 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		3A806C2E1E9F213F0048C733 /* TapeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A97428B1E82843800D3201B /* CollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A97428E1E82843800D3201B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9742901E82843800D3201B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				3A97428E1E82843800D3201B /* AppDelegate.swift */,
+				3A806C2C1E9F09C50048C733 /* Header.h */,
 				3A9742901E82843800D3201B /* ViewController.swift */,
+				3A806C2E1E9F213F0048C733 /* TapeCollectionViewCell.swift */,
+				3A1FB8761E94D22E00E74263 /* BusinessCardTableViewCell.swift */,
+				3A1FB8771E94D22E00E74263 /* BusinessCardTableViewCell.xib */,
 				3A9742921E82843800D3201B /* Main.storyboard */,
 				3A9742951E82843800D3201B /* Assets.xcassets */,
 				3A9742971E82843800D3201B /* LaunchScreen.storyboard */,
@@ -127,6 +138,7 @@
 				3A9742991E82843800D3201B /* LaunchScreen.storyboard in Resources */,
 				3A9742961E82843800D3201B /* Assets.xcassets in Resources */,
 				3A9742941E82843800D3201B /* Main.storyboard in Resources */,
+				3A1FB8791E94D22E00E74263 /* BusinessCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A806C2F1E9F213F0048C733 /* TapeCollectionViewCell.swift in Sources */,
 				3A9742911E82843800D3201B /* ViewController.swift in Sources */,
 				3A97428F1E82843800D3201B /* AppDelegate.swift in Sources */,
+				3A1FB8781E94D22E00E74263 /* BusinessCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +208,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Header.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -242,6 +258,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Header.h";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
