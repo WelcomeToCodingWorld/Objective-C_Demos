@@ -16,20 +16,29 @@ fileprivate class BusinessCardTableViewCell: UITableViewCell {
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
+    private var user : User{
+        get{
+            return self.user
+        }
+        
+        set{
+            
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         if let nameLab = nameLabel {
-            print(nameLab);
+            print(nameLab.text!)
         }
-        
     }
+    
+    
 
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
+        
     }
     
 }

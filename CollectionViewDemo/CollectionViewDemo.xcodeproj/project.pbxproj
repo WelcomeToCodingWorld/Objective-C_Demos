@@ -15,6 +15,7 @@
 		3A9742941E82843800D3201B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742921E82843800D3201B /* Main.storyboard */; };
 		3A9742961E82843800D3201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742951E82843800D3201B /* Assets.xcassets */; };
 		3A9742991E82843800D3201B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742971E82843800D3201B /* LaunchScreen.storyboard */; };
+		3A9958161EA8903600DB0FC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9958151EA8903600DB0FC6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3A9742951E82843800D3201B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9742981E82843800D3201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A97429A1E82843800D3201B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9958151EA8903600DB0FC6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				3A97428E1E82843800D3201B /* AppDelegate.swift */,
 				3A806C2C1E9F09C50048C733 /* Header.h */,
 				3A9742901E82843800D3201B /* ViewController.swift */,
+				3A9958151EA8903600DB0FC6 /* User.swift */,
 				3A806C2E1E9F213F0048C733 /* TapeCollectionViewCell.swift */,
 				3A1FB8761E94D22E00E74263 /* BusinessCardTableViewCell.swift */,
 				3A1FB8771E94D22E00E74263 /* BusinessCardTableViewCell.xib */,
@@ -152,6 +155,7 @@
 				3A806C2F1E9F213F0048C733 /* TapeCollectionViewCell.swift in Sources */,
 				3A9742911E82843800D3201B /* ViewController.swift in Sources */,
 				3A97428F1E82843800D3201B /* AppDelegate.swift in Sources */,
+				3A9958161EA8903600DB0FC6 /* User.swift in Sources */,
 				3A1FB8781E94D22E00E74263 /* BusinessCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

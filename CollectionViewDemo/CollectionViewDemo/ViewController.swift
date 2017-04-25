@@ -11,28 +11,22 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        let origin = CGPoint(x: 50, y: 64)
-        let size = CGSize(width: 100, height: 200)
-        let rect = CGRect(origin: origin, size: size)
-        let view = UIView(frame: rect)
-        
         var collectionRect = CGRect(x: 20, y: 300, width: 100, height: 200)
         collectionRect.origin = CGPoint(x: 50, y: 120)
         
+        //布局
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 50, height: 50)
         layout.sectionHeadersPinToVisibleBounds = true
         
         
+        //创建CollectionView
         let collectionView = UICollectionView(frame: collectionRect, collectionViewLayout: layout)
-        collectionView.register(NSClassFromString("TapeCollectionViewCell"), forCellWithReuseIdentifier: "TapeCellID")
+        collectionView.register(UINib(nibName:"BusinessCardTableViewCell", bundle:nil), forCellWithReuseIdentifier: "BusinessCardID")
         collectionView.delegate = self
         collectionView.dataSource = self;
         
-        
-        self.view.addSubview(view)
+        self.view.addSubview(collectionView)
         
     }
     
@@ -41,11 +35,13 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView .dequeueReusableCell(withReuseIdentifier: "TapeCellID", for: indexPath)
+        
+        
+        let cell = collectionView .dequeueReusableCell(withReuseIdentifier: "BusinessCardID", for: indexPath)
         return cell;
         
     }
