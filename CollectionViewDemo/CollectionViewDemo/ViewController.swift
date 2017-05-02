@@ -7,24 +7,28 @@
 //
 
 import UIKit
-class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var collectionRect = CGRect(x: 20, y: 300, width: 100, height: 200)
-        collectionRect.origin = CGPoint(x: 50, y: 120)
+        let collectionRect = CGRect(x:EdgeWidth, y: TitleHeight , width:ScreenWidth - 2*EdgeWidth, height: ScreenHeight - TitleHeight)
+        
         
         //布局
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 50, height: 50)
+        layout.minimumInteritemSpacing = 20
+        layout.minimumLineSpacing = 30
         layout.sectionHeadersPinToVisibleBounds = true
+    
         
         
         //创建CollectionView
         let collectionView = UICollectionView(frame: collectionRect, collectionViewLayout: layout)
-        collectionView.register(UINib(nibName:"BusinessCardTableViewCell", bundle:nil), forCellWithReuseIdentifier: "BusinessCardID")
+        collectionView.register(UINib(nibName:"BusinessCardCollectionViewCell", bundle:nil), forCellWithReuseIdentifier: "BusinessCardID")
+        collectionView.backgroundColor = UIColor.white
         collectionView.delegate = self
         collectionView.dataSource = self;
+        
         
         self.view.addSubview(collectionView)
         
@@ -41,9 +45,15 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         
-        let cell = collectionView .dequeueReusableCell(withReuseIdentifier: "BusinessCardID", for: indexPath)
+        let cell:BusinessCardCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BusinessCardID", for: indexPath) as! BusinessCardCollectionViewCell
+        cell.titleLabel.text = "Hello"
+        
         return cell;
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
     }
 
     override func didReceiveMemoryWarning() {
