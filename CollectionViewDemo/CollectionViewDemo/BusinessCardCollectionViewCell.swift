@@ -11,17 +11,15 @@ import UIKit
 class BusinessCardCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var titleLabel: UILabel!
-    private var user : User{
-        get{
-            return self.user
+    public var user : User?{
+        willSet{
+            
         }
         
-        set{
-            self.user = newValue
-            titleLabel.text = newValue.name
+        didSet{
+            self.titleLabel.text = user?.name
         }
     }
-    
     override func awakeFromNib() {
 
         super.awakeFromNib()

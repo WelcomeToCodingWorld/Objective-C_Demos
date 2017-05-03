@@ -10,19 +10,18 @@ import UIKit
 
 class User: NSObject {
     var name : String
-    var gender : UInt
-    var address : String
+    var gender : Bool
+//    var address : String
     var age : UInt
-    var mobile : String
-    var email : String
+//    var mobile : String
     
     
     init(fromDic dic : Dictionary<String, Any>){
-        self.name = dic["userName"] as! String
-        self.gender = dic["gender"] as! UInt
-        self.address = dic["address"] as! String
+        self.name = dic["name"] as! String
+        self.gender = dic["sex"] as! Bool
+//        self.address = dic["address"] as! String
         self.age = dic["age"] as! UInt
-        self.mobile = dic["phone"] as! String
-        self.email = dic["email"] as! String
+//        self.mobile = dic["phone"] as! String
+//        self.email = dic["email"] as! String
     }
 }
