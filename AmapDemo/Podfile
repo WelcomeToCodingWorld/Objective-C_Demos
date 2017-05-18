@@ -7,4 +7,5 @@ target 'AmapDemo' do
 
   # Pods for AmapDemo
 pod 'AMapSearch', '~> 4.1.0'
+pod 'AMap2DMap'
 end
