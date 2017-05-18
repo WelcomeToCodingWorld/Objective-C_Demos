@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3EE35B1EBD589300388143 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EE35A1EBD589300388143 /* BaseTableViewController.swift */; };
+		3A3EE35D1EBD650000388143 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EE35C1EBD650000388143 /* MainViewController.swift */; };
+		3A3EE35F1EBD657C00388143 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EE35E1EBD657C00388143 /* Product.swift */; };
+		3A3EE3611EBD6E4600388143 /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EE3601EBD6E4500388143 /* ResultsTableController.swift */; };
+		3A3EE3631EBD7D0A00388143 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3EE3621EBD7D0A00388143 /* TableCell.xib */; };
+		3A3EE3651EBD801000388143 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EE3641EBD801000388143 /* DetailViewController.swift */; };
 		3A9742CB1E82849200D3201B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9742CA1E82849200D3201B /* AppDelegate.swift */; };
-		3A9742CD1E82849200D3201B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9742CC1E82849200D3201B /* ViewController.swift */; };
 		3A9742D01E82849200D3201B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742CE1E82849200D3201B /* Main.storyboard */; };
 		3A9742D21E82849200D3201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742D11E82849200D3201B /* Assets.xcassets */; };
 		3A9742D51E82849200D3201B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742D31E82849200D3201B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A3EE35A1EBD589300388143 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		3A3EE35C1EBD650000388143 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A3EE35E1EBD657C00388143 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3A3EE3601EBD6E4500388143 /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
+		3A3EE3621EBD7D0A00388143 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		3A3EE3641EBD801000388143 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3A9742C71E82849200D3201B /* SearchControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9742CA1E82849200D3201B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A9742CC1E82849200D3201B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A9742CF1E82849200D3201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9742D11E82849200D3201B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9742D41E82849200D3201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				3A9742CA1E82849200D3201B /* AppDelegate.swift */,
-				3A9742CC1E82849200D3201B /* ViewController.swift */,
+				3A3EE35A1EBD589300388143 /* BaseTableViewController.swift */,
+				3A3EE35E1EBD657C00388143 /* Product.swift */,
+				3A3EE35C1EBD650000388143 /* MainViewController.swift */,
+				3A3EE3641EBD801000388143 /* DetailViewController.swift */,
+				3A3EE3601EBD6E4500388143 /* ResultsTableController.swift */,
+				3A3EE3621EBD7D0A00388143 /* TableCell.xib */,
 				3A9742CE1E82849200D3201B /* Main.storyboard */,
 				3A9742D11E82849200D3201B /* Assets.xcassets */,
 				3A9742D31E82849200D3201B /* LaunchScreen.storyboard */,
@@ -126,6 +141,7 @@
 			files = (
 				3A9742D51E82849200D3201B /* LaunchScreen.storyboard in Resources */,
 				3A9742D21E82849200D3201B /* Assets.xcassets in Resources */,
+				3A3EE3631EBD7D0A00388143 /* TableCell.xib in Resources */,
 				3A9742D01E82849200D3201B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9742CD1E82849200D3201B /* ViewController.swift in Sources */,
+				3A3EE35B1EBD589300388143 /* BaseTableViewController.swift in Sources */,
+				3A3EE35F1EBD657C00388143 /* Product.swift in Sources */,
+				3A3EE3611EBD6E4600388143 /* ResultsTableController.swift in Sources */,
+				3A3EE3651EBD801000388143 /* DetailViewController.swift in Sources */,
 				3A9742CB1E82849200D3201B /* AppDelegate.swift in Sources */,
+				3A3EE35D1EBD650000388143 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
 				INFOPLIST_FILE = SearchControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.SearchControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
 				INFOPLIST_FILE = SearchControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.SearchControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +324,7 @@
 				3A9742DB1E82849200D3201B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

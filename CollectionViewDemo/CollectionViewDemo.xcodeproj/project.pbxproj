@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1FB8781E94D22E00E74263 /* BusinessCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1FB8761E94D22E00E74263 /* BusinessCardCollectionViewCell.swift */; };
+		3A1FB8791E94D22E00E74263 /* BusinessCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1FB8771E94D22E00E74263 /* BusinessCardCollectionViewCell.xib */; };
+		3A3EA94A1EB831D20085D5F9 /* TapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3EA9491EB831D20085D5F9 /* TapeCollectionViewCell.xib */; };
+		3A3EA94D1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EA94B1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift */; };
+		3A3EA94E1EB8329D0085D5F9 /* BookMarkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3EA94C1EB8329D0085D5F9 /* BookMarkCollectionViewCell.xib */; };
+		3A3EA9511EB855400085D5F9 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3EA9501EB855400085D5F9 /* Header.swift */; };
+		3A806C2F1E9F213F0048C733 /* TapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A806C2E1E9F213F0048C733 /* TapeCollectionViewCell.swift */; };
 		3A97428F1E82843800D3201B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97428E1E82843800D3201B /* AppDelegate.swift */; };
 		3A9742911E82843800D3201B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9742901E82843800D3201B /* ViewController.swift */; };
 		3A9742941E82843800D3201B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742921E82843800D3201B /* Main.storyboard */; };
 		3A9742961E82843800D3201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742951E82843800D3201B /* Assets.xcassets */; };
 		3A9742991E82843800D3201B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742971E82843800D3201B /* LaunchScreen.storyboard */; };
+		3A9958161EA8903600DB0FC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9958151EA8903600DB0FC6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1FB8761E94D22E00E74263 /* BusinessCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A1FB8771E94D22E00E74263 /* BusinessCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		3A3EA9491EB831D20085D5F9 /* TapeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		3A3EA94B1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A3EA94C1EB8329D0085D5F9 /* BookMarkCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookMarkCollectionViewCell.xib; sourceTree = "<group>"; };
+		3A3EA94F1EB854980085D5F9 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		3A3EA9501EB855400085D5F9 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		3A806C2C1E9F09C50048C733 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		3A806C2E1E9F213F0048C733 /* TapeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A97428B1E82843800D3201B /* CollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A97428E1E82843800D3201B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9742901E82843800D3201B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +39,7 @@
 		3A9742951E82843800D3201B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9742981E82843800D3201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A97429A1E82843800D3201B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9958151EA8903600DB0FC6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +73,21 @@
 			isa = PBXGroup;
 			children = (
 				3A97428E1E82843800D3201B /* AppDelegate.swift */,
+				3A806C2C1E9F09C50048C733 /* Header.h */,
 				3A9742901E82843800D3201B /* ViewController.swift */,
+				3A9958151EA8903600DB0FC6 /* User.swift */,
+				3A806C2E1E9F213F0048C733 /* TapeCollectionViewCell.swift */,
+				3A1FB8761E94D22E00E74263 /* BusinessCardCollectionViewCell.swift */,
+				3A3EA9491EB831D20085D5F9 /* TapeCollectionViewCell.xib */,
+				3A1FB8771E94D22E00E74263 /* BusinessCardCollectionViewCell.xib */,
 				3A9742921E82843800D3201B /* Main.storyboard */,
 				3A9742951E82843800D3201B /* Assets.xcassets */,
 				3A9742971E82843800D3201B /* LaunchScreen.storyboard */,
 				3A97429A1E82843800D3201B /* Info.plist */,
+				3A3EA94B1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift */,
+				3A3EA94C1EB8329D0085D5F9 /* BookMarkCollectionViewCell.xib */,
+				3A3EA94F1EB854980085D5F9 /* Bridging-Header.h */,
+				3A3EA9501EB855400085D5F9 /* Header.swift */,
 			);
 			path = CollectionViewDemo;
 			sourceTree = "<group>";
@@ -125,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A9742991E82843800D3201B /* LaunchScreen.storyboard in Resources */,
+				3A3EA94A1EB831D20085D5F9 /* TapeCollectionViewCell.xib in Resources */,
 				3A9742961E82843800D3201B /* Assets.xcassets in Resources */,
 				3A9742941E82843800D3201B /* Main.storyboard in Resources */,
+				3A3EA94E1EB8329D0085D5F9 /* BookMarkCollectionViewCell.xib in Resources */,
+				3A1FB8791E94D22E00E74263 /* BusinessCardCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A806C2F1E9F213F0048C733 /* TapeCollectionViewCell.swift in Sources */,
 				3A9742911E82843800D3201B /* ViewController.swift in Sources */,
 				3A97428F1E82843800D3201B /* AppDelegate.swift in Sources */,
+				3A3EA9511EB855400085D5F9 /* Header.swift in Sources */,
+				3A9958161EA8903600DB0FC6 /* User.swift in Sources */,
+				3A3EA94D1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift in Sources */,
+				3A1FB8781E94D22E00E74263 /* BusinessCardCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +230,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -242,6 +280,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -263,9 +303,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
 				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,9 +319,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
 				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

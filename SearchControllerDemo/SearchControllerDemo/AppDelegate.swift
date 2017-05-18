@@ -16,6 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let produts = [Product(title:Product.HardWare.iPhone.rawValue, hardWareType:Product.desktopTypeTitle, yearIntroduced:2007, introPrice: 599.00),
+                       Product(title: Product.HardWare.iPod.rawValue, hardWareType: Product.deviceTypeTitle, yearIntroduced: 2001, introPrice: 399.00),
+                       Product(title: Product.HardWare.iPodTouch.rawValue, hardWareType: Product.deviceTypeTitle, yearIntroduced: 2007, introPrice: 210.00),
+                       Product(title: Product.HardWare.iPad.rawValue, hardWareType: Product.deviceTypeTitle, yearIntroduced: 2010, introPrice: 499.00),
+                       Product(title: Product.HardWare.iPadMini.rawValue, hardWareType:Product.deviceTypeTitle, yearIntroduced: 2012, introPrice: 659.00),
+                       Product(title: Product.HardWare.iMac.rawValue, hardWareType:Product.desktopTypeTitle, yearIntroduced: 1997, introPrice: 129.00),
+                       Product(title: Product.HardWare.MacPro.rawValue, hardWareType:Product.desktopTypeTitle, yearIntroduced: 2006, introPrice: 2499.00),
+                       Product(title: Product.HardWare.MacBookAir.rawValue, hardWareType:Product.portableTypeTitle, yearIntroduced: 2008, introPrice: 1799.00),
+                       Product(title: Product.HardWare.MacBookPro.rawValue, hardWareType:Product.portableTypeTitle, yearIntroduced: 2006, introPrice: 149.00)]
+        
+        let navController = window?.rootViewController as! UINavigationController
+        
+        let tableViewController = navController.viewControllers.first as! MainViewController
+        
+        tableViewController.products = produts;
+        
         return true
     }
 
