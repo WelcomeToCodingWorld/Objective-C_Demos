@@ -7,12 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "GeoServiceViewController.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 @interface ViewController ()
 {
     
 }
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *gasChargeBtn;
+@property (strong, nonatomic) IBOutlet UIButton *parkingBtn;
 @property (nonatomic,retain)AMapSearchAPI* searchApi;
 @end
 
@@ -23,6 +26,11 @@
     [self initialize];
     [self setupNav];
     [self setupView];
+}
+- (IBAction)parkingLotSearch:(id)sender {
+    
+}
+- (IBAction)gasStationSearch:(id)sender {
 }
 
 - (void)initialize{

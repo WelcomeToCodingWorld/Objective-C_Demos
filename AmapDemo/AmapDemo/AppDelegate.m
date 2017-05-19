@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ApiKey.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    [AMapServices sharedServices].apiKey = AMAP_KEY;
     return YES;
 }
 
