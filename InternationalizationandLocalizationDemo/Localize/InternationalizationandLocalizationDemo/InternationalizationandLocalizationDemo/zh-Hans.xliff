@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="InternationalizationandLocalizationDemo/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body/>
+  </file>
+  <file original="InternationalizationandLocalizationDemo/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="MRI-GJ-guO.normalTitle">
+        <source>Save</source>
+        <target>保存</target>
+        <note>Class = "UIButton"; normalTitle = "Save"; ObjectID = "MRI-GJ-guO";</note>
+      </trans-unit>
+      <trans-unit id="jxR-rE-cHG.text">
+        <source>Gender</source>
+        <target>性别</target>
+        <note>Class = "UILabel"; text = "Gender"; ObjectID = "jxR-rE-cHG";</note>
+      </trans-unit>
+      <trans-unit id="mPc-sN-Vsw.text">
+        <source>Name</source>
+        <target>姓名</target>
+        <note>Class = "UILabel"; text = "Name"; ObjectID = "mPc-sN-Vsw";</note>
+      </trans-unit>
+      <trans-unit id="qok-0w-FqS.text">
+        <source>Age</source>
+        <target>年龄</target>
+        <note>Class = "UILabel"; text = "Age"; ObjectID = "qok-0w-FqS";</note>
+      </trans-unit>
+      <trans-unit id="vDB-gX-Owi.text">
+        <source>Nationality</source>
+        <target>国籍</target>
+        <note>Class = "UILabel"; text = "Nationality"; ObjectID = "vDB-gX-Owi";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="InternationalizationandLocalizationDemo/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <target>国际化</target>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="InternationalizationandLocalizationDemo/Localizable.strings" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="Cancel">
+        <source>取消</source>
+        <note>取消按钮的文本</note>
+      </trans-unit>
+      <trans-unit id="FriendlyTips">
+        <source>温馨提示</source>
+        <note>alertController的标题</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>确定</source>
+        <note>确认按钮的文本</note>
+      </trans-unit>
+      <trans-unit id="Please operate carefully!">
+        <source>Please operate carefully!</source>
+        <note>alertController的message</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="InternationalizationandLocalizationDemoTests/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <target>国际化</target>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

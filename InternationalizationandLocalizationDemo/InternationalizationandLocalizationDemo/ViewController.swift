@@ -14,13 +14,27 @@ class ViewController: UIViewController {
     @IBOutlet var ageLabel: UILabel!
     @IBOutlet var nationalityLabel: UILabel!
     @IBOutlet var genderLabel: UILabel!
+    
+    @IBOutlet var alertBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        nameLabel.text = NSLocalizedString("name", comment: "The text of the nameLabel")
-        ageLabel.text = NSLocalizedString("age", comment: "The text of the ageLabel")
-        nationalityLabel.text = NSLocalizedString("nationality", comment: "The text of the nationalityLabel")
-        genderLabel.text = NSLocalizedString("gender", comment: "The text of the genderLabel")
+        alertBtn.layer.cornerRadius = 3.0;
+    }
+    @IBAction func alert(_ sender: Any) {
+        let alertController = UIAlertController(title: NSLocalizedString("FriendlyTips", comment: "alertController的标题"), message: NSLocalizedString("Please operate carefully!", comment: "alertController的message"), preferredStyle: UIAlertControllerStyle.alert)
+        let cancleAction = UIAlertAction(title: NSLocalizedString("OK", comment: "确认按钮的文本"), style: UIAlertActionStyle.cancel, handler: { (alertAction) in
+            
+        })
+        
+        let sureAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "取消按钮的文本"), style: UIAlertActionStyle.default, handler: { (alertAction) in
+            
+        })
+        
+        alertController.addAction(cancleAction)
+        alertController.addAction(sureAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
