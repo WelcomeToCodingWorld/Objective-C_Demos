@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,7 +19,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPc-sN-Vsw">
@@ -87,7 +87,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRI-GJ-guO">
-                                <rect key="frame" x="110" y="311" width="100" height="30"/>
+                                <rect key="frame" x="137.5" y="311" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="750" constant="100" id="ref-Qq-l2P"/>
@@ -97,6 +97,12 @@
                                     <action selector="alert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pK2-iH-vNA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eG-bY-kD2">
+                                <rect key="frame" x="168" y="28" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -106,12 +112,14 @@
                             <constraint firstItem="mPc-sN-Vsw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="4lE-Pf-ttk"/>
                             <constraint firstItem="jxR-rE-cHG" firstAttribute="leading" secondItem="vDB-gX-Owi" secondAttribute="leading" id="5Lo-Qp-fDd"/>
                             <constraint firstItem="qok-0w-FqS" firstAttribute="top" secondItem="mPc-sN-Vsw" secondAttribute="bottom" constant="24" id="72F-tw-yLv"/>
+                            <constraint firstItem="9eG-bY-kD2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="77n-qY-iYv"/>
                             <constraint firstItem="oEI-TJ-Z5Y" firstAttribute="centerY" secondItem="mPc-sN-Vsw" secondAttribute="centerY" id="8gg-gB-F9j"/>
                             <constraint firstItem="vDB-gX-Owi" firstAttribute="top" secondItem="qok-0w-FqS" secondAttribute="bottom" constant="24" id="CwD-oa-Kga"/>
                             <constraint firstItem="MRI-GJ-guO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="750" constant="329" id="D6m-MS-nbZ"/>
                             <constraint firstItem="FKC-7y-WlO" firstAttribute="height" secondItem="3Ox-F2-GXj" secondAttribute="height" id="FQL-Fz-r5T"/>
                             <constraint firstItem="MRI-GJ-guO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fbi-Tl-mip"/>
                             <constraint firstItem="jxR-rE-cHG" firstAttribute="top" secondItem="vDB-gX-Owi" secondAttribute="bottom" constant="24" id="GGQ-9L-KXQ"/>
+                            <constraint firstItem="9eG-bY-kD2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IUX-tC-ecF"/>
                             <constraint firstItem="MRI-GJ-guO" firstAttribute="top" secondItem="xjV-4b-YW5" secondAttribute="bottom" constant="30" id="JaJ-gP-SrD"/>
                             <constraint firstItem="MRI-GJ-guO" firstAttribute="top" secondItem="xjV-4b-YW5" secondAttribute="bottom" constant="37.5" id="NdN-u3-vBk"/>
                             <constraint firstItem="FKC-7y-WlO" firstAttribute="leading" secondItem="3Ox-F2-GXj" secondAttribute="leading" id="Oh5-bL-OZ7"/>
@@ -172,6 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>

@@ -1,18 +1,18 @@
+
 /* Class = "UILabel"; text = "Hello"; ObjectID = "9eG-bY-kD2"; */
-"9eG-bY-kD2.text" = "你好";
+"9eG-bY-kD2.text" = "Hello";
 
 /* Class = "UIButton"; normalTitle = "Save"; ObjectID = "MRI-GJ-guO"; */
-"MRI-GJ-guO.normalTitle" = "保存";
+"MRI-GJ-guO.normalTitle" = "Save";
 
 /* Class = "UILabel"; text = "Gender"; ObjectID = "jxR-rE-cHG"; */
-"jxR-rE-cHG.text" = "性别";
+"jxR-rE-cHG.text" = "Gender";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "mPc-sN-Vsw"; */
-"mPc-sN-Vsw.text" = "姓名";
+"mPc-sN-Vsw.text" = "Name";
 
 /* Class = "UILabel"; text = "Age"; ObjectID = "qok-0w-FqS"; */
-"qok-0w-FqS.text" = "年龄";
+"qok-0w-FqS.text" = "Age";
 
 /* Class = "UILabel"; text = "Nationality"; ObjectID = "vDB-gX-Owi"; */
-"vDB-gX-Owi.text" = "国籍";
-
+"vDB-gX-Owi.text" = "Nationality";

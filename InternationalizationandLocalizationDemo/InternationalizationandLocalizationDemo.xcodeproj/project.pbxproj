@@ -15,7 +15,6 @@
 		3A65466D1ECEDC2E005CE7BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A65466F1ECEDC2E005CE7BC /* InfoPlist.strings */; };
 		3A6546721ECEDC2F005CE7BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A6546741ECEDC2F005CE7BC /* Localizable.strings */; };
 		3A65467A1ECEE0BD005CE7BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A6546791ECEE0BD005CE7BC /* Default-568h@2x.png */; };
-		3AFC94D41ECEEC670020EDD4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC94D01ECEE7FA0020EDD4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +29,9 @@
 		3A65466E1ECEDC2E005CE7BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3A6546731ECEDC2F005CE7BC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3A6546791ECEE0BD005CE7BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3A88475B1ECFEB0B0012AF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A88475F1ECFEED50012AF40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3A8847601ECFEF230012AF40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3AFC94D11ECEE7FA0020EDD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		3AFC94D31ECEEAFB0020EDD4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +146,6 @@
 				3A4AC1071ECD97DE008C31AC /* Assets.xcassets in Resources */,
 				3A4AC1051ECD97DE008C31AC /* Main.storyboard in Resources */,
 				3A65467A1ECEE0BD005CE7BC /* Default-568h@2x.png in Resources */,
-				3AFC94D41ECEEC670020EDD4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +169,7 @@
 			children = (
 				3A4AC1041ECD97DE008C31AC /* Base */,
 				3A6546641ECED7B8005CE7BC /* zh-Hans */,
+				3A88475F1ECFEED50012AF40 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -193,6 +195,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A6546731ECEDC2F005CE7BC /* zh-Hans */,
+				3A88475B1ECFEB0B0012AF40 /* Base */,
+				3A8847601ECFEF230012AF40 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -311,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/InternationalizationandLocalizationDemo/Base.lproj/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/$(PROJECT_NAME)/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.InternationalizationandLocalizationDemo;
@@ -325,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/InternationalizationandLocalizationDemo/Base.lproj/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/$(PROJECT_NAME)/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.InternationalizationandLocalizationDemo;

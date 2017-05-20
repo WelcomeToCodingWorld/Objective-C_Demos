@@ -1,0 +1,12 @@
+/* 取消按钮的文本 */
+"Cancel" = "Cancel";
+
+/* alertController的标题 */
+"FriendlyTips" = "FriendlyTips";
+
+/* 确认按钮的文本 */
+"OK" = "OK";
+
+/* alertController的message */
+"Please operate carefully!" = "Please operate carefully!";
+
