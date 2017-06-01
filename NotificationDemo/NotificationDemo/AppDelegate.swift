@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import UserNotifications
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,7 +16,90 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.getCurrentPushSettings()
+        self.getNotHandledNotifications()
+        self.authorizeAPNS()
+        self.configureNotificationCategory()
+        self.schedualLocalNotification()
         return true
+    }
+    
+    func getCurrentPushSettings() {
+        let center = UNUserNotificationCenter.current()
+        center.getNotificationSettings { (notificationSettings) in
+            print("\(notificationSettings)")
+        }
+
+    }
+    
+    func registerApns() {
+        UIApplication.shared.registerForRemoteNotifications()
+    }
+    
+    func authorizeAPNS() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization.
+            if granted {
+                self.registerApns()
+            }
+        }
+    }
+    
+    func configureNotificationCategory() {
+        let generalCategory = UNNotificationCategory(identifier: "GENERAL",
+                                                     actions: [],
+                                                     intentIdentifiers: [],
+                                                     options: .customDismissAction)
+        
+        // Create the custom actions for the TIMER_EXPIRED category.
+        let snoozeAction = UNNotificationAction(identifier: "SNOOZE_ACTION",
+                                                title: "Snooze",
+                                                options: UNNotificationActionOptions(rawValue: 0))
+        let stopAction = UNNotificationAction(identifier: "STOP_ACTION",
+                                              title: "Stop",
+                                              options: .foreground)
+        
+        let expiredCategory = UNNotificationCategory(identifier: "TIMER_EXPIRED",
+                                                     actions: [snoozeAction, stopAction],
+                                                     intentIdentifiers: [],
+                                                     options: UNNotificationCategoryOptions(rawValue: 0))
+        
+        // Register the notification categories.
+        let center = UNUserNotificationCenter.current()
+        center.setNotificationCategories([generalCategory, expiredCategory])
+    }
+    
+    func schedualLocalNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "Wake up!", arguments: nil)
+        content.body  = NSString.localizedUserNotificationString(forKey: "Rise and shine!It's morning time!", arguments: nil)
+        content.sound = UNNotificationSound.default()
+        content.categoryIdentifier = "TIMER_EXPIRED"
+        
+        //configure the trigger for a 7am wakeup
+        var dateInfo = DateComponents()
+        dateInfo.hour = 17
+        dateInfo.minute = 0
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "MorningAlarm", content: content, trigger: trigger)
+        
+        let center = UNUserNotificationCenter.current()
+        center.add(request) { (error:Error?) in
+            if let err = error {
+                print(err.localizedDescription)
+            }
+        }
+        
+    }
+    
+    func getNotHandledNotifications() {
+        let center = UNUserNotificationCenter.current()
+        center.getDeliveredNotifications { (notHandledNotifications) in
+            print("\(notHandledNotifications)")
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -40,7 +123,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    //MARK: register apns
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let device_ns = NSData.init(data: deviceToken)
+        
+        let token:String = device_ns.description.trimmingCharacters(in: CharacterSet(charactersIn: "<>" )).replacingOccurrences(of: " ", with: "")
+        
+        print(token)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("\(error)")
+    }
 }
 
