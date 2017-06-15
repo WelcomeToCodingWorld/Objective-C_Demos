@@ -7,48 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2B01731EE9015900C37836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B01721EE9015900C37836 /* AppDelegate.swift */; };
-		3A2B01751EE9015900C37836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B01741EE9015900C37836 /* ViewController.swift */; };
-		3A2B01781EE9015900C37836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B01761EE9015900C37836 /* Main.storyboard */; };
-		3A2B017A1EE9015900C37836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B01791EE9015900C37836 /* Assets.xcassets */; };
-		3A2B017D1EE9015900C37836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B017B1EE9015900C37836 /* LaunchScreen.storyboard */; };
-		3A2B01881EE9015900C37836 /* KVCDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B01871EE9015900C37836 /* KVCDemoTests.swift */; };
-		3A36D0811EEF754A007360ED /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36D0801EEF754A007360ED /* Animal.swift */; };
+		3A47A5FC1EEA73FD00677710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A47A5FB1EEA73FD00677710 /* AppDelegate.swift */; };
+		3A47A5FE1EEA73FD00677710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A47A5FD1EEA73FD00677710 /* ViewController.swift */; };
+		3A47A6011EEA73FD00677710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A47A5FF1EEA73FD00677710 /* Main.storyboard */; };
+		3A47A6031EEA73FD00677710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A47A6021EEA73FD00677710 /* Assets.xcassets */; };
+		3A47A6061EEA73FD00677710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A47A6041EEA73FD00677710 /* LaunchScreen.storyboard */; };
+		3A47A6111EEA73FD00677710 /* SocketDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A47A6101EEA73FD00677710 /* SocketDemoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A2B01841EE9015900C37836 /* PBXContainerItemProxy */ = {
+		3A47A60D1EEA73FD00677710 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A2B01671EE9015900C37836 /* Project object */;
+			containerPortal = 3A47A5F01EEA73FD00677710 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A2B016E1EE9015900C37836;
-			remoteInfo = KVCDemo;
+			remoteGlobalIDString = 3A47A5F71EEA73FD00677710;
+			remoteInfo = SocketDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A2B016F1EE9015900C37836 /* KVCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A2B01721EE9015900C37836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A2B01741EE9015900C37836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A2B01771EE9015900C37836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A2B01791EE9015900C37836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A2B017C1EE9015900C37836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3A2B017E1EE9015900C37836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A2B01831EE9015900C37836 /* KVCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A2B01871EE9015900C37836 /* KVCDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVCDemoTests.swift; sourceTree = "<group>"; };
-		3A2B01891EE9015900C37836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A36D0801EEF754A007360ED /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		3A47A5F81EEA73FD00677710 /* SocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A47A5FB1EEA73FD00677710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A47A5FD1EEA73FD00677710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A47A6001EEA73FD00677710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A47A6021EEA73FD00677710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A47A6051EEA73FD00677710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A47A6071EEA73FD00677710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A47A60C1EEA73FD00677710 /* SocketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A47A6101EEA73FD00677710 /* SocketDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketDemoTests.swift; sourceTree = "<group>"; };
+		3A47A6121EEA73FD00677710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A2B016C1EE9015900C37836 /* Frameworks */ = {
+		3A47A5F51EEA73FD00677710 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A2B01801EE9015900C37836 /* Frameworks */ = {
+		3A47A6091EEA73FD00677710 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,108 +56,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A2B01661EE9015900C37836 = {
+		3A47A5EF1EEA73FD00677710 = {
 			isa = PBXGroup;
 			children = (
-				3A2B01711EE9015900C37836 /* KVCDemo */,
-				3A2B01861EE9015900C37836 /* KVCDemoTests */,
-				3A2B01701EE9015900C37836 /* Products */,
+				3A47A5FA1EEA73FD00677710 /* SocketDemo */,
+				3A47A60F1EEA73FD00677710 /* SocketDemoTests */,
+				3A47A5F91EEA73FD00677710 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3A2B01701EE9015900C37836 /* Products */ = {
+		3A47A5F91EEA73FD00677710 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A2B016F1EE9015900C37836 /* KVCDemo.app */,
-				3A2B01831EE9015900C37836 /* KVCDemoTests.xctest */,
+				3A47A5F81EEA73FD00677710 /* SocketDemo.app */,
+				3A47A60C1EEA73FD00677710 /* SocketDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A2B01711EE9015900C37836 /* KVCDemo */ = {
+		3A47A5FA1EEA73FD00677710 /* SocketDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3A2B01721EE9015900C37836 /* AppDelegate.swift */,
-				3A2B01741EE9015900C37836 /* ViewController.swift */,
-				3A36D0801EEF754A007360ED /* Animal.swift */,
-				3A2B01761EE9015900C37836 /* Main.storyboard */,
-				3A2B01791EE9015900C37836 /* Assets.xcassets */,
-				3A2B017B1EE9015900C37836 /* LaunchScreen.storyboard */,
-				3A2B017E1EE9015900C37836 /* Info.plist */,
+				3A47A5FB1EEA73FD00677710 /* AppDelegate.swift */,
+				3A47A5FD1EEA73FD00677710 /* ViewController.swift */,
+				3A47A5FF1EEA73FD00677710 /* Main.storyboard */,
+				3A47A6021EEA73FD00677710 /* Assets.xcassets */,
+				3A47A6041EEA73FD00677710 /* LaunchScreen.storyboard */,
+				3A47A6071EEA73FD00677710 /* Info.plist */,
 			);
-			path = KVCDemo;
+			path = SocketDemo;
 			sourceTree = "<group>";
 		};
-		3A2B01861EE9015900C37836 /* KVCDemoTests */ = {
+		3A47A60F1EEA73FD00677710 /* SocketDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A2B01871EE9015900C37836 /* KVCDemoTests.swift */,
-				3A2B01891EE9015900C37836 /* Info.plist */,
+				3A47A6101EEA73FD00677710 /* SocketDemoTests.swift */,
+				3A47A6121EEA73FD00677710 /* Info.plist */,
 			);
-			path = KVCDemoTests;
+			path = SocketDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A2B016E1EE9015900C37836 /* KVCDemo */ = {
+		3A47A5F71EEA73FD00677710 /* SocketDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A2B018C1EE9015900C37836 /* Build configuration list for PBXNativeTarget "KVCDemo" */;
+			buildConfigurationList = 3A47A6151EEA73FD00677710 /* Build configuration list for PBXNativeTarget "SocketDemo" */;
 			buildPhases = (
-				3A2B016B1EE9015900C37836 /* Sources */,
-				3A2B016C1EE9015900C37836 /* Frameworks */,
-				3A2B016D1EE9015900C37836 /* Resources */,
+				3A47A5F41EEA73FD00677710 /* Sources */,
+				3A47A5F51EEA73FD00677710 /* Frameworks */,
+				3A47A5F61EEA73FD00677710 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KVCDemo;
-			productName = KVCDemo;
-			productReference = 3A2B016F1EE9015900C37836 /* KVCDemo.app */;
+			name = SocketDemo;
+			productName = SocketDemo;
+			productReference = 3A47A5F81EEA73FD00677710 /* SocketDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3A2B01821EE9015900C37836 /* KVCDemoTests */ = {
+		3A47A60B1EEA73FD00677710 /* SocketDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A2B018F1EE9015900C37836 /* Build configuration list for PBXNativeTarget "KVCDemoTests" */;
+			buildConfigurationList = 3A47A6181EEA73FD00677710 /* Build configuration list for PBXNativeTarget "SocketDemoTests" */;
 			buildPhases = (
-				3A2B017F1EE9015900C37836 /* Sources */,
-				3A2B01801EE9015900C37836 /* Frameworks */,
-				3A2B01811EE9015900C37836 /* Resources */,
+				3A47A6081EEA73FD00677710 /* Sources */,
+				3A47A6091EEA73FD00677710 /* Frameworks */,
+				3A47A60A1EEA73FD00677710 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3A2B01851EE9015900C37836 /* PBXTargetDependency */,
+				3A47A60E1EEA73FD00677710 /* PBXTargetDependency */,
 			);
-			name = KVCDemoTests;
-			productName = KVCDemoTests;
-			productReference = 3A2B01831EE9015900C37836 /* KVCDemoTests.xctest */;
+			name = SocketDemoTests;
+			productName = SocketDemoTests;
+			productReference = 3A47A60C1EEA73FD00677710 /* SocketDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3A2B01671EE9015900C37836 /* Project object */ = {
+		3A47A5F01EEA73FD00677710 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = zzkj;
 				TargetAttributes = {
-					3A2B016E1EE9015900C37836 = {
+					3A47A5F71EEA73FD00677710 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 6Q7KARRKGM;
 						ProvisioningStyle = Automatic;
 					};
-					3A2B01821EE9015900C37836 = {
+					3A47A60B1EEA73FD00677710 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 3A2B016E1EE9015900C37836;
+						TestTargetID = 3A47A5F71EEA73FD00677710;
 					};
 				};
 			};
-			buildConfigurationList = 3A2B016A1EE9015900C37836 /* Build configuration list for PBXProject "KVCDemo" */;
+			buildConfigurationList = 3A47A5F31EEA73FD00677710 /* Build configuration list for PBXProject "SocketDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -167,29 +164,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 3A2B01661EE9015900C37836;
-			productRefGroup = 3A2B01701EE9015900C37836 /* Products */;
+			mainGroup = 3A47A5EF1EEA73FD00677710;
+			productRefGroup = 3A47A5F91EEA73FD00677710 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A2B016E1EE9015900C37836 /* KVCDemo */,
-				3A2B01821EE9015900C37836 /* KVCDemoTests */,
+				3A47A5F71EEA73FD00677710 /* SocketDemo */,
+				3A47A60B1EEA73FD00677710 /* SocketDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A2B016D1EE9015900C37836 /* Resources */ = {
+		3A47A5F61EEA73FD00677710 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2B017D1EE9015900C37836 /* LaunchScreen.storyboard in Resources */,
-				3A2B017A1EE9015900C37836 /* Assets.xcassets in Resources */,
-				3A2B01781EE9015900C37836 /* Main.storyboard in Resources */,
+				3A47A6061EEA73FD00677710 /* LaunchScreen.storyboard in Resources */,
+				3A47A6031EEA73FD00677710 /* Assets.xcassets in Resources */,
+				3A47A6011EEA73FD00677710 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A2B01811EE9015900C37836 /* Resources */ = {
+		3A47A60A1EEA73FD00677710 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,47 +196,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A2B016B1EE9015900C37836 /* Sources */ = {
+		3A47A5F41EEA73FD00677710 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2B01751EE9015900C37836 /* ViewController.swift in Sources */,
-				3A2B01731EE9015900C37836 /* AppDelegate.swift in Sources */,
-				3A36D0811EEF754A007360ED /* Animal.swift in Sources */,
+				3A47A5FE1EEA73FD00677710 /* ViewController.swift in Sources */,
+				3A47A5FC1EEA73FD00677710 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A2B017F1EE9015900C37836 /* Sources */ = {
+		3A47A6081EEA73FD00677710 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2B01881EE9015900C37836 /* KVCDemoTests.swift in Sources */,
+				3A47A6111EEA73FD00677710 /* SocketDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A2B01851EE9015900C37836 /* PBXTargetDependency */ = {
+		3A47A60E1EEA73FD00677710 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A2B016E1EE9015900C37836 /* KVCDemo */;
-			targetProxy = 3A2B01841EE9015900C37836 /* PBXContainerItemProxy */;
+			target = 3A47A5F71EEA73FD00677710 /* SocketDemo */;
+			targetProxy = 3A47A60D1EEA73FD00677710 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3A2B01761EE9015900C37836 /* Main.storyboard */ = {
+		3A47A5FF1EEA73FD00677710 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3A2B01771EE9015900C37836 /* Base */,
+				3A47A6001EEA73FD00677710 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3A2B017B1EE9015900C37836 /* LaunchScreen.storyboard */ = {
+		3A47A6041EEA73FD00677710 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3A2B017C1EE9015900C37836 /* Base */,
+				3A47A6051EEA73FD00677710 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -247,7 +243,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3A2B018A1EE9015900C37836 /* Debug */ = {
+		3A47A6131EEA73FD00677710 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,7 +294,7 @@
 			};
 			name = Debug;
 		};
-		3A2B018B1EE9015900C37836 /* Release */ = {
+		3A47A6141EEA73FD00677710 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -342,91 +338,89 @@
 			};
 			name = Release;
 		};
-		3A2B018D1EE9015900C37836 /* Debug */ = {
+		3A47A6161EEA73FD00677710 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
-				INFOPLIST_FILE = KVCDemo/Info.plist;
+				INFOPLIST_FILE = SocketDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.KVCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.SocketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		3A2B018E1EE9015900C37836 /* Release */ = {
+		3A47A6171EEA73FD00677710 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
-				INFOPLIST_FILE = KVCDemo/Info.plist;
+				INFOPLIST_FILE = SocketDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.KVCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.SocketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		3A2B01901EE9015900C37836 /* Debug */ = {
+		3A47A6191EEA73FD00677710 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = KVCDemoTests/Info.plist;
+				INFOPLIST_FILE = SocketDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.KVCDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.SocketDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KVCDemo.app/KVCDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketDemo.app/SocketDemo";
 			};
 			name = Debug;
 		};
-		3A2B01911EE9015900C37836 /* Release */ = {
+		3A47A61A1EEA73FD00677710 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = KVCDemoTests/Info.plist;
+				INFOPLIST_FILE = SocketDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.KVCDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.SocketDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KVCDemo.app/KVCDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketDemo.app/SocketDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A2B016A1EE9015900C37836 /* Build configuration list for PBXProject "KVCDemo" */ = {
+		3A47A5F31EEA73FD00677710 /* Build configuration list for PBXProject "SocketDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A2B018A1EE9015900C37836 /* Debug */,
-				3A2B018B1EE9015900C37836 /* Release */,
+				3A47A6131EEA73FD00677710 /* Debug */,
+				3A47A6141EEA73FD00677710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A2B018C1EE9015900C37836 /* Build configuration list for PBXNativeTarget "KVCDemo" */ = {
+		3A47A6151EEA73FD00677710 /* Build configuration list for PBXNativeTarget "SocketDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A2B018D1EE9015900C37836 /* Debug */,
-				3A2B018E1EE9015900C37836 /* Release */,
+				3A47A6161EEA73FD00677710 /* Debug */,
+				3A47A6171EEA73FD00677710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		3A2B018F1EE9015900C37836 /* Build configuration list for PBXNativeTarget "KVCDemoTests" */ = {
+		3A47A6181EEA73FD00677710 /* Build configuration list for PBXNativeTarget "SocketDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A2B01901EE9015900C37836 /* Debug */,
-				3A2B01911EE9015900C37836 /* Release */,
+				3A47A6191EEA73FD00677710 /* Debug */,
+				3A47A61A1EEA73FD00677710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3A2B01671EE9015900C37836 /* Project object */;
+	rootObject = 3A47A5F01EEA73FD00677710 /* Project object */;
 }

@@ -13,6 +13,7 @@
 		3A2B014E1EE9014400C37836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B014D1EE9014400C37836 /* Assets.xcassets */; };
 		3A2B01511EE9014400C37836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B014F1EE9014400C37836 /* LaunchScreen.storyboard */; };
 		3A2B015C1EE9014400C37836 /* KVODemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B015B1EE9014400C37836 /* KVODemoTests.swift */; };
+		3AECDF821EF106A800E742B1 /* LabColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECDF811EF106A800E742B1 /* LabColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3A2B01571EE9014400C37836 /* KVODemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVODemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B015B1EE9014400C37836 /* KVODemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVODemoTests.swift; sourceTree = "<group>"; };
 		3A2B015D1EE9014400C37836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AECDF811EF106A800E742B1 /* LabColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				3A2B01461EE9014300C37836 /* AppDelegate.swift */,
 				3A2B01481EE9014400C37836 /* ViewController.swift */,
+				3AECDF811EF106A800E742B1 /* LabColor.swift */,
 				3A2B014A1EE9014400C37836 /* Main.storyboard */,
 				3A2B014D1EE9014400C37836 /* Assets.xcassets */,
 				3A2B014F1EE9014400C37836 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2B01491EE9014400C37836 /* ViewController.swift in Sources */,
+				3AECDF821EF106A800E742B1 /* LabColor.swift in Sources */,
 				3A2B01471EE9014300C37836 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				3A2B01621EE9014400C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A2B01631EE9014400C37836 /* Build configuration list for PBXNativeTarget "KVODemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				3A2B01651EE9014400C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

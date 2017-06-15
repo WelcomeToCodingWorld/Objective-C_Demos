@@ -7,19 +7,62 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,NSFetchedResultsControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let dataController = DataController { 
+            
+        }
+        let employee = NSEntityDescription.insertNewObject(forEntityName: "Employee", into: dataController.managedObjectContext)
+        
+        //save
+        do {
+            try dataController.managedObjectContext.save()
+        } catch {
+            fatalError("Failure to save context: \(error)")
+        }
+        
+        //fetch and filter
+        let moc = dataController.managedObjectContext
+        let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Employee")
+        let firstName = "Trevor"
+        employeesFetch.predicate = NSPredicate(format: "firstName == %@", firstName)
+        do {
+            let fetchedEmployees = try moc.fetch(employeesFetch) as! [Employee]
+        } catch {
+            fatalError("Failed to fetch employees: \(error)")
+        }
+        
+        
+        //connecting model to views
+        var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>!
+        func initializeFetchedResultsController() {
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+            let departmentSort = NSSortDescriptor(key: "department.name", ascending: true)
+            let lastNameSort = NSSortDescriptor(key: "lastName", ascending: true)
+            request.sortDescriptors = [departmentSort, lastNameSort]
+            
+            let moc = dataController.managedObjectContext
+            fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
+            fetchedResultsController.delegate = self
+            
+            do {
+                try fetchedResultsController.performFetch()
+            } catch {
+                fatalError("Failed to initialize FetchedResultsController: \(error)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
 

@@ -13,6 +13,8 @@
 		3A2B01D21EE901E500C37836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B01D11EE901E500C37836 /* Assets.xcassets */; };
 		3A2B01D51EE901E500C37836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B01D31EE901E500C37836 /* LaunchScreen.storyboard */; };
 		3A2B01E01EE901E500C37836 /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B01DF1EE901E500C37836 /* CoreDataDemoTests.swift */; };
+		3A3A26E31EF2298300E2C465 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A26E11EF2298300E2C465 /* DataModel.xcdatamodeld */; };
+		3A3A26E51EF2550D00E2C465 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A26E41EF2550D00E2C465 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3A2B01DB1EE901E500C37836 /* CoreDataDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B01DF1EE901E500C37836 /* CoreDataDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoTests.swift; sourceTree = "<group>"; };
 		3A2B01E11EE901E500C37836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3A26E21EF2298300E2C465 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		3A3A26E41EF2550D00E2C465 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,12 @@
 			children = (
 				3A2B01CA1EE901E500C37836 /* AppDelegate.swift */,
 				3A2B01CC1EE901E500C37836 /* ViewController.swift */,
+				3A3A26E41EF2550D00E2C465 /* DataController.swift */,
 				3A2B01CE1EE901E500C37836 /* Main.storyboard */,
 				3A2B01D11EE901E500C37836 /* Assets.xcassets */,
 				3A2B01D31EE901E500C37836 /* LaunchScreen.storyboard */,
 				3A2B01D61EE901E500C37836 /* Info.plist */,
+				3A3A26E11EF2298300E2C465 /* DataModel.xcdatamodeld */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2B01CD1EE901E500C37836 /* ViewController.swift in Sources */,
+				3A3A26E51EF2550D00E2C465 /* DataController.swift in Sources */,
 				3A2B01CB1EE901E500C37836 /* AppDelegate.swift in Sources */,
+				3A3A26E31EF2298300E2C465 /* DataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				3A2B01E61EE901E500C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A2B01E71EE901E500C37836 /* Build configuration list for PBXNativeTarget "CoreDataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,8 +428,22 @@
 				3A2B01E91EE901E500C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A3A26E11EF2298300E2C465 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A3A26E21EF2298300E2C465 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 3A3A26E21EF2298300E2C465 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3A2B01BF1EE901E500C37836 /* Project object */;
 }
