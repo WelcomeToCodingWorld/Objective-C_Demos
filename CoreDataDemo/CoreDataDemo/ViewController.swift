@@ -10,24 +10,26 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController,NSFetchedResultsControllerDelegate {
-
+    var persistentContainer : NSPersistentContainer!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let dataController = DataController { 
-            
+        
+        
+        let dataController = DataController { container in
+            self.persistentContainer = container
         }
-        let employee = NSEntityDescription.insertNewObject(forEntityName: "Employee", into: dataController.managedObjectContext)
+        let employee = NSEntityDescription.insertNewObject(forEntityName: "Employee", into: self.persistentContainer.viewContext)
         
         //save
         do {
-            try dataController.managedObjectContext.save()
+            try self.persistentContainer.viewContext.save()
         } catch {
             fatalError("Failure to save context: \(error)")
         }
         
         //fetch and filter
-        let moc = dataController.managedObjectContext
+        let moc = self.persistentContainer.viewContext
         let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Employee")
         let firstName = "Trevor"
         employeesFetch.predicate = NSPredicate(format: "firstName == %@", firstName)
@@ -46,7 +48,7 @@ class ViewController: UIViewController,NSFetchedResultsControllerDelegate {
             let lastNameSort = NSSortDescriptor(key: "lastName", ascending: true)
             request.sortDescriptors = [departmentSort, lastNameSort]
             
-            let moc = dataController.managedObjectContext
+            let moc = self.persistentContainer.viewContext
             fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
             fetchedResultsController.delegate = self
             
@@ -56,6 +58,9 @@ class ViewController: UIViewController,NSFetchedResultsControllerDelegate {
                 fatalError("Failed to initialize FetchedResultsController: \(error)")
             }
         }
+        
+        //NSFetchedResultsControllerDelegate
+        
     }
 
     override func didReceiveMemoryWarning() {

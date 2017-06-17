@@ -13,6 +13,7 @@
 		3A2B029D1EE9455000C37836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B029C1EE9455000C37836 /* Assets.xcassets */; };
 		3A2B02A01EE9455000C37836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B029E1EE9455000C37836 /* LaunchScreen.storyboard */; };
 		3A2B02AB1EE9455000C37836 /* SystemAppCallDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B02AA1EE9455000C37836 /* SystemAppCallDemoTests.swift */; };
+		3A2CED5C1EF4D4BE005F0F15 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CED5B1EF4D4BE005F0F15 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3A2B02A61EE9455000C37836 /* SystemAppCallDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SystemAppCallDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B02AA1EE9455000C37836 /* SystemAppCallDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAppCallDemoTests.swift; sourceTree = "<group>"; };
 		3A2B02AC1EE9455000C37836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2CED5B1EF4D4BE005F0F15 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				3A2B02951EE9455000C37836 /* AppDelegate.swift */,
 				3A2B02971EE9455000C37836 /* ViewController.swift */,
+				3A2CED5B1EF4D4BE005F0F15 /* CustomView.swift */,
 				3A2B02991EE9455000C37836 /* Main.storyboard */,
 				3A2B029C1EE9455000C37836 /* Assets.xcassets */,
 				3A2B029E1EE9455000C37836 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2CED5C1EF4D4BE005F0F15 /* CustomView.swift in Sources */,
 				3A2B02981EE9455000C37836 /* ViewController.swift in Sources */,
 				3A2B02961EE9455000C37836 /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +415,7 @@
 				3A2B02B11EE9455000C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A2B02B21EE9455000C37836 /* Build configuration list for PBXNativeTarget "SystemAppCallDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				3A2B02B41EE9455000C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

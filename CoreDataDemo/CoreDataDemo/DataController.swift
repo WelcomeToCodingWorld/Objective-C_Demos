@@ -10,17 +10,15 @@ import CoreData
 import UIKit
 
 class DataController : NSObject {
-    var managedObjectContext: NSManagedObjectContext{
-        return persistentContainer.viewContext
-    }
-    var persistentContainer:NSPersistentContainer
-    init(completionClosure: @escaping () -> ()) {
-        persistentContainer = NSPersistentContainer(name: "DataModel")
+    init(completionClosure: @escaping (NSPersistentContainer) -> ()) {
+        let persistentContainer = NSPersistentContainer(name: "DataModel")
         persistentContainer.loadPersistentStores() { (description, error) in
             if let error = error {
                 fatalError("Failed to load Core Data stack: \(error)")
             }
-            completionClosure()
+            DispatchQueue.main.async {
+                completionClosure(persistentContainer)
+            }
         }        
     }
     
