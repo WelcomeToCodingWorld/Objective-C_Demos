@@ -15,11 +15,15 @@ class ViewController: UIViewController,NSFetchedResultsControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let managedContext : NSManagedObjectContext!
+        
         
         let dataController = DataController { container in
             self.persistentContainer = container
         }
         let employee = NSEntityDescription.insertNewObject(forEntityName: "Employee", into: self.persistentContainer.viewContext)
+//        var classN = NSClassFromString("ViewController")
+//        print(classN!)
         
         //save
         do {
