@@ -28,14 +28,14 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="members" inverseEntity="Department" syncable="YES"/>
     </entity>
-    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+    <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Employee" positionX="-252" positionY="441" width="128" height="193"/>
-        <element name="Person" positionX="-443" positionY="303" width="128" height="75"/>
         <element name="Building" positionX="142" positionY="228" width="128" height="73"/>
         <element name="Department" positionX="-297" positionY="99" width="128" height="176"/>
+        <element name="Employee" positionX="-252" positionY="441" width="128" height="193"/>
+        <element name="Person" positionX="-443" positionY="303" width="128" height="75"/>
     </elements>
 </model>

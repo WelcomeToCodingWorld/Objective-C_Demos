@@ -14,7 +14,15 @@
 		3A2B01D51EE901E500C37836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B01D31EE901E500C37836 /* LaunchScreen.storyboard */; };
 		3A2B01E01EE901E500C37836 /* CoreDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B01DF1EE901E500C37836 /* CoreDataDemoTests.swift */; };
 		3A3A26E31EF2298300E2C465 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A26E11EF2298300E2C465 /* DataModel.xcdatamodeld */; };
-		3A3A26E51EF2550D00E2C465 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A26E41EF2550D00E2C465 /* DataController.swift */; };
+		3A7A9F9C1F01EE67005DB857 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A9F9B1F01EE67005DB857 /* MainViewController.swift */; };
+		3A7A9FA01F01F1F8005DB857 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A9F9F1F01F1F8005DB857 /* ListViewController.swift */; };
+		3A7A9FA21F01F248005DB857 /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A9FA11F01F248005DB857 /* MsgViewController.swift */; };
+		3A7A9FA41F01F854005DB857 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A9FA31F01F854005DB857 /* SegueHandler.swift */; };
+		3A7A9FA61F022857005DB857 /* BusinessCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A9FA51F022857005DB857 /* BusinessCardTableViewCell.swift */; };
+		3A7A9FA81F022A7F005DB857 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A9FA71F022A7F005DB857 /* TableViewDataSource.swift */; };
+		3AB115DF1F037F6C003BEDA8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB115DE1F037F6C003BEDA8 /* CoreDataStack.swift */; };
+		3AB115E11F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB115E01F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift */; };
+		3AB115E31F039A9F003BEDA8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB115E21F039A9F003BEDA8 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,15 @@
 		3A2B01DF1EE901E500C37836 /* CoreDataDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDemoTests.swift; sourceTree = "<group>"; };
 		3A2B01E11EE901E500C37836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3A26E21EF2298300E2C465 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		3A3A26E41EF2550D00E2C465 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		3A7A9F9B1F01EE67005DB857 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A7A9F9F1F01F1F8005DB857 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3A7A9FA11F01F248005DB857 /* MsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
+		3A7A9FA31F01F854005DB857 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
+		3A7A9FA51F022857005DB857 /* BusinessCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewCell.swift; sourceTree = "<group>"; };
+		3A7A9FA71F022A7F005DB857 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		3AB115DE1F037F6C003BEDA8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3AB115E01F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
+		3AB115E21F039A9F003BEDA8 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +98,15 @@
 			isa = PBXGroup;
 			children = (
 				3A2B01CA1EE901E500C37836 /* AppDelegate.swift */,
-				3A2B01CC1EE901E500C37836 /* ViewController.swift */,
-				3A3A26E41EF2550D00E2C465 /* DataController.swift */,
+				3AB115DA1F037D6E003BEDA8 /* View Controllers */,
+				3AB115DC1F037DE5003BEDA8 /* Views */,
+				3A7A9FA31F01F854005DB857 /* SegueHandler.swift */,
+				3AB115DD1F037E3B003BEDA8 /* Core Data Helpers */,
 				3A2B01CE1EE901E500C37836 /* Main.storyboard */,
 				3A2B01D11EE901E500C37836 /* Assets.xcassets */,
 				3A2B01D31EE901E500C37836 /* LaunchScreen.storyboard */,
 				3A2B01D61EE901E500C37836 /* Info.plist */,
-				3A3A26E11EF2298300E2C465 /* DataModel.xcdatamodeld */,
+				3AB115DB1F037DB2003BEDA8 /* Model */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -100,6 +118,44 @@
 				3A2B01E11EE901E500C37836 /* Info.plist */,
 			);
 			path = CoreDataDemoTests;
+			sourceTree = "<group>";
+		};
+		3AB115DA1F037D6E003BEDA8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A9FA11F01F248005DB857 /* MsgViewController.swift */,
+				3A2B01CC1EE901E500C37836 /* ViewController.swift */,
+				3A7A9F9F1F01F1F8005DB857 /* ListViewController.swift */,
+				3A7A9F9B1F01EE67005DB857 /* MainViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3AB115DB1F037DB2003BEDA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A3A26E11EF2298300E2C465 /* DataModel.xcdatamodeld */,
+				3AB115DE1F037F6C003BEDA8 /* CoreDataStack.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3AB115DC1F037DE5003BEDA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A9FA51F022857005DB857 /* BusinessCardTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3AB115DD1F037E3B003BEDA8 /* Core Data Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A9FA71F022A7F005DB857 /* TableViewDataSource.swift */,
+				3AB115E01F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift */,
+				3AB115E21F039A9F003BEDA8 /* Person.swift */,
+			);
+			name = "Core Data Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +263,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2B01CD1EE901E500C37836 /* ViewController.swift in Sources */,
-				3A3A26E51EF2550D00E2C465 /* DataController.swift in Sources */,
+				3A7A9FA21F01F248005DB857 /* MsgViewController.swift in Sources */,
+				3A7A9FA01F01F1F8005DB857 /* ListViewController.swift in Sources */,
+				3A7A9FA41F01F854005DB857 /* SegueHandler.swift in Sources */,
 				3A2B01CB1EE901E500C37836 /* AppDelegate.swift in Sources */,
+				3AB115DF1F037F6C003BEDA8 /* CoreDataStack.swift in Sources */,
+				3AB115E31F039A9F003BEDA8 /* Person.swift in Sources */,
+				3AB115E11F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift in Sources */,
+				3A7A9FA81F022A7F005DB857 /* TableViewDataSource.swift in Sources */,
 				3A3A26E31EF2298300E2C465 /* DataModel.xcdatamodeld in Sources */,
+				3A7A9F9C1F01EE67005DB857 /* MainViewController.swift in Sources */,
+				3A7A9FA61F022857005DB857 /* BusinessCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,6 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Q7KARRKGM;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.CoreDataDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

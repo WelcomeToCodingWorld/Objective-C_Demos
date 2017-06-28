@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var persistentContainer : NSPersistentContainer!
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        createDataModelContainer { (container) in
+            self.persistentContainer = container
+            guard let nc = (self.window?.rootViewController as? UINavigationController),let vc = nc.viewControllers.first as? ViewController else{
+                fatalError("could not instantiate rootViewController")
+            }
+            vc.managedObjectContext = container.viewContext
+        }
         return true
     }
 
