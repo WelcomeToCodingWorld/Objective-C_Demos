@@ -8,14 +8,20 @@
 
 import CoreData
 
-class Person: NSManagedObject {
+public class Person: NSManagedObject {
     @NSManaged  fileprivate(set) var dateOfBirth:Date
     @NSManaged  fileprivate(set) var name:String
     
     static func insert(into context:NSManagedObjectContext) -> Person{
         let person:Person =  context.insertObject()
-        person.dateOfBirth = Date(timeIntervalSinceNow: 12*30*24*3600*25)
+        person.dateOfBirth = Date()
         person.name = "Lee"
         return person
+    }
+}
+
+extension Person:Managed{
+    static var defaultSortDescriptors:[NSSortDescriptor]{
+        return [NSSortDescriptor(key: #keyPath(Person.dateOfBirth), ascending: false)]
     }
 }

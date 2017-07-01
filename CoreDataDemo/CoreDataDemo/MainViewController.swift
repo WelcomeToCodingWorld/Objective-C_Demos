@@ -13,6 +13,7 @@ class MainViewController: UIViewController,SegueHandler {
         case embedListVC = "embedListViewController"
         case embedMsgVC = "embedMsgViewController"
     }
+    @IBOutlet var vcVSpaceConstraint: NSLayoutConstraint!
     var managedObjectContext : NSManagedObjectContext!
     
     override func viewDidLoad() {
@@ -38,7 +39,10 @@ class MainViewController: UIViewController,SegueHandler {
             }
             listVC.managedObjectContext = self.managedObjectContext
         case .embedMsgVC:
-            break
+            guard let msgVC = segue.destination as? MsgViewController else {
+                fatalError("wrong view controller type")
+            }
+            msgVC.managedObjectContext = self.managedObjectContext
         }
     }
  

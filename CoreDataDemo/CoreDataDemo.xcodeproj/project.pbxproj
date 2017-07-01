@@ -23,6 +23,7 @@
 		3AB115DF1F037F6C003BEDA8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB115DE1F037F6C003BEDA8 /* CoreDataStack.swift */; };
 		3AB115E11F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB115E01F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift */; };
 		3AB115E31F039A9F003BEDA8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB115E21F039A9F003BEDA8 /* Person.swift */; };
+		3AE6CF601F073E4F00CC1C3B /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6CF5F1F073E4F00CC1C3B /* Managed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		3AB115DE1F037F6C003BEDA8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		3AB115E01F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
 		3AB115E21F039A9F003BEDA8 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3AE6CF5F1F073E4F00CC1C3B /* Managed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				3A7A9FA71F022A7F005DB857 /* TableViewDataSource.swift */,
 				3AB115E01F0397BF003BEDA8 /* NSManagedObjectContext+Extension.swift */,
 				3AB115E21F039A9F003BEDA8 /* Person.swift */,
+				3AE6CF5F1F073E4F00CC1C3B /* Managed.swift */,
 			);
 			name = "Core Data Helpers";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE6CF601F073E4F00CC1C3B /* Managed.swift in Sources */,
 				3A2B01CD1EE901E500C37836 /* ViewController.swift in Sources */,
 				3A7A9FA21F01F248005DB857 /* MsgViewController.swift in Sources */,
 				3A7A9FA01F01F1F8005DB857 /* ListViewController.swift in Sources */,

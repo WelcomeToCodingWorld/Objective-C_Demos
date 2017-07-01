@@ -12,6 +12,9 @@ import CoreData
 class ListViewController: UITableViewController {
 
     var managedObjectContext:NSManagedObjectContext!
+    let cellID = "BusinessCard"
+    fileprivate var dataSource:TableViewDataSource<ListViewController>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -21,6 +24,13 @@ class ListViewController: UITableViewController {
     fileprivate func setupTableView(){
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
+        tableView.tableFooterView = UIView()
+        let request = Person.sortedFetchRequest
+        request.fetchBatchSize = 20
+        request.returnsObjectsAsFaults = false
+        
+        let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+        dataSource = TableViewDataSource(tableView: tableView, cellIdentifier: cellID, fetchResultController: frc, delegate: self)
         
     }
 
@@ -29,7 +39,6 @@ class ListViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -41,3 +50,10 @@ class ListViewController: UITableViewController {
     */
 
 }
+
+extension ListViewController:TableViewDataSourceDelegate{
+    func configure(_ cell: BusinessCardTableViewCell , with object: Person) {
+        cell.config(with: object)
+    }
+}
+

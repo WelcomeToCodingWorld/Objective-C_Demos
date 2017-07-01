@@ -1,37 +1,25 @@
 //
-//  MsgViewController.swift
-//  CoreDataDemo
+//  ViewController.swift
+//  Scroll+AutoLayout
 //
-//  Created by zz on 2017/6/27.
+//  Created by zz on 2017/6/29.
 //  Copyright © 2017年 zzkj. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class MsgViewController: UIViewController {
+class ViewController: UIViewController {
 
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var contentView: UIView!
-    var managedObjectContext : NSManagedObjectContext!
-    
-    var activeTextField:UITextField?{
-        willSet{
-            if newValue == nil{
-                print("the activeTextField is being set to nil")
-            }
-        }
-        
-        didSet{
-            if  activeTextField == nil {
-                print("the activeTextField has been set to nil")
-            }else{
-                print("The activeTextField now has a value")
-            }
-        }
-    }
+    var activeTextField:UITextField?
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        let leftEdgeAlign = NSLayoutConstraint(item: self.contentView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1.0, constant: 0)
+        let rightEdgeAlign = NSLayoutConstraint(item: self.contentView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1.0, constant: 0)
+        self.view.addConstraints([leftEdgeAlign,rightEdgeAlign])
         self.registerKeyboardNotification()
     }
     
@@ -49,13 +37,11 @@ class MsgViewController: UIViewController {
             screenRect.size.height -= (keyboardRect?.size.height)!
             
             guard self.activeTextField != nil else{
-                fatalError("No active textField found")
+                fatalError("active textField has not found")
             }
             
             if screenRect.contains((self.activeTextField?.frame.origin)!) {
                 self.scrollView.scrollRectToVisible((self.activeTextField?.frame)!, animated: true)
-            }else{
-                print("need not to adjust")
             }
         }
         
@@ -65,39 +51,24 @@ class MsgViewController: UIViewController {
             self.scrollView.contentInset = contentInsets
             self.scrollView.scrollIndicatorInsets = contentInsets
         }
+        
     }
     
     deinit {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardDidShow, object: nil)
         notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.activeTextField?.endEditing(true)
+        notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardDidShow, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
-extension MsgViewController:UITextFieldDelegate{
+extension ViewController:UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.activeTextField = textField
     }
@@ -110,5 +81,5 @@ extension MsgViewController:UITextFieldDelegate{
         textField.endEditing(true)
         return true
     }
-    
 }
+
