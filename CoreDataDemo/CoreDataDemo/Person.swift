@@ -12,10 +12,10 @@ public class Person: NSManagedObject {
     @NSManaged  fileprivate(set) var dateOfBirth:Date
     @NSManaged  fileprivate(set) var name:String
     
-    static func insert(into context:NSManagedObjectContext) -> Person{
+    static func insert(into context:NSManagedObjectContext,name:String,dateOfBirth:Date) -> Person{
         let person:Person =  context.insertObject()
-        person.dateOfBirth = Date()
-        person.name = "Lee"
+        person.dateOfBirth = dateOfBirth
+        person.name = name
         return person
     }
 }

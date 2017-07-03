@@ -11,6 +11,7 @@ import UIKit
 class BusinessCardTableViewCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var ageLabel: UILabel!
+    
 
 }
 

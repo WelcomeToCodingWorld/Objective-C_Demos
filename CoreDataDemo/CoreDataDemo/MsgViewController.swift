@@ -13,6 +13,41 @@ class MsgViewController: UIViewController {
 
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var contentView: UIView!
+    
+    @IBOutlet var birthDateTF: UITextField!
+    @IBOutlet var nameTF: UITextField!
+    @IBAction func add(_ sender: Any) {
+        if birthDateTF.text?.characters.count == 0 {
+            fatalError("date of birth can't be nil")
+        }else{//验证日期格式
+            do {
+                let regex = try NSRegularExpression(pattern: "[1,2][0-9]{3}-((1[0-2])|(0[1-9]))-([0-2][0-9]|3[01])", options: NSRegularExpression.Options.allowCommentsAndWhitespace)
+                if regex.matches(in: birthDateTF.text!, options: NSRegularExpression.MatchingOptions.anchored, range:NSMakeRange(0, (birthDateTF.text?.characters.count)!)).count != 1 {
+                    fatalError("the date format is incorrect!")
+                }
+            } catch {
+                fatalError("the regularExpression is failed to create")
+            }
+        }
+        
+        if nameTF.text?.characters.count == 0 {
+            fatalError("name can't be nil")
+        }
+        managedObjectContext.performChange {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .short
+            formatter.doesRelativeDateFormatting = false
+            formatter.formattingContext = .standalone
+            _ = Person.insert(into: self.managedObjectContext ,name:self.nameTF.text!,dateOfBirth: formatter.date(from: self.birthDateTF.text!)!)
+        }
+    }
+    
+    @IBAction func selectX(_ sender:Any)  {
+        
+    }
+    
+    
     var managedObjectContext : NSManagedObjectContext!
     
     var activeTextField:UITextField?{

@@ -256,10 +256,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPs-gh-vom">
                                                 <rect key="frame" x="60" y="131" width="31" height="30"/>
                                                 <state key="normal" title="添加"/>
+                                                <connections>
+                                                    <action selector="add:" destination="cgI-gE-EbN" eventType="touchUpInside" id="Zay-D7-fmI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-JG-uuf">
                                                 <rect key="frame" x="214" y="131" width="31" height="30"/>
                                                 <state key="normal" title="查询"/>
+                                                <connections>
+                                                    <action selector="selectX:" destination="cgI-gE-EbN" eventType="touchUpInside" id="PsC-pc-ciz"/>
+                                                </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uQo-5Y-6gT">
                                                 <rect key="frame" x="36" y="176" width="258" height="100"/>
@@ -314,7 +320,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthDateTF" destination="Uyt-qG-MSa" id="hDq-ov-SzW"/>
                         <outlet property="contentView" destination="eMX-06-DFO" id="x5D-Fs-aJp"/>
+                        <outlet property="nameTF" destination="PGq-B8-rSx" id="BfH-8D-acL"/>
                         <outlet property="scrollView" destination="mUH-mT-ilp" id="zAq-6g-w8Y"/>
                     </connections>
                 </viewController>

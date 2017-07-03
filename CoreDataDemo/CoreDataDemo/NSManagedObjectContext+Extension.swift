@@ -9,8 +9,8 @@
 import CoreData
 
 extension NSManagedObjectContext {
-    func insertObject<A:NSManagedObject>()->A {
-        guard let object = NSEntityDescription.insertNewObject(forEntityName: A.entity().name!, into: self) as? A else{
+    func insertObject<A:NSManagedObject>()->A where A:Managed{
+        guard let object = NSEntityDescription.insertNewObject(forEntityName: A.entityName, into: self) as? A else{
             fatalError("wrong object type")
         }
         return object
@@ -26,7 +26,7 @@ extension NSManagedObjectContext {
         }
     }
     
-    func perforChange(block: @escaping ()->()) {
+    func performChange(block: @escaping ()->()) {
         perform(block)
         _  = self.saveOrRollback()
     }
