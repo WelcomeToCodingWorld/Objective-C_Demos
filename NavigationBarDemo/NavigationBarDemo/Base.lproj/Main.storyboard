@@ -25,28 +25,37 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbv-hg-dAD" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="494"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="784"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kLz-DL-V4L">
-                                                <rect key="frame" x="15" y="284" width="345" height="200"/>
+                                                <rect key="frame" x="15" y="384" width="345" height="200"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="4xf-6G-adR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AsU-Jy-cFP"/>
+                                                </connections>
                                             </textView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9f-ke-qU4">
-                                                <rect key="frame" x="84" y="154" width="276" height="30"/>
+                                                <rect key="frame" x="84" y="254" width="276" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Fih-hm-guO"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2G-Dz-vfK">
-                                                <rect key="frame" x="84" y="100" width="276" height="30"/>
+                                                <rect key="frame" x="84" y="200" width="276" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7ia-Xq-BXF"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.40475697690000001" blue="0.69597198449999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,10 +65,10 @@
                                             <constraint firstItem="W2G-Dz-vfK" firstAttribute="leading" secondItem="cbv-hg-dAD" secondAttribute="leading" constant="84" id="JJw-dm-VaL"/>
                                             <constraint firstAttribute="trailing" secondItem="W2G-Dz-vfK" secondAttribute="trailing" constant="15" id="MxK-09-klU"/>
                                             <constraint firstItem="v9f-ke-qU4" firstAttribute="trailing" secondItem="W2G-Dz-vfK" secondAttribute="trailing" id="VxH-sm-oDM"/>
-                                            <constraint firstItem="W2G-Dz-vfK" firstAttribute="top" secondItem="cbv-hg-dAD" secondAttribute="top" constant="100" id="oQh-L3-XPt"/>
+                                            <constraint firstItem="W2G-Dz-vfK" firstAttribute="top" secondItem="cbv-hg-dAD" secondAttribute="top" constant="200" id="oQh-L3-XPt"/>
                                             <constraint firstItem="kLz-DL-V4L" firstAttribute="leading" secondItem="cbv-hg-dAD" secondAttribute="leading" constant="15" id="usq-vu-dAd"/>
                                             <constraint firstAttribute="trailing" secondItem="kLz-DL-V4L" secondAttribute="trailing" constant="15" id="vQi-a5-t2M"/>
-                                            <constraint firstAttribute="bottom" secondItem="kLz-DL-V4L" secondAttribute="bottom" constant="10" id="wn8-pP-Z4F"/>
+                                            <constraint firstAttribute="bottom" secondItem="kLz-DL-V4L" secondAttribute="bottom" constant="200" id="wn8-pP-Z4F"/>
                                             <constraint firstItem="kLz-DL-V4L" firstAttribute="top" secondItem="v9f-ke-qU4" secondAttribute="bottom" constant="100" id="yuP-Pv-1un"/>
                                         </constraints>
                                     </view>
@@ -85,6 +94,7 @@
                     <navigationItem key="navigationItem" id="NFG-Io-cUU"/>
                     <connections>
                         <outlet property="scrollView" destination="1RC-3F-VFb" id="fR8-yp-NHW"/>
+                        <outlet property="textView" destination="kLz-DL-V4L" id="1da-hl-SgP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,6 +107,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jja-i2-WOa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Dwy-xj-3aC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

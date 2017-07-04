@@ -11,10 +11,30 @@ import UIKit
 class GeneralViewController: UIViewController {
 
     @IBOutlet var scrollView: UIScrollView!
+    
+    @IBOutlet var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentInset = UIEdgeInsetsMake(10, 0, 10, 0)
         // Do any additional setup after loading the view.
+    }
+    
+    func observeKeyboard() {
+        let notiCenter = NotificationCenter.default
+        notiCenter.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification) in
+            
+        }
+        
+        notiCenter.addObserver(forName: NSNotification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification) in
+            
+        }
+        
+    }
+    
+    deinit {
+        let notiCenter = NotificationCenter.default
+        notiCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        notiCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,4 +53,21 @@ class GeneralViewController: UIViewController {
     }
     */
 
+}
+
+extension GeneralViewController:UITextViewDelegate{
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.endEditing(true)
+            return false
+        }
+        return true
+    }
+}
+
+extension GeneralViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return true
+    }
 }
