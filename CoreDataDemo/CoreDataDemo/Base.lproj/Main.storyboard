@@ -111,6 +111,9 @@
                                     <constraint firstAttribute="bottom" secondItem="8vY-Cy-3K5" secondAttribute="bottom" id="pYJ-tA-qev"/>
                                     <constraint firstAttribute="trailing" secondItem="8vY-Cy-3K5" secondAttribute="trailing" id="w8A-V4-Nvh"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="1HK-uX-CSQ" id="Ua0-4F-der"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

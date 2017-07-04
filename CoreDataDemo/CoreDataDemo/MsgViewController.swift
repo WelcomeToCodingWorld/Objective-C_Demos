@@ -39,7 +39,7 @@ class MsgViewController: UIViewController {
             formatter.timeStyle = .short
             formatter.doesRelativeDateFormatting = false
             formatter.formattingContext = .standalone
-            _ = Person.insert(into: self.managedObjectContext ,name:self.nameTF.text!,dateOfBirth: formatter.date(from: self.birthDateTF.text!)!)
+            _ = Person.insert(into: self.managedObjectContext ,name:self.nameTF.text!,dateOfBirth: Date())
         }
     }
     

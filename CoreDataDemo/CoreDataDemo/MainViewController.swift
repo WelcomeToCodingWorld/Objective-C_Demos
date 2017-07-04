@@ -16,6 +16,7 @@ class MainViewController: UIViewController,SegueHandler {
     @IBOutlet var vcVSpaceConstraint: NSLayoutConstraint!
     var managedObjectContext : NSManagedObjectContext!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,5 +47,13 @@ class MainViewController: UIViewController,SegueHandler {
         }
     }
  
+    
+    func zz_setBackgroundColor(color:UIColor) {
+        
+    }
 
+}
+
+extension MainViewController:UIScrollViewDelegate{
+    
 }
