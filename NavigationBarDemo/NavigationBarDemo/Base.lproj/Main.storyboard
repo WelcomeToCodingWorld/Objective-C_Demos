@@ -73,7 +73,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="cbv-hg-dAD" secondAttribute="trailing" id="9QV-Bf-IBE"/>
                                     <constraint firstItem="cbv-hg-dAD" firstAttribute="top" secondItem="1RC-3F-VFb" secondAttribute="top" id="Kr3-Fa-Jry"/>
@@ -95,11 +94,12 @@
                     <connections>
                         <outlet property="scrollView" destination="1RC-3F-VFb" id="fR8-yp-NHW"/>
                         <outlet property="textView" destination="kLz-DL-V4L" id="1da-hl-SgP"/>
+                        <outlet property="textViewHeightConstraint" destination="4xf-6G-adR" id="TNb-aj-nfe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805.5999999999999" y="-136.28185907046478"/>
+            <point key="canvasLocation" x="1887" y="-145"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pzs-7z-Bug">

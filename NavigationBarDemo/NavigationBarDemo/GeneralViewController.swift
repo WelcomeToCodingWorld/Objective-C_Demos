@@ -12,21 +12,29 @@ class GeneralViewController: UIViewController {
 
     @IBOutlet var scrollView: UIScrollView!
     
+    @IBOutlet var textViewHeightConstraint: NSLayoutConstraint!
+    
     @IBOutlet var textView: UITextView!
+    var activeView : UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentInset = UIEdgeInsetsMake(10, 0, 10, 0)
         // Do any additional setup after loading the view.
+        observeKeyboard()
     }
     
-    func observeKeyboard() {
+    fileprivate func observeKeyboard() {
         let notiCenter = NotificationCenter.default
         notiCenter.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification) in
-            
+            let kbF = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect
+            self.scrollView.contentInset = UIEdgeInsetsMake(10, 0, ((kbF?.size.height)! - 49), 0)
+            self.scrollView.scrollRectToVisible((self.activeView?.frame)!, animated: true)
         }
         
         notiCenter.addObserver(forName: NSNotification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification) in
-            
+            self.scrollView.contentInset = UIEdgeInsetsMake(10, 0, 10, 0)
+//            self.scrollView.contentOffset = CGPoint(x: 0, y: -10)
         }
         
     }
@@ -52,6 +60,17 @@ class GeneralViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "contentSize" {
+            if textView.contentSize.height < 200 {
+                textView.contentSize.height = 200
+            }
+            textViewHeightConstraint.constant = textView.contentSize.height
+            scrollView.layoutIfNeeded()
+            scrollView.scrollRectToVisible(textView.frame, animated: true)
+        }
+    }
 
 }
 
@@ -63,11 +82,33 @@ extension GeneralViewController:UITextViewDelegate{
         }
         return true
     }
+    
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        activeView = textView;
+        textView.addObserver(self, forKeyPath: #keyPath(UITextView.contentSize), options: NSKeyValueObservingOptions.new, context: nil)
+        return true
+    }
+    
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        activeView = nil
+        textView.removeObserver(self, forKeyPath: #keyPath(UITextView.contentSize))
+        return true
+    }
 }
 
 extension GeneralViewController:UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        activeView = textField
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        activeView = nil
         return true
     }
 }
