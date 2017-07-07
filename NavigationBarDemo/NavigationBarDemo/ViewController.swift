@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
+}
+
+class MyClass: NSObject {
+    var date = NSDate()
+    
+}
+
+class MyChildClass: MyClass {
+     override var date: NSDate {
+        get { return super.date }
+        set{super.date = newValue}
+    }
 }
 
