@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6920581F1081F200500A44 /* ZZNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6920571F1081F200500A44 /* ZZNavViewController.swift */; };
+		3A69205A1F10821C00500A44 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6920591F10821C00500A44 /* NextViewController.swift */; };
+		3A69205C1F10828300500A44 /* FisrstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69205B1F10828300500A44 /* FisrstViewController.swift */; };
 		3A9AFAA41F0B27CC0035A131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AFAA31F0B27CC0035A131 /* AppDelegate.swift */; };
 		3A9AFAA61F0B27CC0035A131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AFAA51F0B27CC0035A131 /* ViewController.swift */; };
 		3A9AFAA91F0B27CD0035A131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9AFAA71F0B27CD0035A131 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A6920571F1081F200500A44 /* ZZNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZNavViewController.swift; sourceTree = "<group>"; };
+		3A6920591F10821C00500A44 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		3A69205B1F10828300500A44 /* FisrstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FisrstViewController.swift; sourceTree = "<group>"; };
 		3A9AFAA01F0B27CC0035A131 /* NavigationBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9AFAA31F0B27CC0035A131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9AFAA51F0B27CC0035A131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 				3A9AFAA51F0B27CC0035A131 /* ViewController.swift */,
 				3A9AFAC31F0B334B0035A131 /* ZZNavigationBar.swift */,
 				3A9AFAC51F0BA81A0035A131 /* GeneralViewController.swift */,
+				3A69205B1F10828300500A44 /* FisrstViewController.swift */,
+				3A6920591F10821C00500A44 /* NextViewController.swift */,
+				3A6920571F1081F200500A44 /* ZZNavViewController.swift */,
 				3A9AFAA71F0B27CD0035A131 /* Main.storyboard */,
 				3A9AFAAA1F0B27CD0035A131 /* Assets.xcassets */,
 				3A9AFAAC1F0B27CD0035A131 /* LaunchScreen.storyboard */,
@@ -206,9 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A69205C1F10828300500A44 /* FisrstViewController.swift in Sources */,
 				3A9AFAA61F0B27CC0035A131 /* ViewController.swift in Sources */,
+				3A69205A1F10821C00500A44 /* NextViewController.swift in Sources */,
 				3A9AFAA41F0B27CC0035A131 /* AppDelegate.swift in Sources */,
 				3A9AFAC41F0B334B0035A131 /* ZZNavigationBar.swift in Sources */,
+				3A6920581F1081F200500A44 /* ZZNavViewController.swift in Sources */,
 				3A9AFAC61F0BA81A0035A131 /* GeneralViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +433,7 @@
 				3A9AFABF1F0B27CE0035A131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A9AFAC01F0B27CE0035A131 /* Build configuration list for PBXNativeTarget "NavigationBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +442,7 @@
 				3A9AFAC21F0B27CE0035A131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
