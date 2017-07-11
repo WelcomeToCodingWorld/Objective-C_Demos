@@ -18,11 +18,21 @@ class ViewController: UIViewController {
     @IBAction func test(_ sender: Any) {
         testAlpha()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        thirdView.frame = CGRect(x: 15, y: 300, width: 300, height: 100)
+
+        view.addSubview(thirdView)
+ 
+        // Creating the same constraints using Layout Anchors
+        view.layoutMargins = UIEdgeInsetsMake(0, 15, 0, 15)
+        let margins = view.layoutMarginsGuide
+
+        thirdView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        thirdView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        thirdView.topAnchor.constraint(equalTo: secondView.layoutMarginsGuide.bottomAnchor, constant:80).isActive = true
         thirdView.backgroundColor = UIColor.blue
+//        print("\(#function)\n\(thirdView.constraintsAffectingLayout(for: UILayoutConstraintAxis.horizontal))")
     }
     
     
@@ -44,7 +54,7 @@ class ViewController: UIViewController {
         
         UIView.transition(with: self.view, duration: 2, options: UIViewAnimationOptions.transitionFlipFromLeft, animations: {
             self.firstView.removeFromSuperview()
-            self.view.addSubview(self.thirdView)
+//            self.view.addSubview(self.thirdView)
             
         }, completion: nil)
     }
