@@ -13,6 +13,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     let reuseIdentifier = "BusinessCardID"
     
+    
+    
     let collectionRect = CGRect(x:EdgeWidth, y: TitleHeight , width:ScreenWidth - 2*EdgeWidth, height: ScreenHeight - TitleHeight)
     let layout = UICollectionViewFlowLayout()
     
@@ -65,8 +67,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
                     let dataContainer = try! JSONSerialization.jsonObject(with:data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
                     let dataArr = dataContainer["users"]
                     for  dic  in (dataArr as! Array<Any>){
-                        let user = User(fromDic: dic as! Dictionary<String, AnyObject>)
-                        self.data.append(user)
+//                        let user = User(fromDic: dic as! Dictionary<String, AnyObject>)
+//                        self.data.append(user)
                     }
                     DispatchQueue.main.async {
                         self.collectionView.reloadData()

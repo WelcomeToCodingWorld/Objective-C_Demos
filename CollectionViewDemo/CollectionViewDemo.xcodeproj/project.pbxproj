@@ -20,6 +20,10 @@
 		3A9742961E82843800D3201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742951E82843800D3201B /* Assets.xcassets */; };
 		3A9742991E82843800D3201B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9742971E82843800D3201B /* LaunchScreen.storyboard */; };
 		3A9958161EA8903600DB0FC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9958151EA8903600DB0FC6 /* User.swift */; };
+		3AE1B8A41F258110003D3569 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1B8A21F258110003D3569 /* Model.xcdatamodeld */; };
+		3AE1B8A61F25A008003D3569 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1B8A51F25A008003D3569 /* Person.swift */; };
+		3AE1B8A81F25D2F4003D3569 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1B8A71F25D2F4003D3569 /* Address.swift */; };
+		3AE1B8AA1F25D31A003D3569 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1B8A91F25D31A003D3569 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		3A9742981E82843800D3201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A97429A1E82843800D3201B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9958151EA8903600DB0FC6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3AE1B8A31F258110003D3569 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3AE1B8A51F25A008003D3569 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3AE1B8A71F25D2F4003D3569 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		3AE1B8A91F25D31A003D3569 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +90,16 @@
 				3A1FB8771E94D22E00E74263 /* BusinessCardCollectionViewCell.xib */,
 				3A9742921E82843800D3201B /* Main.storyboard */,
 				3A9742951E82843800D3201B /* Assets.xcassets */,
+				3AE1B8A71F25D2F4003D3569 /* Address.swift */,
 				3A9742971E82843800D3201B /* LaunchScreen.storyboard */,
 				3A97429A1E82843800D3201B /* Info.plist */,
 				3A3EA94B1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift */,
 				3A3EA94C1EB8329D0085D5F9 /* BookMarkCollectionViewCell.xib */,
 				3A3EA94F1EB854980085D5F9 /* Bridging-Header.h */,
 				3A3EA9501EB855400085D5F9 /* Header.swift */,
+				3AE1B8A21F258110003D3569 /* Model.xcdatamodeld */,
+				3AE1B8A51F25A008003D3569 /* Person.swift */,
+				3AE1B8A91F25D31A003D3569 /* City.swift */,
 			);
 			path = CollectionViewDemo;
 			sourceTree = "<group>";
@@ -171,8 +183,12 @@
 				3A806C2F1E9F213F0048C733 /* TapeCollectionViewCell.swift in Sources */,
 				3A9742911E82843800D3201B /* ViewController.swift in Sources */,
 				3A97428F1E82843800D3201B /* AppDelegate.swift in Sources */,
+				3AE1B8A41F258110003D3569 /* Model.xcdatamodeld in Sources */,
+				3AE1B8A81F25D2F4003D3569 /* Address.swift in Sources */,
 				3A3EA9511EB855400085D5F9 /* Header.swift in Sources */,
 				3A9958161EA8903600DB0FC6 /* User.swift in Sources */,
+				3AE1B8AA1F25D31A003D3569 /* City.swift in Sources */,
+				3AE1B8A61F25A008003D3569 /* Person.swift in Sources */,
 				3A3EA94D1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift in Sources */,
 				3A1FB8781E94D22E00E74263 /* BusinessCardCollectionViewCell.swift in Sources */,
 			);
@@ -351,6 +367,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AE1B8A21F258110003D3569 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AE1B8A31F258110003D3569 /* Model.xcdatamodel */,
+			);
+			currentVersion = 3AE1B8A31F258110003D3569 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3A9742831E82843800D3201B /* Project object */;
 }
