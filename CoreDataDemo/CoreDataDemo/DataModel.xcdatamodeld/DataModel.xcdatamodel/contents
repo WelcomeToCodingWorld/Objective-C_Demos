@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Building" representedClassName="Building" syncable="YES" codeGenerationType="class">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
         <relationship name="departments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Department" inverseName="building" inverseEntity="Department" syncable="YES"/>
     </entity>
     <entity name="Department" representedClassName="Department" syncable="YES" codeGenerationType="class">
@@ -33,7 +33,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Building" positionX="142" positionY="228" width="128" height="73"/>
+        <element name="Building" positionX="142" positionY="228" width="128" height="75"/>
         <element name="Department" positionX="-297" positionY="99" width="128" height="176"/>
         <element name="Employee" positionX="-252" positionY="441" width="128" height="193"/>
         <element name="Person" positionX="-443" positionY="303" width="128" height="75"/>

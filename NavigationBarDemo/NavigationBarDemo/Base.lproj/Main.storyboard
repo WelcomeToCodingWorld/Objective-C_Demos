@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="870" y="-187"/>
         </scene>
-        <!--View Controller-->
+        <!--Fisrst View Controller-->
         <scene sceneID="2Rb-cw-sfm">
             <objects>
-                <viewController id="SkR-Ig-8OY" sceneMemberID="viewController">
+                <viewController id="SkR-Ig-8OY" customClass="FisrstViewController" customModule="NavigationBarDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zj2-S5-eok"/>
                         <viewControllerLayoutGuide type="bottom" id="f59-3T-Qpu"/>
@@ -151,13 +151,44 @@
                     <view key="view" contentMode="scaleToFill" id="mj0-eT-cax">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSn-zz-mKN">
+                                <rect key="frame" x="120" y="276" width="82" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Sm-uG-lQg" kind="show" id="zdj-7J-phv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="V0b-QN-egW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLu-6u-VpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.8" y="608.54572713643188"/>
+            <point key="canvasLocation" x="1831" y="609"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="0Hd-cg-ckt">
+            <objects>
+                <viewController id="9Sm-uG-lQg" customClass="NextViewController" customModule="NavigationBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OMY-WO-lv3"/>
+                        <viewControllerLayoutGuide type="bottom" id="yFY-qn-QVu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l1u-Zi-UyY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jE3-G1-VC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="597"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QMl-4u-74U">
@@ -181,12 +212,18 @@
         <!--CustomNavBar-->
         <scene sceneID="lHv-UK-X7S">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L52-xY-s0l" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L52-xY-s0l" customClass="ZZNavViewController" customModule="NavigationBarDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="CustomNavBar" image="mine" selectedImage="mineHighlight" id="RzC-4L-jfQ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MT3-Y6-tku">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="mine" backIndicatorTransitionMaskImage="mineHighlight" id="MT3-Y6-tku">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.61316102090000002" blue="0.3281972749" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

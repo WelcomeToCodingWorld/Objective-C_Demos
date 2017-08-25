@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  NavigationBarDemo
+//  CollectionViewTest
 //
-//  Created by zz on 2017/7/4.
+//  Created by zz on 2017/8/23.
 //  Copyright © 2017年 zzkj. All rights reserved.
 //
 
@@ -20,19 +20,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
 
-}
-
-class MyClass: NSObject {
-    var date = NSDate()
-    
-}
-
-class MyChildClass: MyClass {
-     override var date: NSDate {
-        get { return super.date }
-        set{super.date = newValue}
-    }
 }
 

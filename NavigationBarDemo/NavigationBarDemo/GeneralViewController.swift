@@ -19,9 +19,24 @@ class GeneralViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //应该明确这些点：当设置了automaticallyAdjustsScrollViewInsets时
+        //1.可滑动区域始终从NavigationBar的MaxY下方开始
+        //2.会自定在设定的contentInset.y上加20+44
+        //3.至于contentOffset,一般情况下，出现负值的情况很短暂，只要滑动为负值就会恢复(弹回)为零
+        //4.当在viewDidLoad()中设置Offset.y为负值，就会自动设置为0，设置为正值是会体现在初始UI状态上
         scrollView.contentInset = UIEdgeInsetsMake(10, 0, 10, 0)
         // Do any additional setup after loading the view.
         observeKeyboard()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("\(#function)")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        //可以在此设置offSet初始值，无论正负始终有效
     }
     
     fileprivate func observeKeyboard() {

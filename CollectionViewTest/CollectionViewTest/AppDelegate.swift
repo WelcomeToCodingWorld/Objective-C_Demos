@@ -1,73 +1,22 @@
 //
 //  AppDelegate.swift
-//  CoreDataDemo
+//  CollectionViewTest
 //
-//  Created by zz on 2017/6/8.
+//  Created by zz on 2017/8/23.
 //  Copyright © 2017年 zzkj. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var persistentContainer : NSPersistentContainer!
-    
-    let dic:[String:Any] = ["name":"Lee","age":"23"]
-    var testStr:String!
-    
-    
-    var things = [Any]()
-    
-    
-    
 
-    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        createDataModelContainer { (container) in
-            self.persistentContainer = container
-            guard let nc = (self.window?.rootViewController as? UINavigationController),let vc = nc.viewControllers.first as? ViewController else{
-                fatalError("could not instantiate rootViewController")
-            }
-            vc.managedObjectContext = container.viewContext
-            self.testStr = self.dic["name"] as! String
-            print(self.testStr)
-            print("the name is '"  + self.testStr + "'")
-            
-            
-            self.initThings()
-            
-            for thing in self.things{
-                switch thing {
-                case 0 as Int:
-                    print("")
-                    print("")
-                case let aInt as Int:
-                    print("\(aInt)")
-                case 0 as Double:
-                    print("")
-                case is Double:
-                    print("")
-                default:
-                    print("")
-                }
-            }
-        }
         return true
-    }
-    
-    func initThings() {
-        things.append(0)
-        things.append(0.0)
-        things.append(42)
-        things.append(3.14159)
-        things.append("hello")
-        things.append((3.0, 5.0))
-        things.append({ (name: String) -> String in "Hello, \(name)" })
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

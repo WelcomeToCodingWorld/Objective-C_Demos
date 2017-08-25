@@ -7,21 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
-class User: NSObject {
-    var name : String
-    var gender : Bool
-//    var address : String
-    var age : UInt
-//    var mobile : String
-    
-    
-    init(fromDic dic : Dictionary<String, Any>){
-        self.name = dic["name"] as! String
-        self.gender = dic["sex"] as! Bool
-//        self.address = dic["address"] as! String
-        self.age = dic["age"] as! UInt
-//        self.mobile = dic["phone"] as! String
-//        self.email = dic["email"] as! String
-    }
+class User:  NSManagedObject,Decodable{
+    @NSManaged public fileprivate(set) var name : String
+    @NSManaged public fileprivate(set) var registDate : Date
+    @NSManaged public fileprivate(set) var userId : String
 }
