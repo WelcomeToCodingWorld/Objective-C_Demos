@@ -124,7 +124,7 @@
 				TargetAttributes = {
 					3A97428A1E82843800D3201B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6Q7KARRKGM;
+						DevelopmentTeam = YD6H32NYXJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -301,12 +301,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.CollectionViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesta.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -317,12 +317,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.CollectionViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesta.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
