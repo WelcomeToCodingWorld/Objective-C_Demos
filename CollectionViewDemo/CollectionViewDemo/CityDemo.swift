@@ -7,3 +7,10 @@
 //
 
 import CoreData
+
+struct CityDemo:Decodable{
+    var name : String
+    var code : String
+    var population : UInt64
+    var isProvinceLevel : Bool    
+}
