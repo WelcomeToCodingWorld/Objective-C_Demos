@@ -161,7 +161,7 @@
 				TargetAttributes = {
 					3A9AFA9F1F0B27CC0035A131 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6Q7KARRKGM;
+						DevelopmentTeam = 586EZFCKQC;
 						ProvisioningStyle = Automatic;
 					};
 					3A9AFAB31F0B27CD0035A131 = {
@@ -362,11 +362,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = 586EZFCKQC;
 				INFOPLIST_FILE = NavigationBarDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.NavigationBarDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesta.NavigationBarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -376,11 +376,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = 586EZFCKQC;
 				INFOPLIST_FILE = NavigationBarDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.NavigationBarDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesta.NavigationBarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

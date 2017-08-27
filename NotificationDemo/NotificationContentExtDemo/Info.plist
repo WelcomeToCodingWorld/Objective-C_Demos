@@ -27,7 +27,7 @@
 			<key>UNNotificationExtensionCategory</key>
 			<array>
 				<string>TIMER_EXPIRED</string>
-                <string>GENERAL</string>
+				<string>GENERAL</string>
 			</array>
 			<key>UNNotificationExtensionInitialContentSizeRatio</key>
 			<real>1</real>
