@@ -53,6 +53,35 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 ]
 """.data(using: String.Encoding.utf8)
     
+    let responseArrayData = """
+{
+  "code": "50001",
+  "data": [
+    {
+      "name": "lee",
+      "age": 10
+    },
+    {
+      "name": "king",
+      "age": 20
+    },
+    {
+      "name": "paul",
+      "age": 25
+    }
+  ]
+}
+""".data(using: String.Encoding.utf8)
+
+    let responseDicData = """
+{
+  "code": "50001",
+  "data": {
+      "name": "lee",
+      "age": 10
+    }
+}
+""".data(using: String.Encoding.utf8)
     
     
     
@@ -72,6 +101,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 //        self.layout.layoutAttributesForItem(at: IndexPath(item: 3, section: 0))
 //        self.layout.layoutAttributesForElements(in: CGRect(x: 20, y: 20, width: UIScreen.main.bounds.width, height: 300))
     }
+    
+    
     
     func configCollectionView() {
         self.collectionView.collectionViewLayout = self.layout
@@ -140,6 +171,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         self.collectionView.reloadData()
         
         
+        let response = try! decoder.decode(Response<Antique>.self, from: self.responseArrayData!)
+        print(response)
     }
     
     override func viewDidLoad() {
@@ -329,10 +362,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         
     }
     
-    
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -342,6 +371,56 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 struct Product:Decodable {
     var productId:String
     var productName:String
+}
+
+struct Response<T:Decodable>:Decodable {
+    var code:String
+    var data:Any
+    
+    enum ResponseType : String{
+        case ReponseTypeDictionary,ReponseTypeArray
+    }
+    
+    enum CodingKeys:String,CodingKey {
+        case code
+        case data
+    }
+    
+    init(_ code:String,_ data:Any) {
+        self.code = code
+        self.data = data
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        let code = try values.decode(String.self, forKey: .code)
+        if let additionalInfo = try? values.nestedUnkeyedContainer(forKey: .data) {//Array
+            print(additionalInfo.count!)
+            print("Array")
+            let antiques = try values.decode([T].self, forKey: .data)
+            self.init(code, antiques)
+        }else{//Dictionary
+            print("Dictionary")
+            let antique = try values.decode(T.self, forKey: .data)
+            self.init(code, antique)
+        }
+    }
+}
+
+class Antique:Decodable{
+    var name:String
+    var age: UInt
+    
+    
+    init(_ name:String,_ age:UInt){
+        self.name = name
+        self.age = age
+    }
+}
+
+struct dog {
+    var name:String
+    var aga:UInt
 }
 
 
