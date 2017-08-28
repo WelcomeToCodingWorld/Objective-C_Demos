@@ -22,7 +22,13 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     let decorationIdentifier = "DecorationViewID"
     
-    
+    let singleValueContainerJsonData = """
+[
+  "king",
+  "paul",
+  "lee"
+]
+""".data(using: .utf8)!
     
     let products = """
     [
@@ -173,6 +179,11 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         
         let response = try! decoder.decode(Response<Antique>.self, from: self.responseArrayData!)
         print(response)
+        
+//        SingleValueDecodingContainer
+        let dogs = try! decoder.decode([Dog].self, from: self.singleValueContainerJsonData)
+        
+        print(dogs)
     }
     
     override func viewDidLoad() {
@@ -376,6 +387,7 @@ struct Product:Decodable {
 struct Response<T:Decodable>:Decodable {
     var code:String
     var data:Any
+    var responseType:ResponseType
     
     enum ResponseType : String{
         case ReponseTypeDictionary,ReponseTypeArray
@@ -386,9 +398,10 @@ struct Response<T:Decodable>:Decodable {
         case data
     }
     
-    init(_ code:String,_ data:Any) {
+    init(_ code:String,_ data:Any,_ responseType:ResponseType) {
         self.code = code
         self.data = data
+        self.responseType = responseType
     }
     
     init(from decoder: Decoder) throws {
@@ -398,11 +411,11 @@ struct Response<T:Decodable>:Decodable {
             print(additionalInfo.count!)
             print("Array")
             let antiques = try values.decode([T].self, forKey: .data)
-            self.init(code, antiques)
+            self.init(code, antiques, ResponseType.ReponseTypeArray)
         }else{//Dictionary
             print("Dictionary")
             let antique = try values.decode(T.self, forKey: .data)
-            self.init(code, antique)
+            self.init(code, antique,ResponseType.ReponseTypeDictionary)
         }
     }
 }
@@ -418,9 +431,19 @@ class Antique:Decodable{
     }
 }
 
-struct dog {
+struct Dog:Decodable {
     var name:String
-    var aga:UInt
+//    var aga:UInt
+    init(_ name:String) {
+        self.name = name
+    }
+    
+    init(from decoder:Decoder) {
+        let singleValueContainter = try! decoder.singleValueContainer()
+        let dogName = try! singleValueContainter.decode(String.self)
+        print(dogName)
+        self.init(dogName)
+    }
 }
 
 
