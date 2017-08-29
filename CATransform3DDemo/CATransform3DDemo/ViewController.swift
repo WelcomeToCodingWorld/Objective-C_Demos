@@ -20,6 +20,38 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    let delegate = LayerDelegate()
+    
+    lazy var sublayer: CALayer = {
+        let layer = CALayer()
+        layer.delegate = self.delegate
+        
+        return layer
+    }()
+    
+    func moveSublayer() {
+        guard let action = sublayer.action(forKey: "moveRight") else {
+            return
+        }
+        
+        action.run(forKey: "transform", object: sublayer, arguments: nil)
+    }
+    
+    class LayerDelegate: NSObject, CALayerDelegate {
+        func action(for layer: CALayer, forKey event: String) -> CAAction? {
+            
+            guard event == "moveRight" else {
+                return nil
+            }
+            
+            let animation = CABasicAnimation()
+            animation.valueFunction = CAValueFunction(name: kCAValueFunctionTranslateX)
+            animation.fromValue = 1
+            animation.toValue = 300
+            animation.duration = 2
+            
+            return animation
+        }
+    }
 }
 
