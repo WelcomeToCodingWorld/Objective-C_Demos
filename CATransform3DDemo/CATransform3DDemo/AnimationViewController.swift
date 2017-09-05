@@ -12,6 +12,7 @@ class AnimationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layer.masksToBounds = true
         self.view.layer.addSublayer(sublayer)
         sublayer.backgroundColor = UIColor.white.cgColor
         sublayer.frame = CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 64)
@@ -24,16 +25,24 @@ class AnimationViewController: UIViewController {
 //        let customLayer = CustomLayer()
 //        self.view.layer.addSublayer(customLayer)
 //        customLayer.setNeedsDisplay()
+        
+        
+        //affineTransformation
+        affineTest()
+    }
+    
+    func affineTest() {
+        var affineTranform = CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 1, ty: 1)
+        print(affineTranform.isIdentity)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        moveSublayer()
+        moveSublayer()
     }
     
-    deinit {
-        
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,6 +53,11 @@ class AnimationViewController: UIViewController {
     
     lazy var sublayer: CALayer = {
         let layer = CALayer()
+        
+        let alayer = CALayer()
+        alayer.name = "aLayer"
+        let blayer = CALayer()
+        blayer.name = "bLayer"
         
         //1.set delgate to provide layer content
         layer.delegate = AnimationViewController.delegate
@@ -59,7 +73,6 @@ class AnimationViewController: UIViewController {
         guard let action = sublayer.action(forKey: "moveRight") else {
             return
         }
-        
         action.run(forKey: "transform", object: sublayer, arguments: nil)
     }
     
@@ -90,7 +103,13 @@ class AnimationViewController: UIViewController {
         
         func display(_ layer: CALayer) {
             layer.contents = UIImage.init(named: "layer_border_background_2x")?.cgImage
-            layer.contentsGravity = kCAGravityCenter
+            layer.contentsGravity = kCAGravityTop
+        }
+        
+        
+//        use this method to adjust the size and position of any sublayers currently embedded inside the layer
+        func layoutSublayers(of layer: CALayer) {
+            
         }
     }
 }

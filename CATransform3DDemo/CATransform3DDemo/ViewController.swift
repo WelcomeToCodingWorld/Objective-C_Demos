@@ -13,6 +13,37 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let sourceTypes = CGImageSourceCopyTypeIdentifiers()
+        CFShow(sourceTypes)
+        
+        let destinationTypes = CGImageDestinationCopyTypeIdentifiers()
+        CFShow(destinationTypes)
+        
+    }
+    
+    lazy var image = {
+        let url = URL(fileURLWithPath: "")
+        let myImage : CGImage?
+        let myImageSource : CGImageSource?
+        var myOptions : CFDictionary?
+        var myKeys = [UnsafeMutablePointer<UnsafeRawPointer?>]()
+        var myValues = [UnsafeMutablePointer<UnsafeRawPointer?>]()
+        myKeys.append(UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 1).initialize(to: kCGImageSourceShouldCache))
+        myValues.append(kCFBooleanTrue)
+        myKeys.append(kCGImageSourceShouldAllowFloat)
+        myValues.append(kCFBooleanTrue)
+        
+        myOptions = CFDictionaryCreate(nil, myKeys, myValues, 2, kCFTypeDictionaryKeyCallBacks, kCFTypeDictionaryValueCallBacks)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     
     

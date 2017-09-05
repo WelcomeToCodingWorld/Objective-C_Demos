@@ -34,5 +34,9 @@ class CustomLayer: CALayer {
         ctx.strokePath()
     }
     
+//    use this method (instead of a delegate) to handle any layout tasks
+    override func layoutSublayers() {
+        
+    }
     
 }
