@@ -26,18 +26,40 @@ class ViewController: UIViewController {
         let myImage : CGImage?
         let myImageSource : CGImageSource?
         var myOptions : CFDictionary?
-        var myKeys = [UnsafeMutablePointer<UnsafeRawPointer?>]()
-        var myValues = [UnsafeMutablePointer<UnsafeRawPointer?>]()
-        myKeys.append(UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 1).initialize(to: kCGImageSourceShouldCache))
-        myValues.append(kCFBooleanTrue)
-        myKeys.append(kCGImageSourceShouldAllowFloat)
-        myValues.append(kCFBooleanTrue)
+        var myKeys = [UnsafeMutablePointer<CFString>]()
+        var myValues = [UnsafeMutablePointer<CFBoolean>]()
+        let cacheOptionPointer = UnsafeMutablePointer<CFString>.allocate(capacity: CFStringGetLength(kCGImageSourceShouldCache))
+        cacheOptionPointer.initialize(to: kCGImageSourceShouldCache)
         
-        myOptions = CFDictionaryCreate(nil, myKeys, myValues, 2, kCFTypeDictionaryKeyCallBacks, kCFTypeDictionaryValueCallBacks)
-        
+        let floatOptionPointer = UnsafeMutablePointer<CFString>.allocate(capacity: CFStringGetLength(kCGImageSourceShouldAllowFloat))
+        floatOptionPointer.initialize(to: kCGImageSourceShouldAllowFloat)
         
         
+        let boolOptionPointer = UnsafeMutablePointer<CFBoolean>.allocate(capacity: 1)
+        boolOptionPointer.initialize(to: kCFBooleanTrue)
         
+        
+        myKeys.append(cacheOptionPointer)
+        myValues.append(boolOptionPointer)
+        myKeys.append(floatOptionPointer)
+        myValues.append(boolOptionPointer)
+        
+        let keysPointer = UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: myKeys.count)
+        
+        let valuesPointer = UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: myValues.count)
+        
+        
+//        Cannot convert value of type 'CFDictionaryKeyCallBacks' to expected argument type 'UnsafePointer<CFDictionaryKeyCallBacks>!'
+//        let mutablekeyCallBackPointer = UnsafeMutablePointer<CFDictionaryKeyCallBacks>.allocate(capacity: 4).initialize(to: kCFTypeDictionaryKeyCallBacks)
+        
+//        let keyCallBack = UnsafePointer<CFDictionaryKeyCallBacks>.init(mutablekeyCallBackPointer)
+        
+        
+//        myOptions = CFDictionaryCreate(nil, keysPointer, valuesPointer, 2, mutablekeyCallBackPointer, kCFTypeDictionaryValueCallBacks)
+        
+        
+        
+//        Cannot convert value of type 'UnsafeMutablePointer<CFString>' to expected argument type 'UnsafeMutablePointer<CFString?>'
         
         
         
