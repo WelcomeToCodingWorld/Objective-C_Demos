@@ -27,27 +27,44 @@ class ViewController: UIViewController {
         let myImageSource : CGImageSource?
         var myOptions : CFDictionary?
         
-        let myKeys = [kCGImageSourceShouldCache,kCGImageSourceShouldAllowFloat]
-        let myValues = [kCFBooleanTrue,kCFBooleanTrue]
+        var key1:UnsafeMutablePointer<CFString> = UnsafeMutablePointer.allocate(capacity: 1)
         
-        var keyPointer:UnsafeRawPointer? = nil
-        var valuePointer:UnsafeRawPointer? = nil
-//        keyPointer = kCGImageSourceShouldCache
+        key1.initialize(to: kCGImageSourceShouldCache, count: 1)
         
+        var key2:UnsafeMutablePointer<CFString> = UnsafeMutablePointer.allocate(capacity: 1)
         
+        key2.initialize(to: kCGImageSourceShouldAllowFloat, count: 1)
         
+        let value1:UnsafeMutablePointer<CFBoolean> = UnsafeMutablePointer.allocate(capacity: 1)
         
-//        UnsafeMutablePointer<UnsafeRawPointer?>!   --- UnsafePointer<CFDictionaryKeyCallBacks>!
-//        UnsafePointer<CFDictionaryValueCallBacks>!)
-//        Cannot convert value of type '[CFString]' to expected argument type '[UnsafeRawPointer?]'
-//        myOptions = CFDictionaryCreate(nil, &myKeys, &myValues, 2, kCGImageSourceShouldCache, kCFTypeDictionaryValueCallBacks)
+        value1.initialize(to: kCFBooleanTrue, count: 1)
         
         
+        let value2:UnsafeMutablePointer<CFBoolean> = UnsafeMutablePointer.allocate(capacity: 1)
+        
+        value2.initialize(to: kCFBooleanTrue, count: 1)
+        var myKeys = [key1,key2]
+        let myValues = [value1,value2]
+        
+        var keyPointer:UnsafeMutablePointer<UnsafeRawPointer?> = UnsafeMutablePointer.allocate(capacity: 1)
+        keyPointer.initialize(to: myKeys, count: 1)
+        
+        var valuePointer : UnsafeMutablePointer<UnsafeRawPointer?> = UnsafeMutablePointer.allocate(capacity: 1)
+        
+        keyPointer.initialize(to: myValues, count: 1)
         
         
+
+        
+        var callBackKeyPointer : UnsafeMutablePointer<CFDictionaryKeyCallBacks> = UnsafeMutablePointer.allocate(capacity: 1)
+        callBackKeyPointer.initialize(to: kCFTypeDictionaryKeyCallBacks, count: 1)
+        
+        var callBackValuePointer : UnsafeMutablePointer<CFDictionaryValueCallBacks> = UnsafeMutablePointer.allocate(capacity: 1)
+        callBackValuePointer.initialize(to: kCFTypeDictionaryValueCallBacks, count: 1)
         
         
-        
+        myOptions = CFDictionaryCreate(nil, keyPointer, valuePointer, 2, callBackKeyPointer, callBackValuePointer)
+
     }
     
     
