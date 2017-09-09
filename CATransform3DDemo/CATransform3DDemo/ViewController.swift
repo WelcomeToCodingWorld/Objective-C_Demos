@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let imageUrl = "/Users/arili/Desktop/screenshot-a.png"
+//    https://forums.developer.apple.com/thread/68897
+    var imageUrl : URL?
     
+    @IBOutlet var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,43 +26,55 @@ class ViewController: UIViewController {
             print("image creat failed")
             return;
         }
-        
+        imageView.image = UIImage.init(cgImage: image!)
     }
     
+    
     var image : CGImage? {
-        let url = URL(fileURLWithPath: imageUrl)
+        if let bundle = Bundle.init(url: Bundle.main.url(forResource: "image", withExtension: "bundle")!){
+            imageUrl = bundle.url(forResource: "test", withExtension: "png")
+            guard imageUrl != nil else{
+                fatalError("the url is failed to create")
+            }
+            
+        }else{
+            fatalError("the bundle is not found")
+        }
         let myImage : CGImage?
         let myImageSource : CGImageSource?
         var myOptions : CFDictionary?
         
-        let key1:UnsafeMutablePointer<CFString> = UnsafeMutablePointer.allocate(capacity: 1)
-        
-        key1.initialize(to: kCGImageSourceShouldCache, count: 1)
-        
-        let key2:UnsafeMutablePointer<CFString> = UnsafeMutablePointer.allocate(capacity: 1)
-        
-        key2.initialize(to: kCGImageSourceShouldAllowFloat, count: 1)
-        
-        let value1:UnsafeMutablePointer<CFBoolean> = UnsafeMutablePointer.allocate(capacity: 1)
-        
-        value1.initialize(to: kCFBooleanTrue, count: 1)
+        let valuePtr = UnsafeMutablePointer<CGSize>.allocate(capacity: 1)
+        valuePtr.initialize(to: CGSize(width: 100, height: 100))
         
         
-        let value2:UnsafeMutablePointer<CFBoolean> = UnsafeMutablePointer.allocate(capacity: 1)
+        let thumbnailSize = CFNumberCreate(kCFAllocatorDefault, CFNumberType.intType, valuePtr);
+
+        let testKeys = [kCGImageSourceShouldCache,kCGImageSourceShouldAllowFloat]
+        let testValues = [kCFBooleanTrue,kCFBooleanTrue]
         
-        value2.initialize(to: kCFBooleanTrue, count: 1)
-        let myKeys = [key1,key2]
-        let myValues = [value1,value2]
+        let thumbNailKeys = [kCGImageSourceCreateThumbnailWithTransform as CFTypeRef,kCGImageSourceCreateThumbnailFromImageIfAbsent as CFTypeRef,kCGImageSourceThumbnailMaxPixelSize as CFTypeRef]
+        let thumbNailValues = [kCFBooleanTrue as CFTypeRef,kCFBooleanTrue as CFTypeRef,thumbnailSize as CFTypeRef]
+        
+        
+        
         
         let keyPointer:UnsafeMutablePointer<UnsafeRawPointer?> = UnsafeMutablePointer.allocate(capacity: 1)
-        keyPointer.initialize(to: myKeys, count: 1)
+        keyPointer.initialize(to: testKeys, count: 1)
         
         let valuePointer : UnsafeMutablePointer<UnsafeRawPointer?> = UnsafeMutablePointer.allocate(capacity: 1)
         
-        keyPointer.initialize(to: myValues, count: 1)
+        keyPointer.initialize(to: testValues, count: 1)
         
         
-
+        
+        let thumbNailKeyPointer:UnsafeMutablePointer<UnsafeRawPointer?> = UnsafeMutablePointer.allocate(capacity: 1)
+        keyPointer.initialize(to: thumbNailKeys, count: 1)
+        
+        let thumbNailValuePointer :  UnsafeMutablePointer<UnsafeRawPointer?> = UnsafeMutablePointer.allocate(capacity: 1)
+        keyPointer.initialize(to: thumbNailValues, count: 1)
+        
+        
         
         let callBackKeyPointer : UnsafeMutablePointer<CFDictionaryKeyCallBacks> = UnsafeMutablePointer.allocate(capacity: 1)
         callBackKeyPointer.initialize(to: kCFTypeDictionaryKeyCallBacks, count: 1)
@@ -68,30 +82,33 @@ class ViewController: UIViewController {
         let callBackValuePointer : UnsafeMutablePointer<CFDictionaryValueCallBacks> = UnsafeMutablePointer.allocate(capacity: 1)
         callBackValuePointer.initialize(to: kCFTypeDictionaryValueCallBacks, count: 1)
         
+        guard thumbNailKeyPointer.pointee != nil,thumbNailValuePointer.pointee != nil else {
+            print("the keyPointer or valuePointer is released")
+            return nil
+        }
         
-        myOptions = CFDictionaryCreate(nil, keyPointer, valuePointer, 2, callBackKeyPointer, callBackValuePointer)
+//        myOptions = CFDictionaryCreate(kCFAllocatorDefault, keyPointer, valuePointer, 2, nil, nil)
         
-        myImageSource = CGImageSourceCreateWithURL(url as CFURL, myOptions)
+        //for thumbNail
+        myOptions = CFDictionaryCreate(kCFAllocatorDefault, thumbNailKeyPointer, thumbNailValuePointer, 3, nil, nil)
+        guard myOptions != nil else {
+            print("the myOption was failed to create")
+            return nil
+        }
+        
+        myImageSource = CGImageSourceCreateWithURL(imageUrl! as CFURL, myOptions)
         guard myImageSource != nil else {
-            print("image source is null")
+            print("The image source is nil")
             return nil;
         }
         
         myImage = CGImageSourceCreateImageAtIndex(myImageSource!, 0, nil)
         
         guard myImage != nil else {
-            print("image not create from image source")
+            print("Failed to create image from image source!")
             return nil;
         }
         
-        key1.deinitialize()
-        key1.deallocate(capacity: 1)
-        key2.deinitialize()
-        key2.deallocate(capacity: 1)
-        value1.deinitialize()
-        value1.deallocate(capacity: 1)
-        value2.deinitialize()
-        value2.deallocate(capacity: 1)
         keyPointer.deinitialize()
         keyPointer.deallocate(capacity: 1)
         valuePointer.deinitialize()
@@ -100,6 +117,8 @@ class ViewController: UIViewController {
         callBackKeyPointer.deallocate(capacity: 1)
         callBackValuePointer.deinitialize()
         callBackValuePointer.deallocate(capacity: 1)
+        
+        
         
         return myImage!
 

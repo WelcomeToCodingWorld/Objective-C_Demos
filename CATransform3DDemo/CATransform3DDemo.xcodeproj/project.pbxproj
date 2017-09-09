@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A1A92581F5CE27D00E53107 /* MyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A92571F5CE27D00E53107 /* MyAction.swift */; };
+		3AAF5D041F63B5AA00BD827D /* test.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3AAF5D031F63B5AA00BD827D /* test.rtf */; };
+		3AAF5D091F63BEB500BD827D /* image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3AAF5D061F63B71100BD827D /* image.bundle */; };
 		3AC0F5C41F58F5FB003F3A88 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0F5C31F58F5FB003F3A88 /* AnimationViewController.swift */; };
 		3AC0F5C61F58FA68003F3A88 /* Layer-basedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0F5C51F58FA68003F3A88 /* Layer-basedView.swift */; };
 		3AC0F5CA1F59144D003F3A88 /* CustomLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0F5C91F59144D003F3A88 /* CustomLayer.swift */; };
@@ -31,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		3A1A92571F5CE27D00E53107 /* MyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAction.swift; sourceTree = "<group>"; };
+		3AAF5D031F63B5AA00BD827D /* test.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = test.rtf; sourceTree = "<group>"; };
+		3AAF5D051F63B65C00BD827D /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		3AAF5D061F63B71100BD827D /* image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = image.bundle; sourceTree = "<group>"; };
 		3AC0F5C31F58F5FB003F3A88 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		3AC0F5C51F58FA68003F3A88 /* Layer-basedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layer-basedView.swift"; sourceTree = "<group>"; };
 		3AC0F5C91F59144D003F3A88 /* CustomLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayer.swift; sourceTree = "<group>"; };
@@ -85,6 +90,7 @@
 		3ACDAEBC1F53AB46000828C1 /* CATransform3DDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3AAF5D051F63B65C00BD827D /* test.png */,
 				3ACDAEBD1F53AB47000828C1 /* AppDelegate.swift */,
 				3ACDAEBF1F53AB47000828C1 /* ViewController.swift */,
 				3AC0F5C31F58F5FB003F3A88 /* AnimationViewController.swift */,
@@ -92,9 +98,11 @@
 				3AC0F5C91F59144D003F3A88 /* CustomLayer.swift */,
 				3A1A92571F5CE27D00E53107 /* MyAction.swift */,
 				3ACDAEC11F53AB47000828C1 /* Main.storyboard */,
+				3AAF5D061F63B71100BD827D /* image.bundle */,
 				3ACDAEC41F53AB48000828C1 /* Assets.xcassets */,
 				3ACDAEC61F53AB48000828C1 /* LaunchScreen.storyboard */,
 				3ACDAEC91F53AB48000828C1 /* Info.plist */,
+				3AAF5D031F63B5AA00BD827D /* test.rtf */,
 			);
 			path = CATransform3DDemo;
 			sourceTree = "<group>";
@@ -191,8 +199,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAF5D091F63BEB500BD827D /* image.bundle in Resources */,
 				3ACDAEC81F53AB48000828C1 /* LaunchScreen.storyboard in Resources */,
 				3ACDAEC51F53AB48000828C1 /* Assets.xcassets in Resources */,
+				3AAF5D041F63B5AA00BD827D /* test.rtf in Resources */,
 				3ACDAEC31F53AB47000828C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
