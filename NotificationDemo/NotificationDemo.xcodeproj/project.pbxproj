@@ -57,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0748A2A21F6704E700452D85 /* NotificationContentExtDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationContentExtDemo.entitlements; sourceTree = "<group>"; };
 		3A26BAA31ED415F7000081DB /* NotificationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationDemo.entitlements; sourceTree = "<group>"; };
 		3A2B012E1EE8E6CA00C37836 /* NotificationServiceExeDemo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExeDemo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B01301EE8E6CA00C37836 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		3A2B027C1EE93D1B00C37836 /* NotificationContentExtDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0748A2A21F6704E700452D85 /* NotificationContentExtDemo.entitlements */,
 				3A2B027D1EE93D1B00C37836 /* NotificationViewController.swift */,
 				3A2B027F1EE93D1B00C37836 /* MainInterface.storyboard */,
 				3A2B02821EE93D1B00C37836 /* Info.plist */,
@@ -248,6 +250,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = YD6H32NYXJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					3A9742A81E82845A00D3201B = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -418,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationContentExtDemo/NotificationContentExtDemo.entitlements;
 				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = NotificationContentExtDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -433,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationContentExtDemo/NotificationContentExtDemo.entitlements;
 				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = NotificationContentExtDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
