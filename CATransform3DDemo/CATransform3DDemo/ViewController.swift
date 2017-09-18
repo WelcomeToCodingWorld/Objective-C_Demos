@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     }
     
     
+//    Image I/O
     var image : CGImage? {
         if let bundle = Bundle.init(url: Bundle.main.url(forResource: "image", withExtension: "bundle")!){
             imageUrl = bundle.url(forResource: "test", withExtension: "png")
@@ -44,11 +45,10 @@ class ViewController: UIViewController {
         let myImageSource : CGImageSource?
         var myOptions : CFDictionary?
         
-        let valuePtr = UnsafeMutablePointer<CGSize>.allocate(capacity: 1)
-        valuePtr.initialize(to: CGSize(width: 100, height: 100))
+        var valuePtr = 1
         
         
-        let thumbnailSize = CFNumberCreate(kCFAllocatorDefault, CFNumberType.intType, valuePtr);
+        let thumbnailSize = CFNumberCreate(kCFAllocatorDefault, CFNumberType.intType, &valuePtr);
 
         let testKeys = [kCGImageSourceShouldCache,kCGImageSourceShouldAllowFloat]
         let testValues = [kCFBooleanTrue,kCFBooleanTrue]
@@ -74,8 +74,9 @@ class ViewController: UIViewController {
         let thumbNailValuePointer :  UnsafeMutablePointer<UnsafeRawPointer?> = UnsafeMutablePointer.allocate(capacity: 1)
         keyPointer.initialize(to: thumbNailValues, count: 1)
         
-        
-        
+//        var kcBacks = kCFTypeDictionaryKeyCallBacks
+//        var vcBacks = kCFTypeDictionaryValueCallBacks
+//
         let callBackKeyPointer : UnsafeMutablePointer<CFDictionaryKeyCallBacks> = UnsafeMutablePointer.allocate(capacity: 1)
         callBackKeyPointer.initialize(to: kCFTypeDictionaryKeyCallBacks, count: 1)
         
@@ -111,15 +112,17 @@ class ViewController: UIViewController {
         
         keyPointer.deinitialize()
         keyPointer.deallocate(capacity: 1)
+        thumbNailKeyPointer.deinitialize()
+        thumbNailKeyPointer.deallocate(capacity: 1)
         valuePointer.deinitialize()
         valuePointer.deallocate(capacity: 1)
+        thumbNailValuePointer.deinitialize()
+        thumbNailValuePointer.deallocate(capacity: 1)
         callBackKeyPointer.deinitialize()
         callBackKeyPointer.deallocate(capacity: 1)
         callBackValuePointer.deinitialize()
         callBackValuePointer.deallocate(capacity: 1)
-        
-        
-        
+                
         return myImage!
 
     }
