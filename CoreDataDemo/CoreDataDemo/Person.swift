@@ -9,8 +9,8 @@
 import CoreData
 
 public class Person: NSManagedObject {
-    @NSManaged  fileprivate(set) var dateOfBirth:Date
-    @NSManaged  fileprivate(set) var name:String
+    @NSManaged  private(set) var dateOfBirth:Date
+    @NSManaged  private(set) var name:String
     
     static func insert(into context:NSManagedObjectContext,name:String,dateOfBirth:Date) -> Person{
         let person:Person =  context.insertObject()

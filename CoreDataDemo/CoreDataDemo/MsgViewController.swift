@@ -13,38 +13,73 @@ class MsgViewController: UIViewController {
 
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var contentView: UIView!
+    @IBOutlet var textView: UITextView!
     
     @IBOutlet var birthDateTF: UITextField!
     @IBOutlet var nameTF: UITextField!
     @IBAction func add(_ sender: Any) {
         if birthDateTF.text?.characters.count == 0 {
-            fatalError("date of birth can't be nil")
+            alert(msg: "出生日期不能为空")
+            return;
         }else{//验证日期格式
             do {
                 let regex = try NSRegularExpression(pattern: "[1,2][0-9]{3}-((1[0-2])|(0[1-9]))-([0-2][0-9]|3[01])", options: NSRegularExpression.Options.allowCommentsAndWhitespace)
                 if regex.matches(in: birthDateTF.text!, options: NSRegularExpression.MatchingOptions.anchored, range:NSMakeRange(0, (birthDateTF.text?.characters.count)!)).count != 1 {
-                    fatalError("the date format is incorrect!")
+                    alert(msg: "日期格式应为YYYY-MM-DD,请重新输入")
+                    return
                 }
             } catch {
-                fatalError("the regularExpression is failed to create")
+                alert(msg: "regulareExpression for date failed to create")
+                return
             }
         }
         
         if nameTF.text?.characters.count == 0 {
-            fatalError("name can't be nil")
+            alert(msg: "姓名不能为空")
+            return;
         }
+        
         managedObjectContext.performChange {
+//            print(Locale.availableIdentifiers)
             let formatter = DateFormatter()
-            formatter.dateStyle = .medium
-            formatter.timeStyle = .short
+            formatter.dateFormat = "yyyy-MM-dd"
             formatter.doesRelativeDateFormatting = false
             formatter.formattingContext = .standalone
-            _ = Person.insert(into: self.managedObjectContext ,name:self.nameTF.text!,dateOfBirth: Date())
+            print(formatter.string(from: Date()))
+            if let date = formatter.date(from: self.birthDateTF.text!){
+                print("Date format failed")
+                _ = Person.insert(into: self.managedObjectContext ,name:self.nameTF.text!,dateOfBirth: date)
+            }else{
+                _ = Person.insert(into: self.managedObjectContext ,name:self.nameTF.text!,dateOfBirth: Date())
+            }
         }
     }
     
+    private func alert(msg:String){
+        let alertController = UIAlertController.init(title: "温馨提示", message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        //            show(alertController, sender: self)
+        let alertAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func selectX(_ sender:Any)  {
+        let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        employeesFetch.returnsDistinctResults = true
+        employeesFetch.fetchLimit = 10
         
+        do {
+            let allUsers = try self.managedObjectContext.fetch(employeesFetch) as! [Person]
+            var tempStr = ""
+            
+            for item in allUsers{
+                tempStr += (item.name + item.dateOfBirth.description + "")
+            }
+            textView.text = tempStr
+            
+        } catch {
+            fatalError("Failed to fetch employees: \(error)")
+        }
     }
     
     
@@ -58,7 +93,7 @@ class MsgViewController: UIViewController {
         }
         
         didSet{
-            if  activeTextField == nil {
+            if  activeTextField?.text == nil {
                 print("the activeTextField has been set to nil")
             }else{
                 print("The activeTextField now has a value")

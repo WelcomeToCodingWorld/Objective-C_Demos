@@ -18,9 +18,10 @@ class BusinessCardTableViewCell: UITableViewCell {
 
 private let dateFormatter:DateFormatter = {
     let xformatter = DateFormatter()
-    xformatter.dateStyle = .medium
-    xformatter.timeStyle = .short
-    xformatter.doesRelativeDateFormatting = true
+    xformatter.dateFormat = "YYYY-MM-dd"
+//    xformatter.dateStyle = .medium
+//    xformatter.timeStyle = .short
+//    xformatter.doesRelativeDateFormatting = true
     xformatter.formattingContext = .standalone
     return xformatter
 }()
