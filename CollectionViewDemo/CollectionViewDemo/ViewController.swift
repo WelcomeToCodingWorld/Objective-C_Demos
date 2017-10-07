@@ -208,7 +208,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
   }
 ]
 """.data(using: String.Encoding.utf8)
-        
         let decoder = JSONDecoder()
         let cities = try? decoder.decode([CityDemo].self, from: cityJson!)
         
