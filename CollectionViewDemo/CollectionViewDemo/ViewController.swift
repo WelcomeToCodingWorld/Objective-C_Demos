@@ -142,26 +142,23 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         
         
         //url for session
-        let userUrl = "http://192.168.0.191:6969/SpringDemo/privateapi/allusers"
+        let userUrl = "https://local.server.com/restexample/site/list"
         
-        if let url = URL(string: userUrl.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!) {
+        if let url = URL(string: userUrl) {
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
-            request.addValue("text/json;charset=utf-8", forHTTPHeaderField: "Content-Type")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.addValue("application/json", forHTTPHeaderField: "accept")
             defaultSession.dataTask(with: request, completionHandler: { (data, response, error) in
                 if let error = error{
                     print("Error\(error)")
                 }else if let response = response,
                     let data = data,
                     let string = String(data: data, encoding: String.Encoding.utf8){
-//                    print("Response:\(response)");
-//                    print("DATA:\n\(string)\nEND DATA\n");
-//                    let dataContainer = try! JSONSerialization.jsonObject(with:data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
-//                    let dataArr = dataContainer["users"]
-//                    for  dic  in (dataArr as! Array<Any>){
-//                        let user = User(fromDic: dic as! Dictionary<String, AnyObject>)
-//                        self.data.append(user)
-//                    }
+                    print("Response:\(response)");
+                    print("DATA:\n\(string)\nEND DATA\n");
+                    let dataContainer = try! JSONSerialization.jsonObject(with:data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
+                    _ = dataContainer["users"]
                     DispatchQueue.main.async {
                         self.collectionView.reloadData()
                     }

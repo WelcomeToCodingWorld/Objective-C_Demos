@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070FD5371F89130C009AB948 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5361F89130C009AB948 /* TableDataSource.swift */; };
 		3A1FB8781E94D22E00E74263 /* BusinessCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1FB8761E94D22E00E74263 /* BusinessCardCollectionViewCell.swift */; };
 		3A1FB8791E94D22E00E74263 /* BusinessCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1FB8771E94D22E00E74263 /* BusinessCardCollectionViewCell.xib */; };
 		3A3EA94A1EB831D20085D5F9 /* TapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3EA9491EB831D20085D5F9 /* TapeCollectionViewCell.xib */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070FD5361F89130C009AB948 /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		3A1FB8761E94D22E00E74263 /* BusinessCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A1FB8771E94D22E00E74263 /* BusinessCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A3EA9491EB831D20085D5F9 /* TapeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				3A97428E1E82843800D3201B /* AppDelegate.swift */,
 				3A806C2C1E9F09C50048C733 /* Header.h */,
 				3A9742901E82843800D3201B /* ViewController.swift */,
+				070FD5361F89130C009AB948 /* TableDataSource.swift */,
 				3ADDAEA91F4FEF7C00DC0E66 /* DecorationCollectionReusableView.swift */,
 				3ADDAEAA1F4FEF7C00DC0E66 /* DecorationCollectionReusableView.xib */,
 				3ADDAEA51F4FD37B00DC0E66 /* FooterCollectionReusableView.swift */,
@@ -154,8 +157,7 @@
 				TargetAttributes = {
 					3A97428A1E82843800D3201B = {
 						CreatedOnToolsVersion = 8.2.1;
-
-						DevelopmentTeam = 6Q7KARRKGM;
+						DevelopmentTeam = YD6H32NYXJ;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -211,6 +213,7 @@
 				3A3EA9511EB855400085D5F9 /* Header.swift in Sources */,
 				3AE1B8AA1F25D31A003D3569 /* CityDemo.swift in Sources */,
 				3ADDAEA31F4FBE9F00DC0E66 /* HeaderCollectionReusableView.swift in Sources */,
+				070FD5371F89130C009AB948 /* TableDataSource.swift in Sources */,
 				3ADDAEAB1F4FEF7C00DC0E66 /* DecorationCollectionReusableView.swift in Sources */,
 				3ABE64B51F4EC7DF00067ED5 /* CustomLayout.swift in Sources */,
 				3A3EA94D1EB8329D0085D5F9 /* BookMarkCollectionViewCell.swift in Sources */,
