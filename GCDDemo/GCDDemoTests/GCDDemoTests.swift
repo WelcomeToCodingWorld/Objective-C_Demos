@@ -1,15 +1,15 @@
 //
-//  GDCDemoTests.swift
-//  GDCDemoTests
+//  GCDDemoTests.swift
+//  GCDDemoTests
 //
-//  Created by zz on 2017/6/8.
-//  Copyright © 2017年 zzkj. All rights reserved.
+//  Created by zz on 16/10/2017.
+//  Copyright © 2017 zzkj. All rights reserved.
 //
 
 import XCTest
-@testable import GDCDemo
+@testable import GCDDemo
 
-class GDCDemoTests: XCTestCase {
+class GCDDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

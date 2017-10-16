@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        self.getCurrentPushSettings()
-//        self.getNotHandledNotifications()
-//        UNUserNotificationCenter.current().delegate = self
-        self.authorizeAPNS()
-        self.configureNotificationCategory()
-        self.schedualLocalNotification()
+        getCurrentPushSettings()
+        getNotHandledNotifications()
+        UNUserNotificationCenter.current().delegate = self
+        authorizeAPNS()
+        configureNotificationCategory()
+        schedualLocalNotification()
         return true
     }
     
@@ -38,10 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
     
     func authorizeAPNS() {
         let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        center.requestAuthorization(options: [.alert, .sound]) {[weak self] (granted, error) in
             // Enable or disable features based on authorization.
             if granted {
-                self.registerApns()
+                self?.registerApns()
             }
         }
     }
@@ -87,7 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         
         // Swift
         let timeIntervalTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 120,
-                                                        repeats: false)
+                                                        repeats: true)
 //        let trigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: false)
         
         let request = UNNotificationRequest(identifier: "MorningAlarm", content: content, trigger: timeIntervalTrigger)
