@@ -13,6 +13,7 @@
 		3A2B01A61EE9018B00C37836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B01A51EE9018B00C37836 /* Assets.xcassets */; };
 		3A2B01A91EE9018B00C37836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B01A71EE9018B00C37836 /* LaunchScreen.storyboard */; };
 		3A2B01B41EE9018B00C37836 /* FileManagerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B01B31EE9018B00C37836 /* FileManagerDemoTests.swift */; };
+		3AE176FF1FA05B7C00049624 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE176FE1FA05B7C00049624 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3A2B01AF1EE9018B00C37836 /* FileManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B01B31EE9018B00C37836 /* FileManagerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerDemoTests.swift; sourceTree = "<group>"; };
 		3A2B01B51EE9018B00C37836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AE176FE1FA05B7C00049624 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3A2B019E1EE9018B00C37836 /* AppDelegate.swift */,
+				3AE176FE1FA05B7C00049624 /* Util.swift */,
 				3A2B01A01EE9018B00C37836 /* ViewController.swift */,
 				3A2B01A21EE9018B00C37836 /* Main.storyboard */,
 				3A2B01A51EE9018B00C37836 /* Assets.xcassets */,
@@ -146,7 +149,7 @@
 				TargetAttributes = {
 					3A2B019A1EE9018B00C37836 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6Q7KARRKGM;
+						DevelopmentTeam = YD6H32NYXJ;
 						ProvisioningStyle = Automatic;
 					};
 					3A2B01AE1EE9018B00C37836 = {
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2B01A11EE9018B00C37836 /* ViewController.swift in Sources */,
+				3AE176FF1FA05B7C00049624 /* Util.swift in Sources */,
 				3A2B019F1EE9018B00C37836 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,8 +346,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = FileManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.FileManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,8 +360,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = FileManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.FileManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +417,7 @@
 				3A2B01BA1EE9018B00C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A2B01BB1EE9018B00C37836 /* Build configuration list for PBXNativeTarget "FileManagerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				3A2B01BD1EE9018B00C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
