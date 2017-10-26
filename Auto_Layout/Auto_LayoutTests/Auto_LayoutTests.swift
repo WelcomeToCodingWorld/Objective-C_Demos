@@ -1,15 +1,15 @@
 //
-//  FileManagerDemoTests.swift
-//  FileManagerDemoTests
+//  Auto_LayoutTests.swift
+//  Auto_LayoutTests
 //
-//  Created by zz on 2017/6/8.
-//  Copyright © 2017年 zzkj. All rights reserved.
+//  Created by zz on 26/10/2017.
+//  Copyright © 2017 zzkj. All rights reserved.
 //
 
 import XCTest
-import FileManagerDemo
+@testable import Auto_Layout
 
-class FileManagerDemoTests: XCTestCase {
+class Auto_LayoutTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

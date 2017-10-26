@@ -56,7 +56,16 @@ class ViewController: UIViewController {
         }catch {
             printLog(error)
         }
-
+        
+        delay(2) {
+            printLog("This will be print 2 seconds later")
+        }
+        
+        let task = delay(5) {
+            printLog("If not cancel,this gonna be print 5 seconds later")
+        }
+        
+        cancel(task)
         
     }
 

@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A25D2191FA1C8F800A1C6EC /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 		3A2B019B1EE9018B00C37836 /* FileManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B019E1EE9018B00C37836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A2B01A01EE9018B00C37836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,25 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A2B01921EE9018B00C37836 = {
+		3A25D2181FA1C8F700A1C6EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A2B019D1EE9018B00C37836 /* FileManagerDemo */,
-				3A2B01B21EE9018B00C37836 /* FileManagerDemoTests */,
-				3A2B019C1EE9018B00C37836 /* Products */,
+				3A25D2191FA1C8F800A1C6EC /* CallKit.framework */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3A2B019C1EE9018B00C37836 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3A2B019B1EE9018B00C37836 /* FileManagerDemo.app */,
-				3A2B01AF1EE9018B00C37836 /* FileManagerDemoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3A2B019D1EE9018B00C37836 /* FileManagerDemo */ = {
+		3A25D21D1FA1CC8900A1C6EC /* FileManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				3A2B019E1EE9018B00C37836 /* AppDelegate.swift */,
@@ -90,13 +81,32 @@
 			path = FileManagerDemo;
 			sourceTree = "<group>";
 		};
-		3A2B01B21EE9018B00C37836 /* FileManagerDemoTests */ = {
+		3A25D21E1FA1CE6500A1C6EC /* FileManagerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				3A2B01B31EE9018B00C37836 /* FileManagerDemoTests.swift */,
 				3A2B01B51EE9018B00C37836 /* Info.plist */,
 			);
 			path = FileManagerDemoTests;
+			sourceTree = "<group>";
+		};
+		3A2B01921EE9018B00C37836 = {
+			isa = PBXGroup;
+			children = (
+				3A25D21E1FA1CE6500A1C6EC /* FileManagerDemoTests */,
+				3A25D21D1FA1CC8900A1C6EC /* FileManagerDemo */,
+				3A2B019C1EE9018B00C37836 /* Products */,
+				3A25D2181FA1C8F700A1C6EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A2B019C1EE9018B00C37836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B019B1EE9018B00C37836 /* FileManagerDemo.app */,
+				3A2B01AF1EE9018B00C37836 /* FileManagerDemoTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
