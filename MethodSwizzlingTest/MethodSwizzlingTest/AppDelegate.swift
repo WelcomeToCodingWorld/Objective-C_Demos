@@ -81,7 +81,8 @@ extension UIApplication {
 extension SelfAware where Self: UIView {
     static func swizzleMethod(originalSelector:Selector,swizzledSelector:Selector) {
         var anyClass : AnyClass
-        
+        print(self)
+        print(self is UILabel.Type)
         if self is UILabel.Type {
             anyClass = UILabel.self
         }else {
