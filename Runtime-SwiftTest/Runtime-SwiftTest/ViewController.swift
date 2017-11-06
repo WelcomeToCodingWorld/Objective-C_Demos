@@ -15,46 +15,24 @@
  if label.autoLayoutModels == nil {
      label.autoLayoutModels = [UIView]()
  }
- 放在1）处和2）处的区别
- 
- 
- 通过实验：
- 放在1）处时，2）处判不判断已经无所谓，情况符合预期：两个Label都加到了数组中
- 
- 而只放在2）处时，调用addObject的两次方法，两次运行居然互不影响，第一次数组中加进去了Label,而在第二次运行开始时，数组居然又是nil了
- 
- 总结：
- 1)以上试验纯属偶然：我自己创建了一个name为view的UIView,这和controller的view一样了，可能让编译器造成误会了，所以出现上面奇怪的情况，这也证明了命名的重要性
- 2)上面的情况在用UIView试验的时候的确是偶然，但是可笑的是用UIView和UILabel试验结果却不同
- 
- 3)好吧，真的不知道怎么说了，不管我用UIView还是UILabel试验，每次运行之前，我进行Clean操作，每次运行的结果居然不同，My God。只能感叹OC的运行时在Swift上真的难以预料，很是任性
- 4)好，我的操作失误，以此条结论为准：如果在2）处判断进行了判断，每次Clean并运行会出现各种不同的结果，而只在1）结果一致且符合预期
- 两处都判断会出现下面所示的一种随机结果：
- ViewController.swift[95],autoLayoutModels:newValue:Optional([])
- ViewController.swift[110],al_layout():It's not nil
- ViewController.swift[95],autoLayoutModels:newValue:nil
- ViewController.swift[107],al_layout():yah,it is nil
- ViewController.swift[95],autoLayoutModels:newValue:Optional([])
- ViewController.swift[95],autoLayoutModels:newValue:Optional([<UILabel: 0x7f9ee4d0afb0; frame = (0 0; 0 0); userInteractionEnabled = NO; layer = <_UILabelLayer: 0x600000285e10>>])
- ViewController.swift[65],viewDidLoad():Optional([<UILabel: 0x7f9ee4d0afb0; frame = (0 0; 0 0); userInteractionEnabled = NO; layer = <_UILabelLayer: 0x600000285e10>>])
- 
- See that:It's not nil then :: newValue:nil ,damn ,who did this!
+ 放在①处和②处的区别
  */
 import UIKit
 
 class ViewController: UIViewController {
 
+    static let keyPointer = UnsafeRawPointer("autoLayoutModels.key")
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let label = UILabel()
-        if label.autoLayoutModels == nil {
-            label.autoLayoutModels = [UIView]()
-        }
+//        if label.autoLayoutModels == nil {
+//            label.autoLayoutModels = [UIView]()
+//        }
 
-        let view = UIView()
-//        //1)
+//        let view = UIView()
+//        //①
 //        if view.autoLayoutModels == nil {
 //            view.autoLayoutModels = [UIView]()
 //        }
@@ -83,7 +61,33 @@ class ViewController: UIViewController {
 //        person.makeFriend()
 //        printLog(person.friends)
         
+        
+        //
+        let bytesPointer = UnsafeMutableRawPointer.allocate(bytes: 4, alignedTo: 1)
+        bytesPointer.storeBytes(of: 0xFFFF_FFFF, as: UInt32.self)
+        
+        // Load a value from the memory referenced by 'bytesPointer'
+        let x = bytesPointer.load(as: UInt8.self)       // 255
+        print(x)
+        // Load a value from the last two allocated bytes
+        let offsetPointer = bytesPointer + 2
+        let y = offsetPointer.load(as: UInt16.self)     // 65535
+        print(y)
+        
+        
+        
+        
+        
+        
+        func printt<T>(address p: UnsafeRawPointer, as type: T.Type) {
+            let value = p.load(as: type)
+            print(value)
+        }
+        
     }
+    
+//    Use of 'print' nearly matches global function 'print(_:separator:terminator:)' in module 'Swift' rather than instance method 'print(address:as:)'
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -96,12 +100,12 @@ class ViewController: UIViewController {
 extension UIView {
     var autoLayoutModels : [UIView]? {
         get {
-            return objc_getAssociatedObject(self, "autoLayoutModels.key") as? [UIView]
+            return objc_getAssociatedObject(self, ViewController.keyPointer) as? [UIView]
         }
 
         set{
             printLog("newValue:\(newValue as Optional)")
-            objc_setAssociatedObject(self, "autoLayoutModels.key", newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, ViewController.keyPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 
@@ -110,7 +114,7 @@ extension UIView {
         //Don't know why.
         //When a call began,it's computed property autoLayoutModels has been nil again.
         //May be,this cannot be did in the  internal of the declaration
-        //2)
+        //②
         if autoLayoutModels == nil {
             printLog("yah,it is nil")
             autoLayoutModels = [UIView]()

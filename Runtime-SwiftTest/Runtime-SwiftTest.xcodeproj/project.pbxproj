@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1454F81FAFEF03006E6D12 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3AAD312D1FAC1D5600C21283 /* Runtime-SwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runtime-SwiftTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAD31301FAC1D5600C21283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AAD31321FAC1D5600C21283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 				3AAD31421FAC20C100C21283 /* Util.swift */,
 				3AAD31301FAC1D5600C21283 /* AppDelegate.swift */,
 				3AAD31321FAC1D5600C21283 /* ViewController.swift */,
+				3A1454F81FAFEF03006E6D12 /* README.md */,
 				3AAD31341FAC1D5600C21283 /* Main.storyboard */,
 				3AAD31371FAC1D5600C21283 /* Assets.xcassets */,
 				3AAD31391FAC1D5600C21283 /* LaunchScreen.storyboard */,
