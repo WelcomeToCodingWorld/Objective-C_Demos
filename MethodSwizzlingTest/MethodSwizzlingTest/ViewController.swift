@@ -14,10 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let testLabel = UILabel()
-        print(type(of: testLabel))
         testLabel.text = "Hello"
         view.addSubview(testLabel)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +28,14 @@ class ViewController: UIViewController {
 
 extension UILabel {
     @objc func al_setText(_ :String) {
-        print("newMethod called")
+        print("UILabel's newMethod called")
     }
 }
+
+extension UIView {
+    @objc func al_layoutSubviews() {
+//        print("UIView's newMethod called")
+    }
+}
+
 

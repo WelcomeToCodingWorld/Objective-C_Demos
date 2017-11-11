@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        print("\(UIDevice.current.systemName):\(UIDevice.current.systemVersion)")
         return true
     }
 
@@ -81,8 +81,6 @@ extension UIApplication {
 extension SelfAware where Self: UIView {
     static func swizzleMethod(originalSelector:Selector,swizzledSelector:Selector) {
         var anyClass : AnyClass
-        print(self)
-        print(self is UILabel.Type)
         if self is UILabel.Type {
             anyClass = UILabel.self
         }else {
@@ -99,7 +97,7 @@ extension SelfAware where Self: UIView {
 
         if didAddMethod {
             if let originMethod = originalMethod {
-                class_replaceMethod(self, swizzledSelector, method_getImplementation(originMethod), method_getTypeEncoding(originMethod))
+                class_replaceMethod(anyClass, swizzledSelector, method_getImplementation(originMethod), method_getTypeEncoding(originMethod))
             }
         }else {
             if let originMethod = originalMethod,let swizzledMethod = swizzledMethod {
@@ -111,17 +109,36 @@ extension SelfAware where Self: UIView {
     }
 }
 
+// MARK:- Case1
+// MARK: Of course, it works!
+//extension UILabel:SelfAware {
+//    static func awake() {
+//        var originSelector:Selector
+//        var swizzledSelector:Selector
+//        originSelector = #selector(setter: text)
+//        swizzledSelector = #selector(al_setText(_:))
+//        swizzleMethod(originalSelector: originSelector, swizzledSelector: swizzledSelector)
+//    }
+//}
+
+// MARK: In iOS 11.0 ,only the UIView's method implementation has changed, but not for UILabel
+//But it works in iOS 9.3.2 at least.
+//And it works in iOS 11.1
 extension UIView:SelfAware {
     static func awake() {
         var originSelector:Selector
         var swizzledSelector:Selector
-        if self is UILabel.Type {
-            originSelector = #selector(setter: UILabel.self.text)
-            swizzledSelector = #selector(UILabel.self.al_setText(_:))
+        if let varType = self as? UILabel.Type {
+            originSelector = #selector(setter: varType.text)
+            swizzledSelector = #selector(varType.al_setText(_:))
             swizzleMethod(originalSelector: originSelector, swizzledSelector: swizzledSelector)
         }
+        originSelector = #selector(layoutSubviews)
+        swizzledSelector = #selector(al_layoutSubviews)
+        swizzleMethod(originalSelector: originSelector, swizzledSelector: swizzledSelector)
     }
 }
+
 
 
 
