@@ -146,7 +146,7 @@
 				TargetAttributes = {
 					3A2B024E1EE92A8F00C37836 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6Q7KARRKGM;
+						DevelopmentTeam = YD6H32NYXJ;
 						ProvisioningStyle = Automatic;
 					};
 					3A2B02621EE92A9000C37836 = {
@@ -342,8 +342,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = UserPreferencesDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.UserPreferencesDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,8 +356,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Q7KARRKGM;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
 				INFOPLIST_FILE = UserPreferencesDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanvoo.UserPreferencesDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +413,7 @@
 				3A2B026E1EE92A9000C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A2B026F1EE92A9000C37836 /* Build configuration list for PBXNativeTarget "UserPreferencesDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				3A2B02711EE92A9000C37836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

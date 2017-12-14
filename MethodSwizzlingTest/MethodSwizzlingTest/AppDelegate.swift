@@ -79,9 +79,17 @@ extension UIApplication {
 }
 
 extension SelfAware where Self: UIView {
+    func test() {
+//        print(self is Self)//'is' test is always true
+    }
     static func swizzleMethod(originalSelector:Selector,swizzledSelector:Selector) {
+//        print(Self.self == self)// false
+//        print(Self.self)// UIView
+//        print(self)// the underlying view
+//        print(type(of: Self.self))// UIView.Type
+//        print(type(of: self))// UIView.Type
+//        print(self is Self)//Cast from 'Self.Type' to unrelated type 'Self' always fails
         var anyClass : AnyClass
-        print(Self.self is UILabel.Type)
         if self is UILabel.Type {
             anyClass = UILabel.self
         }else {
