@@ -41,6 +41,11 @@ class ViewController: UIViewController {
         cache.greet()
         cache.kick()
         Cache.support()
+        
+        
+        let materials : [Material] = Array(repeating: Material(name: "机油", code: "1002"), count: 4)
+        var kit = Kit(name: "Kit", code: "10", materials: materials)
+        kit.materials = [Material(name: "机油", code: "1003")]
     }
 
     override func didReceiveMemoryWarning() {
@@ -155,5 +160,21 @@ extension unbelievable where Self:Cache {
         print("\(#function):[\(#line)]\(Self.name)")
     }
 }
+
+struct Material {
+    var name : String
+    var code : String
+}
+
+struct Kit {
+    var name : String
+    var code : String
+    var materials:[Material] {
+        didSet{
+            print("didSet")
+        }
+    }
+}
+
 
 
