@@ -12,6 +12,7 @@
 		3A264DED1FAB00CD00064B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A264DEB1FAB00CD00064B5F /* Main.storyboard */; };
 		3A264DEF1FAB00CD00064B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A264DEE1FAB00CD00064B5F /* Assets.xcassets */; };
 		3A264DF21FAB00CD00064B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A264DF01FAB00CD00064B5F /* LaunchScreen.storyboard */; };
+		3A37FF8E1FE8A30B00E9DC37 /* TTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FF8D1FE8A30B00E9DC37 /* TTViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3A264DEE1FAB00CD00064B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A264DF11FAB00CD00064B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A264DF31FAB00CD00064B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A37FF8D1FE8A30B00E9DC37 /* TTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3A264DE71FAB00CD00064B5F /* AppDelegate.swift */,
 				3A264DE91FAB00CD00064B5F /* ViewController.swift */,
+				3A37FF8D1FE8A30B00E9DC37 /* TTViewController.swift */,
 				3A264DEB1FAB00CD00064B5F /* Main.storyboard */,
 				3A264DEE1FAB00CD00064B5F /* Assets.xcassets */,
 				3A264DF01FAB00CD00064B5F /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				3A264DEA1FAB00CD00064B5F /* ViewController.swift in Sources */,
 				3A264DE81FAB00CD00064B5F /* AppDelegate.swift in Sources */,
+				3A37FF8E1FE8A30B00E9DC37 /* TTViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

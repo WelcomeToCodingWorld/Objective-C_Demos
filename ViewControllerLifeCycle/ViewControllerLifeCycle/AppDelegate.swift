@@ -16,12 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        self.window = UIWindow(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-        let vc = ViewController();
+//        self.window = UIWindow(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+//        let vc = ViewController();
+//        
+//        window?.rootViewController = vc;
+//        vc.view.backgroundColor = UIColor.brown
         
-        window?.rootViewController = vc;
-        vc.view.backgroundColor = UIColor.brown
-        window?.makeKeyAndVisible()
+        // uncomment the code snippet to see the different
+        if let rootVC = window?.rootViewController {
+            rootVC.view.backgroundColor = UIColor.brown
+        }
+        
+        
+        print("\(#function)")
+//        window?.makeKeyAndVisible()
         return true
     }
 
