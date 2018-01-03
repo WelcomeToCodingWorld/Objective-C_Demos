@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         }
         print("LanguageCode is \(locale.languageCode)\n ")
         
+        
+        //code
+        let testLocale = Locale(identifier: "en_CN")
+        print("scriptCode:\(testLocale.scriptCode as Optional)" + "\t" + "regionCode:\(testLocale.regionCode as Optional)" + "\t" + "languageCode:\(testLocale.languageCode as Optional)" + "\n" + "calendar:\(testLocale.calendar)" + "\t" + "variantCode:\(testLocale.variantCode as Optional)" + "examplarCharSet:\(testLocale.exemplarCharacterSet as Optional)" + "\t")
+        
 
         
 //        print(NSLocale.availableLocaleIdentifiers)

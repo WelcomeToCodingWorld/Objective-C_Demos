@@ -26,20 +26,25 @@ class ViewController: UIViewController {
         //printerDescriptionDirectory ,userDirectory return nil
         //inputMethodsDirectory,applicationSupportDirectory reside in Library directory
         //demoApplicationDirectory,adminApplicationDirectory reside in Applications directory
-        let testUrl = fileMgr.urls(for: FileManager.SearchPathDirectory.applicationSupportDirectory, in: .userDomainMask).first
+        let testUrl = fileMgr.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
         printLog("testUrl:\(testUrl as Optional)")
         
         
         
         local {
-            var tempUrl : URL?
             if #available(iOS 10.0, *) {
-                tempUrl = fileMgr.temporaryDirectory
+                let tempUrl = fileMgr.temporaryDirectory
+                printLog("tempUrl:\(tempUrl as Optional)")
             } else {
                 // Fallback on earlier versions
-                tempUrl = fileMgr.urls(for: FileManager.SearchPathDirectory.cachesDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).first
+                let tempUrl = NSTemporaryDirectory()
+                printLog("tempUrl:\(tempUrl)")
             }
-            printLog("tempUrl:\(tempUrl as Optional)")
+        }
+        
+        local {
+            let cacheUrl = fileMgr.urls(for: .cachesDirectory, in: .userDomainMask).first
+            printLog("cacheUrl:\(cacheUrl as Optional)")
         }
         
         do {

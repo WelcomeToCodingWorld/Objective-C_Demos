@@ -8,21 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "TransitionDemo"
+        title = "TransitionDemo"
         print("hello");
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func loadView() {
-        super .loadView();
+        super.loadView();
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        super .viewDidAppear(animated)
+        super.viewDidAppear(animated)
     }
 
     @IBAction func transitionTest(_ sender: Any) {

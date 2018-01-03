@@ -38,23 +38,26 @@ class ViewController: UIViewController {
         let stepCounter = StepCounter()
         stepCounter.totalSteps = 200
         
-        DispatchQueue.main.async {
-            sleep(2)
+        delay(2) {
             stepCounter.totalSteps = 400
-            
-            sleep(2)
+        }
+        
+        delay(2) {
             stepCounter.totalSteps = 500
         }
+        
+        // MARK: Mail
+        let email = "747852289@qq.com"
+        if let url =  URL(string:email) {
+            UIApplication.shared.openURL(url)
+        }
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-
-
 }
 
 
