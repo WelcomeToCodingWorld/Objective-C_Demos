@@ -15,26 +15,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        // MARK:- UnderStand the UIScrollView
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = UIColor.lightGray
+//        view.backgroundColor = UIColor.lightGray
         scrollView = UIScrollView(frame: view.bounds)
-        scrollView.bounds = CGRect(x: 0, y: 70, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+//        scrollView.frame.origin.y += 20
+//        scrollView.frame.size.height -= 20
+        if #available(iOS 11.0, *) {
+            scrollView.contentInsetAdjustmentBehavior = .scrollableAxes
+        } else {
+            // Fallback on earlier versions
+        }
+        scrollView.backgroundColor = UIColor.lightGray
+//        scrollView.bounds = CGRect(x: 0, y: 70, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         view.addSubview(scrollView)
-        print("\(#function)")
         let view1 = UIView(frame: CGRect(x: 15, y: 20, width: UIScreen.main.bounds.width - 2*15, height: 700))
-        view1.backgroundColor = UIColor.lightGray
+        view1.backgroundColor = UIColor.cyan
         scrollView.addSubview(view1)
         scrollView.alwaysBounceVertical = true
-        print(scrollView.contentSize)
+        printLog(scrollView.contentSize)
         
-        // When you change the contentInset, the scrollview's contentOffset is also changed relatively. but not inversely.
+        // When you change the contentInset, you changed the max and min value of contentOffset.
         // When you change the contentOffset , the scrollView's bounds is also changed relatively
         // So we can think of the bounds of a scrollView as a window into the scrollable area defined by contentSize
         scrollView.contentInset = UIEdgeInsetsMake(100, 0, 400, 0)//
-        print("scrollView.contentSize:\(scrollView.contentSize)")//scrollView.contentSize:(0.0, 0.0)
-        print("scrollView.bounds:\(scrollView.bounds)")//scrollView.bounds:(0.0, -100.0, 375.0, 667.0)
-        print("scrollView.contentOffset:\(scrollView.contentOffset)")//scrollView.contentOffset:(0.0, -100.0)
-        print("view.bounds:\(view.bounds)")
+        printLog("scrollView.contentSize:\(scrollView.contentSize)")//scrollView.contentSize:(0.0, 0.0)
+        printLog("scrollView.bounds:\(scrollView.bounds)")//scrollView.bounds:(0.0, -100.0, 375.0, 667.0)
+        printLog("scrollView.contentOffset:\(scrollView.contentOffset)")//scrollView.contentOffset:(0.0, -100.0)
+        printLog("view.bounds:\(view.bounds)")
+        if #available(iOS 11.0, *) {
+            printLog("view.safeAreaInsets:\(view.safeAreaInsets)")
+            printLog("scrollView.safeAreaInsets:\(scrollView.safeAreaInsets)")
+            printLog("adjustedContentInset:\(scrollView.adjustedContentInset)")
+        } else {
+            // Fallback on earlier versions
+        }
         
         // No,it's place is not expected.
         let view2 = UIView(frame: CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.contentOffset.y))
@@ -51,13 +68,12 @@ class ViewController: UIViewController {
     
     @objc private func tapToResetContentInset() {
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
-        print(scrollView.contentOffset)
-        print(scrollView.contentSize)
+        printLog(scrollView.contentOffset)
+        printLog(scrollView.contentSize)
     }
     
     //The view controller calls this method when its view property is requested but is currently nil. This method loads or creates a view and assigns it to the view property.
     override func loadView() {
-        print("\(#function)")
         super.loadView()
         
         // set custom view as rootView
@@ -72,7 +88,24 @@ class ViewController: UIViewController {
     //Notifies the view controller that its view was added to a view hierarchy.
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(scrollView.contentOffset)
+        if #available(iOS 11.0, *) {
+            printLog("view.safeAreaInsets:\(view.safeAreaInsets)")
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 11.0, *) {
+            printLog("scrollView.safeAreaInsets:\(scrollView.safeAreaInsets)")
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 11.0, *) {
+            printLog("adjustedContentInset:\(scrollView.adjustedContentInset)")
+        } else {
+            // Fallback on earlier versions
+        }
+        printLog("scrollView.contentOffset:\(scrollView.contentOffset)")
+        printLog("view.bounds:\(view.bounds)")
+        printLog("scrollView.contentSize:\(scrollView.contentSize)")
     }
     
     //
@@ -90,6 +123,6 @@ class ViewController: UIViewController {
 
 extension ViewController:UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        print("scrollView.bounds:\(scrollView.bounds)")
+//        printLog("scrollView.bounds:\(scrollView.bounds)")
     }
 }

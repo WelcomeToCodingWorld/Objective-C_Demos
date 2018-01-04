@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21405FDAE2DBB755B7F29754 /* Pods_KeyboardAdjustDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1EB296DDA66E6CD8D7FFA6 /* Pods_KeyboardAdjustDemo.framework */; };
 		3AD7E7F91FB3E79C00E5C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7E7F81FB3E79C00E5C8FF /* AppDelegate.swift */; };
 		3AD7E7FB1FB3E79C00E5C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7E7FA1FB3E79C00E5C8FF /* ViewController.swift */; };
 		3AD7E7FE1FB3E79C00E5C8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7E7FC1FB3E79C00E5C8FF /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1EB296DDA66E6CD8D7FFA6 /* Pods_KeyboardAdjustDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardAdjustDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C76837B2EF57F014690BBBD /* Pods-KeyboardAdjustDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardAdjustDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardAdjustDemo/Pods-KeyboardAdjustDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3AD7E7F51FB3E79C00E5C8FF /* KeyboardAdjustDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardAdjustDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD7E7F81FB3E79C00E5C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AD7E7FA1FB3E79C00E5C8FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		3AD7E8021FB3E79C00E5C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AD7E8041FB3E79C00E5C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD7E80C1FB44A3C00E5C8FF /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		408AA6E206951CA9A38B9C2F /* Pods-KeyboardAdjustDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardAdjustDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardAdjustDemo/Pods-KeyboardAdjustDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21405FDAE2DBB755B7F29754 /* Pods_KeyboardAdjustDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				3AD7E7F71FB3E79C00E5C8FF /* KeyboardAdjustDemo */,
 				3AD7E7F61FB3E79C00E5C8FF /* Products */,
+				7146C01DFD9650900F476157 /* Pods */,
+				DC2C6E62EE680C6A13D1BECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = KeyboardAdjustDemo;
 			sourceTree = "<group>";
 		};
+		7146C01DFD9650900F476157 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C76837B2EF57F014690BBBD /* Pods-KeyboardAdjustDemo.debug.xcconfig */,
+				408AA6E206951CA9A38B9C2F /* Pods-KeyboardAdjustDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC2C6E62EE680C6A13D1BECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A1EB296DDA66E6CD8D7FFA6 /* Pods_KeyboardAdjustDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AD7E8071FB3E79C00E5C8FF /* Build configuration list for PBXNativeTarget "KeyboardAdjustDemo" */;
 			buildPhases = (
+				60FD5790FD73C22E2D9EB0FE /* [CP] Check Pods Manifest.lock */,
 				3AD7E7F11FB3E79C00E5C8FF /* Sources */,
 				3AD7E7F21FB3E79C00E5C8FF /* Frameworks */,
 				3AD7E7F31FB3E79C00E5C8FF /* Resources */,
+				320F51813259503AE56027CC /* [CP] Embed Pods Frameworks */,
+				4A4F3267F25FC593E00F3D93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		320F51813259503AE56027CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardAdjustDemo/Pods-KeyboardAdjustDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardAdjustDemo/Pods-KeyboardAdjustDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A4F3267F25FC593E00F3D93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardAdjustDemo/Pods-KeyboardAdjustDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60FD5790FD73C22E2D9EB0FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeyboardAdjustDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AD7E7F11FB3E79C00E5C8FF /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		3AD7E8081FB3E79C00E5C8FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C76837B2EF57F014690BBBD /* Pods-KeyboardAdjustDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,6 +374,7 @@
 		};
 		3AD7E8091FB3E79C00E5C8FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408AA6E206951CA9A38B9C2F /* Pods-KeyboardAdjustDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

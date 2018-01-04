@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-        print("\(#function)")
 //        window?.makeKeyAndVisible()
         return true
     }
