@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  TableViewDemo
+//  LightWeightTableDemo
 //
-//  Created by zz on 2017/2/10.
-//  Copyright © 2017年 zzkj. All rights reserved.
+//  Created by zz on 04/01/2018.
+//  Copyright © 2018 com.lesta. All rights reserved.
 //
 
 import UIKit
@@ -13,15 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let nav = UINavigationController(rootViewController: ViewController());
-        
-        window?.rootViewController = nav;
-        window?.backgroundColor = UIColor.white;
-        window?.makeKeyAndVisible();
-        
         return true
     }
 
