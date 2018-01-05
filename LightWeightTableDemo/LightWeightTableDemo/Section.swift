@@ -14,13 +14,6 @@ protocol SectionInfo {
     var items:[Item] {get set}
     var headerTitle:String? {get}
     var footerTitle:String? {get}
-    var sectionIndex:String? {get}
-}
-
-extension SectionInfo {
-    var sectionIndex:String? {
-        return headerTitle
-    }
 }
 
 // MARK:- Concrete

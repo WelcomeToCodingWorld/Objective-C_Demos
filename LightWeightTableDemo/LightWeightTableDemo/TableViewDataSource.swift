@@ -15,23 +15,38 @@ protocol TableDataSourceDelegate:class {
     func configure(_ cell:Cell,with item:Item ,indexPath:IndexPath)
 }
 
-
-protocol DS {
-    associatedtype Item
-    var items:[Item] {get}
-    var indices:[String]? {get}
+protocol Toggle {
+    var selected:Bool {get set}
 }
+
+extension Toggle {
+    var selected:Bool {
+        get {
+            return false
+        }
+        set {
+            
+        }
+    }
+}
+
+
 
 class TableViewDataSource<DataSource:DataSourceProtocol,Delegate:TableDataSourceDelegate>: NSObject,UITableViewDataSource where DataSource.Item == Delegate.Item {
     
     enum SectionOpenStyle {
         case none,single,multiple
     }
-    var needSectionToggle = false//是否需要区打开的处理
-    var sectionOpenStatus : [Bool]?//区打开状态纪录数组
-    var needSectionIndex = false
+    
+    //section handler support
+    var needSectionToggle = false
+    var sectionOpenStyle:SectionOpenStyle = .none
+    var sectionOpenStatus : [Bool]?
     var currentOpenSection:Int = -1
     
+    // section index support
+    var needSectionIndex = false
+
     var dataSource : DataSource
     var delegate: Delegate
     weak var tableView:UITableView!
@@ -49,7 +64,47 @@ class TableViewDataSource<DataSource:DataSourceProtocol,Delegate:TableDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if needSectionToggle {
+            if let open = sectionOpenStatus?[section] {
+                return open ? dataSource.numberOfItems(inSection: section) : 0
+            }
+        }
         return dataSource.numberOfItems(inSection: section)
+    }
+    
+    // MARK:- SectionToggleSupport
+    func open(_ open:Bool, section:Int) {
+        if sectionOpenStyle == .none {
+            return
+        }
+        if open {//ask to open
+            if currentOpenSection == section  {//already open
+                return
+            }else {//open
+                if sectionOpenStyle == .single {
+                    if currentOpenSection >= 0 {
+                        sectionOpenStatus?[currentOpenSection] = false
+                    }
+                }
+                currentOpenSection = section
+            }
+            
+        }else {//ask to close
+            if let status = sectionOpenStatus?[section] {
+                if false == status {//already close
+                    return
+                }else {//close
+                    if let item = dataSource.items(in: section) as? Toggle {
+                        var newItem = item
+                        newItem.selected = false
+                        dataSource.items(in: section)
+                    }
+                    sectionOpenStatus?[section] = false
+                    currentOpenSection = -1
+                }
+            }
+        }
+        sectionOpenStatus?[section] = open
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,9 +137,7 @@ class TableViewDataSource<DataSource:DataSourceProtocol,Delegate:TableDataSource
     
     // MARK:- SectionIndex
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        
-        
-        return nil
+        return dataSource.indices
     }
 }
 

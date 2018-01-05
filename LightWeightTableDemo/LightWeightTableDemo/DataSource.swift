@@ -24,6 +24,16 @@ extension DataSourceProtocol {
     func item(atIndexPath indexPath:IndexPath) -> Item? {
         return item(atRow: indexPath.row, inSection: indexPath.section)
     }
+    
+    var indices:[String] {
+        var indices = [String]()
+        for idx in 0..<numberOfSections() {
+            if let indexTitle = headerTitle(in: idx) {
+                indices.append(indexTitle)
+            }
+        }
+        return indices
+    }
 }
 
 // MARK:- Concrete
@@ -32,6 +42,7 @@ struct DataSource<S:SectionInfo>:DataSourceProtocol {
     
     var sections:[S]
     func numberOfItems(inSection section: Int) -> Int {
+        
         return sections[section].items.count
     }
     
@@ -93,5 +104,7 @@ struct DataSource<S:SectionInfo>:DataSourceProtocol {
             sections[index] = newValue
         }
     }
+    
+    
     
 }

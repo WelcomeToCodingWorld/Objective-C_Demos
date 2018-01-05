@@ -88,6 +88,10 @@ struct Mobile {
     var no:String
 }
 
+extension Mobile:Toggle {
+    
+}
+
 extension ViewController:TableDataSourceDelegate {
     func configure(_ cell: UITableViewCell, with item: Mobile, indexPath: IndexPath) {
         cell.textLabel?.text = item.owner
