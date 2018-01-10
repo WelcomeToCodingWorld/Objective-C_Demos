@@ -21,6 +21,7 @@
 		3A0507B71FFDC0180090FD60 /* DataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0507B21FFDC0180090FD60 /* DataSourceProvider.swift */; };
 		3A0507BA1FFDD1420090FD60 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0507B91FFDD1420090FD60 /* TableViewDataSource.swift */; };
 		3A0507BC1FFE18AB0090FD60 /* TableCellMovingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0507BB1FFE18AB0090FD60 /* TableCellMovingController.swift */; };
+		3A0B0C2F200059000058801A /* CellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B0C2E200059000058801A /* CellFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		3A0507B21FFDC0180090FD60 /* DataSourceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProvider.swift; sourceTree = "<group>"; };
 		3A0507B91FFDD1420090FD60 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3A0507BB1FFE18AB0090FD60 /* TableCellMovingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellMovingController.swift; sourceTree = "<group>"; };
+		3A0B0C2E200059000058801A /* CellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				3A0507961FFDBC220090FD60 /* AppDelegate.swift */,
 				3A0507981FFDBC220090FD60 /* ViewController.swift */,
 				3A0507B91FFDD1420090FD60 /* TableViewDataSource.swift */,
+				3A0B0C2E200059000058801A /* CellFactory.swift */,
 				3A05079A1FFDBC220090FD60 /* Main.storyboard */,
 				3A05079D1FFDBC220090FD60 /* Assets.xcassets */,
 				3A05079F1FFDBC220090FD60 /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				3A0507B31FFDC0180090FD60 /* ReusableViewFactory.swift in Sources */,
 				3A0507AB1FFDBEBC0090FD60 /* DataSource.swift in Sources */,
 				3A0507BA1FFDD1420090FD60 /* TableViewDataSource.swift in Sources */,
+				3A0B0C2F200059000058801A /* CellFactory.swift in Sources */,
 				3A0507B41FFDC0180090FD60 /* ReusableView.swift in Sources */,
 				3A0507B51FFDC0180090FD60 /* BridgedDataSource.swift in Sources */,
 				3A0507971FFDBC220090FD60 /* AppDelegate.swift in Sources */,

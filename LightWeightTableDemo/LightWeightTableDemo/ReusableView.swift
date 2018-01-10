@@ -8,7 +8,7 @@
 
 import UIKit
 // MARK: ReusableViewParent
-protocol ReusableViewParent:class {
+protocol ReusableViewParent where Self:UIView {
     associatedtype ReusableViewType:UIView
     func dequeueReusableCell(identifier:String,indexPath:IndexPath) -> ReusableViewType?
     func dequeueReusableSupplementaryView(ofKind kind:String,identifier:String,indexPath:IndexPath) -> ReusableViewType?
@@ -39,8 +39,8 @@ extension UICollectionView:ReusableViewParent {
 }
 
 // MARK: ReusableView
-protocol ReusableView {
-    associatedtype ParentView:UIView,ReusableViewParent
+protocol ReusableView where Self:UIView {
+    associatedtype ParentView:ReusableViewParent
     var reuseIdentifier:String? {get}
     func prepareForReuse()
 }

@@ -94,11 +94,6 @@ class TableViewDataSource<DataSource:DataSourceProtocol,Delegate:TableDataSource
                 if false == status {//already close
                     return
                 }else {//close
-                    if let item = dataSource.items(in: section) as? Toggle {
-                        var newItem = item
-                        newItem.selected = false
-                        dataSource.items(in: section)
-                    }
                     sectionOpenStatus?[section] = false
                     currentOpenSection = -1
                 }
@@ -141,11 +136,15 @@ class TableViewDataSource<DataSource:DataSourceProtocol,Delegate:TableDataSource
     }
 }
 
+// MARK:-  adding constraint: CellFactory.View == UITableViewCell,cause warning as follows:
 
-//Redundant superclass constraint 'CellFactory.View.ParentView' : 'UIView'
-//Redundant superclass constraint 'CellFactory.View.ParentView.ReusableViewType' : 'UIView'
+//1.Redundant superclass constraint 'CellFactory.View.ParentView' : 'UIView'
+//2.Redundant superclass constraint 'CellFactory.View.ParentView.ReusableViewType' : 'UIView'
+//3.Redundant superclass constraint 'CellFactory.View' : 'UIView'
+
 //1. Same-type constraint 'CellFactory.View.ParentView' == 'UITableViewCell.ParentView' (aka 'UITableView') implied here
 //2. Same-type constraint 'CellFactory.View.ParentView.ReusableViewType' == 'UITableView.ReusableViewType' (aka 'UITableViewCell') implied here
+//3. Same-type constraint 'CellFactory.View' == 'UITableViewCell' written here
 class TableViewDataSourceProvider<DataSource:DataSourceProtocol,CellFactory:ReusableViewFactory>: NSObject,UITableViewDataSource where DataSource.Item == CellFactory.Item,CellFactory.View == UITableViewCell {
     var dataSource : DataSource
     var cellFactory: CellFactory
@@ -205,4 +204,36 @@ class TableViewDataSourceProvider<DataSource:DataSourceProtocol,CellFactory:Reus
     }
 }
 
+
+
+class TableViewDataSourceProviderr<DataSource:DataSourceProtocol,CellFactory:ReusableViewFactory>: NSObject,UITableViewDataSource where DataSource.Item == CellFactory.Item {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+// MARK:- Redundant superclass constraint test
+protocol S where Self:UIView {
+    associatedtype Parent:P
+}
+
+protocol P where Self:UIView {
+    associatedtype View:S
+}
+
+extension UIButton:P {
+    typealias View = UILabel
+}
+
+extension UILabel:S {
+    typealias Parent = UIButton
+}
+
+class D<T:P> where T.View == UILabel{
+    
+}
 
