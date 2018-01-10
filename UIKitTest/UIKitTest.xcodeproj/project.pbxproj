@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0796349C20067E3F00D83CA9 /* LayoutGuideTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796349A20067E3F00D83CA9 /* LayoutGuideTestViewController.swift */; };
+		0796349D20067E3F00D83CA9 /* TextFieldTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796349B20067E3F00D83CA9 /* TextFieldTestViewController.swift */; };
 		3A6105012005BB6500760F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6105002005BB6500760F5C /* AppDelegate.swift */; };
 		3A6105032005BB6500760F5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6105022005BB6500760F5C /* ViewController.swift */; };
 		3A6105062005BB6500760F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6105042005BB6500760F5C /* Main.storyboard */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0796349920067B7700D83CA9 /* Plan.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Plan.md; sourceTree = "<group>"; };
+		0796349A20067E3F00D83CA9 /* LayoutGuideTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutGuideTestViewController.swift; sourceTree = "<group>"; };
+		0796349B20067E3F00D83CA9 /* TextFieldTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTestViewController.swift; sourceTree = "<group>"; };
 		19C48959BA6DD461DFE49032 /* Pods-UIKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKitTest/Pods-UIKitTest.debug.xcconfig"; sourceTree = "<group>"; };
 		3A6104FD2005BB6500760F5C /* UIKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6105002005BB6500760F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +79,8 @@
 		3A6104FF2005BB6500760F5C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0796349A20067E3F00D83CA9 /* LayoutGuideTestViewController.swift */,
+				0796349B20067E3F00D83CA9 /* TextFieldTestViewController.swift */,
 				3A6105182005BD7D00760F5C /* UIColor+Hex.swift */,
 				3A6105192005BD7D00760F5C /* Util.swift */,
 				3A6105132005BCA300760F5C /* UIButton+ZYExtension.swift */,
@@ -86,6 +93,7 @@
 				3A6105092005BB6500760F5C /* LaunchScreen.storyboard */,
 				3A61050C2005BB6500760F5C /* Info.plist */,
 				3A61051C2005BF8A00760F5C /* BaseViewController.swift */,
+				0796349920067B7700D83CA9 /* Plan.md */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -245,11 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0796349C20067E3F00D83CA9 /* LayoutGuideTestViewController.swift in Sources */,
 				3A6105172005BCA300760F5C /* UIView+ZYExtension.swift in Sources */,
 				3A6105032005BB6500760F5C /* ViewController.swift in Sources */,
 				3A6105012005BB6500760F5C /* AppDelegate.swift in Sources */,
 				3A61051A2005BD7E00760F5C /* UIColor+Hex.swift in Sources */,
 				3A61051B2005BD7E00760F5C /* Util.swift in Sources */,
+				0796349D20067E3F00D83CA9 /* TextFieldTestViewController.swift in Sources */,
 				3A61051D2005BF8A00760F5C /* BaseViewController.swift in Sources */,
 				3A6105162005BCA300760F5C /* UIButton+ZYExtension.swift in Sources */,
 				3A6105152005BCA300760F5C /* UILabel+ZYExtension.swift in Sources */,
