@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  UIButton
 //
-//  Created by ari 李 on 11/01/2018.
-//  Copyright © 2018 ari 李. All rights reserved.
+//  Created by zz on 11/01/2018.
+//  Copyright © 2018 com.lesta. All rights reserved.
 //
 
 import UIKit
