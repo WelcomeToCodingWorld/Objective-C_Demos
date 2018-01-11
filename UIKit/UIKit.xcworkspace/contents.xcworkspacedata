@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UIButton/UIButton.xcworkspace">
+      location = "group:UIButton/UIButton.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:UIWebView/UIWebView.xcodeproj">
@@ -20,6 +20,6 @@
       location = "group:UIPickerView/UIPickerView.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UILabel/UILabel.xcworkspace">
+      location = "group:UILabel/UILabel.xcodeproj">
    </FileRef>
 </Workspace>

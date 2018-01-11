@@ -6,6 +6,4 @@ target 'UIButton' do
   use_frameworks!
 
   # Pods for UIButton
-pod 'SnapKit'
-pod 'Kingfisher'
 end

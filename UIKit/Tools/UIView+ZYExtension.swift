@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import SnapKit
 import Kingfisher
-
 internal let kEdge:CGFloat = 15
 internal let SCREEN_BOUNDS = UIScreen.main.bounds
 internal let SCREEN_WIDTH = SCREEN_BOUNDS.width

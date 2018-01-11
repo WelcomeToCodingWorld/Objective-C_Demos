@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079637E52007D94200D83CA9 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079637E22007D93D00D83CA9 /* SnapKit.framework */; };
+		079639AF2007DAE100D83CA9 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079639862007DAD600D83CA9 /* Kingfisher.framework */; };
 		3ACC5330200711FF0000A5A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACC532F200711FF0000A5A9 /* AppDelegate.swift */; };
 		3ACC5332200711FF0000A5A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACC5331200711FF0000A5A9 /* ViewController.swift */; };
 		3ACC5335200711FF0000A5A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACC5333200711FF0000A5A9 /* Main.storyboard */; };
@@ -18,10 +20,523 @@
 		3ACC534A200714520000A5A9 /* UIView+ZYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACC5345200714510000A5A9 /* UIView+ZYExtension.swift */; };
 		3ACC534B200714520000A5A9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACC5346200714510000A5A9 /* Util.swift */; };
 		3ACC534D200736F50000A5A9 /* UIButton+ZYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACC534C200736F40000A5A9 /* UIButton+ZYExtension.swift */; };
-		A1FDC4057AB158C5586BD086 /* Pods_UIButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CC6C04071CF6BB6A4EC4B /* Pods_UIButton.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		079637E12007D93D00D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079637DA2007D93D00D83CA9 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		079637E32007D93D00D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079637DA2007D93D00D83CA9 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		079639852007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+		079639872007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49D61BEDA67C00CE335D;
+			remoteInfo = "Kingfisher-tvOS";
+		};
+		079639892007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B2944481C3D01B20088C3E7;
+			remoteInfo = "Kingfisher-macOS";
+		};
+		0796398B2007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D16799EB1C4E74460020FD12;
+			remoteInfo = "Kingfisher-watchOS";
+		};
+		0796398D2007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D0B1AD2CFA600CFC3EB;
+			remoteInfo = "Kingfisher-Demo";
+		};
+		0796398F2007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49C21BEDA53F00CE335D;
+			remoteInfo = "Kingfisher-tvOS-Demo";
+		};
+		079639912007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B2944551C3D03880088C3E7;
+			remoteInfo = "Kingfisher-macOS-Demo";
+		};
+		079639932007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1679A391C4E78B20020FD12;
+			remoteInfo = "Kingfisher-watchOS-Demo";
+		};
+		079639952007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1679A451C4E78B20020FD12;
+			remoteInfo = "Kingfisher-watchOS-Demo Extension";
+		};
+		079639972007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
+			remoteInfo = KingfisherTests;
+		};
+		079639992007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B37667F1C478F940001443F;
+			remoteInfo = "KingfisherTests-tvOS";
+		};
+		0796399B2007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D10EC2311C3D632300A4211C;
+			remoteInfo = "KingfisherTests-macOS";
+		};
+		079639A32007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079638B12007DAD500D83CA9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D2057AF2695544F1F10A7EC07DD3FCF;
+			remoteInfo = "Nocilla-iOS";
+		};
+		079639A52007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079638B12007DAD500D83CA9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5FCFCF3B3D86BC1B041D3E877BA477;
+			remoteInfo = "Nocilla-macOS";
+		};
+		079639A72007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079638B12007DAD500D83CA9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8706801FE7F2520B7FBD16EC7389B00E;
+			remoteInfo = "Nocilla-tvOS";
+		};
+		079639A92007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079638B12007DAD500D83CA9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 012A1C2A72428B1238BEA0A8B7877786;
+			remoteInfo = "Pods-KingfisherTests";
+		};
+		079639AB2007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079638B12007DAD500D83CA9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F233054A3754E145F753C01DD5ACEDA;
+			remoteInfo = "Pods-KingfisherTests-macOS";
+		};
+		079639AD2007DAD600D83CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079638B12007DAD500D83CA9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11690BC5A0B05F32B240DA7192817CA1;
+			remoteInfo = "Pods-KingfisherTests-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0796379C2007D93D00D83CA9 /* SnapKit 3.0 Migration Guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "SnapKit 3.0 Migration Guide.md"; sourceTree = "<group>"; };
+		0796379D2007D93D00D83CA9 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		0796379F2007D93D00D83CA9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		079637A02007D93D00D83CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		079637A22007D93D00D83CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		079637A32007D93D00D83CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		079637A52007D93D00D83CA9 /* SimpleLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLayoutViewController.swift; sourceTree = "<group>"; };
+		079637A62007D93D00D83CA9 /* BasicUIScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUIScrollViewController.swift; sourceTree = "<group>"; };
+		079637A72007D93D00D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079637A82007D93D00D83CA9 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		079637AA2007D93D00D83CA9 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		079637AB2007D93D00D83CA9 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		079637AC2007D93D00D83CA9 /* ConstraintDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		079637AD2007D93D00D83CA9 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		079637AE2007D93D00D83CA9 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		079637AF2007D93D00D83CA9 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		079637B02007D93D00D83CA9 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		079637B12007D93D00D83CA9 /* ConstraintInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
+		079637B22007D93D00D83CA9 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		079637B32007D93D00D83CA9 /* ConstraintDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
+		079637B42007D93D00D83CA9 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		079637B52007D93D00D83CA9 /* ConstraintPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintPriority.swift; sourceTree = "<group>"; };
+		079637B62007D93D00D83CA9 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		079637B72007D93D00D83CA9 /* SnapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		079637B82007D93D00D83CA9 /* ConstraintConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
+		079637B92007D93D00D83CA9 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		079637BA2007D93D00D83CA9 /* ConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
+		079637BB2007D93D00D83CA9 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		079637BC2007D93D00D83CA9 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		079637BD2007D93D00D83CA9 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		079637BE2007D93D00D83CA9 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		079637BF2007D93D00D83CA9 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		079637C02007D93D00D83CA9 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		079637C12007D93D00D83CA9 /* ConstraintMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		079637C22007D93D00D83CA9 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		079637C32007D93D00D83CA9 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		079637C42007D93D00D83CA9 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		079637C52007D93D00D83CA9 /* ConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		079637C62007D93D00D83CA9 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		079637C72007D93D00D83CA9 /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		079637C82007D93D00D83CA9 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		079637C92007D93D00D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079637CA2007D93D00D83CA9 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		079637CB2007D93D00D83CA9 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		079637CC2007D93D00D83CA9 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		079637CD2007D93D00D83CA9 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		079637CF2007D93D00D83CA9 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		079637D02007D93D00D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079637D22007D93D00D83CA9 /* SnapKit Constraint Remake.codesnippet */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SnapKit Constraint Remake.codesnippet"; sourceTree = "<group>"; };
+		079637D32007D93D00D83CA9 /* SnapKit Constraint Make.codesnippet */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SnapKit Constraint Make.codesnippet"; sourceTree = "<group>"; };
+		079637D42007D93D00D83CA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		079637D52007D93D00D83CA9 /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
+		079637D62007D93D00D83CA9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		079637D72007D93D00D83CA9 /* SnapKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SnapKit.podspec; sourceTree = "<group>"; };
+		079637D82007D93D00D83CA9 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		079637D92007D93D00D83CA9 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		079637DA2007D93D00D83CA9 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SnapKit.xcodeproj; sourceTree = "<group>"; };
+		079637DD2007D93D00D83CA9 /* SnapKit.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = SnapKit.xcworkspace; sourceTree = "<group>"; };
+		079637DE2007D93D00D83CA9 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		079638042007DAD500D83CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		079638062007DAD500D83CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		079638072007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079638092007DAD500D83CA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0796380A2007DAD500D83CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0796380C2007DAD500D83CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0796380D2007DAD500D83CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0796380E2007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0796380F2007DAD500D83CA9 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		079638112007DAD500D83CA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		079638122007DAD500D83CA9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		079638142007DAD500D83CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		079638162007DAD500D83CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		079638172007DAD500D83CA9 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		079638182007DAD500D83CA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		079638192007DAD500D83CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0796381A2007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0796381C2007DAD500D83CA9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0796381D2007DAD500D83CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0796381E2007DAD500D83CA9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0796381F2007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079638212007DAD500D83CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		079638232007DAD500D83CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		079638242007DAD500D83CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		079638252007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079638262007DAD500D83CA9 /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
+		079638272007DAD500D83CA9 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = codecov.yml; sourceTree = "<group>"; };
+		079638282007DAD500D83CA9 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		079638292007DAD500D83CA9 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0796382A2007DAD500D83CA9 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0796382B2007DAD500D83CA9 /* Kingfisher.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Kingfisher.podspec; sourceTree = "<group>"; };
+		0796382D2007DAD500D83CA9 /* kingfisher-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-9.jpg"; sourceTree = "<group>"; };
+		0796382E2007DAD500D83CA9 /* kingfisher-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-8.jpg"; sourceTree = "<group>"; };
+		0796382F2007DAD500D83CA9 /* kingfisher-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-1.jpg"; sourceTree = "<group>"; };
+		079638302007DAD500D83CA9 /* kingfisher-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-3.jpg"; sourceTree = "<group>"; };
+		079638312007DAD500D83CA9 /* kingfisher-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-2.jpg"; sourceTree = "<group>"; };
+		079638322007DAD500D83CA9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		079638332007DAD500D83CA9 /* kingfisher-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-6.jpg"; sourceTree = "<group>"; };
+		079638342007DAD500D83CA9 /* kingfisher-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-7.jpg"; sourceTree = "<group>"; };
+		079638352007DAD500D83CA9 /* kingfisher-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-5.jpg"; sourceTree = "<group>"; };
+		079638362007DAD500D83CA9 /* kingfisher-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-4.jpg"; sourceTree = "<group>"; };
+		079638372007DAD500D83CA9 /* kingfisher-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kingfisher-10.jpg"; sourceTree = "<group>"; };
+		0796383A2007DAD500D83CA9 /* KingfisherTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherTestHelper.swift; sourceTree = "<group>"; };
+		0796383B2007DAD500D83CA9 /* ImageModifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifierTests.swift; sourceTree = "<group>"; };
+		0796383C2007DAD500D83CA9 /* ImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderTests.swift; sourceTree = "<group>"; };
+		0796383D2007DAD500D83CA9 /* KingfisherManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherManagerTests.swift; sourceTree = "<group>"; };
+		0796383E2007DAD500D83CA9 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		0796383F2007DAD500D83CA9 /* ImageCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTests.swift; sourceTree = "<group>"; };
+		079638402007DAD500D83CA9 /* KingfisherTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KingfisherTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		079638412007DAD500D83CA9 /* ImageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensionTests.swift; sourceTree = "<group>"; };
+		079638422007DAD500D83CA9 /* NSButtonExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSButtonExtensionTests.swift; sourceTree = "<group>"; };
+		079638432007DAD500D83CA9 /* UIButtonExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensionTests.swift; sourceTree = "<group>"; };
+		079638442007DAD500D83CA9 /* dancing-banana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dancing-banana.gif"; sourceTree = "<group>"; };
+		079638452007DAD500D83CA9 /* KingfisherOptionsInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherOptionsInfoTests.swift; sourceTree = "<group>"; };
+		079638462007DAD500D83CA9 /* ImageProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessorTests.swift; sourceTree = "<group>"; };
+		079638472007DAD500D83CA9 /* single-frame.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "single-frame.gif"; sourceTree = "<group>"; };
+		079638482007DAD500D83CA9 /* ImagePrefetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePrefetcherTests.swift; sourceTree = "<group>"; };
+		079638492007DAD500D83CA9 /* ImageViewExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtensionTests.swift; sourceTree = "<group>"; };
+		0796384A2007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0796384C2007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0796384E2007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kingfisher.xcodeproj; sourceTree = "<group>"; };
+		079638532007DAD500D83CA9 /* Structs.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Structs.html; sourceTree = "<group>"; };
+		079638542007DAD500D83CA9 /* Enums.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Enums.html; sourceTree = "<group>"; };
+		079638552007DAD500D83CA9 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		079638562007DAD500D83CA9 /* Functions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Functions.html; sourceTree = "<group>"; };
+		079638572007DAD500D83CA9 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		079638592007DAD500D83CA9 /* highlight.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = highlight.css; sourceTree = "<group>"; };
+		0796385A2007DAD500D83CA9 /* jazzy.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jazzy.css; sourceTree = "<group>"; };
+		0796385C2007DAD500D83CA9 /* Kingfisher.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Kingfisher.html; sourceTree = "<group>"; };
+		0796385D2007DAD500D83CA9 /* ImageDownloader.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageDownloader.html; sourceTree = "<group>"; };
+		0796385E2007DAD500D83CA9 /* KingfisherManager.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = KingfisherManager.html; sourceTree = "<group>"; };
+		079638602007DAD500D83CA9 /* CacheCheckResult.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CacheCheckResult.html; sourceTree = "<group>"; };
+		079638612007DAD500D83CA9 /* ImagePrefetcher.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImagePrefetcher.html; sourceTree = "<group>"; };
+		079638622007DAD500D83CA9 /* ImageCache.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageCache.html; sourceTree = "<group>"; };
+		079638632007DAD500D83CA9 /* AnimatedImageView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AnimatedImageView.html; sourceTree = "<group>"; };
+		079638652007DAD500D83CA9 /* RepeatCount.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RepeatCount.html; sourceTree = "<group>"; };
+		079638662007DAD500D83CA9 /* RetrieveImageTask.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RetrieveImageTask.html; sourceTree = "<group>"; };
+		079638682007DAD500D83CA9 /* jquery.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		079638692007DAD500D83CA9 /* jazzy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jazzy.js; sourceTree = "<group>"; };
+		0796386B2007DAD500D83CA9 /* ContentMode.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ContentMode.html; sourceTree = "<group>"; };
+		0796386C2007DAD500D83CA9 /* CacheType.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CacheType.html; sourceTree = "<group>"; };
+		0796386D2007DAD500D83CA9 /* IndicatorType.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = IndicatorType.html; sourceTree = "<group>"; };
+		0796386E2007DAD500D83CA9 /* ImageProcessItem.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageProcessItem.html; sourceTree = "<group>"; };
+		0796386F2007DAD500D83CA9 /* KingfisherError.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = KingfisherError.html; sourceTree = "<group>"; };
+		079638702007DAD500D83CA9 /* ImageTransition.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageTransition.html; sourceTree = "<group>"; };
+		079638712007DAD500D83CA9 /* KingfisherOptionsInfoItem.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = KingfisherOptionsInfoItem.html; sourceTree = "<group>"; };
+		079638722007DAD500D83CA9 /* Global Variables.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Global Variables.html"; sourceTree = "<group>"; };
+		079638732007DAD500D83CA9 /* Extensions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Extensions.html; sourceTree = "<group>"; };
+		079638752007DAD500D83CA9 /* Collection.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Collection.html; sourceTree = "<group>"; };
+		079638772007DAD500D83CA9 /* Name.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Name.html; sourceTree = "<group>"; };
+		079638782007DAD500D83CA9 /* Notification.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Notification.html; sourceTree = "<group>"; };
+		079638792007DAD500D83CA9 /* URL.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = URL.html; sourceTree = "<group>"; };
+		0796387A2007DAD500D83CA9 /* Data.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Data.html; sourceTree = "<group>"; };
+		0796387B2007DAD500D83CA9 /* String.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = String.html; sourceTree = "<group>"; };
+		0796387C2007DAD500D83CA9 /* CGSize.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CGSize.html; sourceTree = "<group>"; };
+		0796387E2007DAD500D83CA9 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
+		0796387F2007DAD500D83CA9 /* dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash.png; sourceTree = "<group>"; };
+		079638802007DAD500D83CA9 /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
+		079638812007DAD500D83CA9 /* undocumented.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = undocumented.json; sourceTree = "<group>"; };
+		079638822007DAD500D83CA9 /* badge.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = badge.svg; sourceTree = "<group>"; };
+		079638842007DAD500D83CA9 /* FormatIndicatedCacheSerializer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = FormatIndicatedCacheSerializer.html; sourceTree = "<group>"; };
+		079638852007DAD500D83CA9 /* CompositingImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CompositingImageProcessor.html; sourceTree = "<group>"; };
+		079638862007DAD500D83CA9 /* RenderingModeImageModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RenderingModeImageModifier.html; sourceTree = "<group>"; };
+		079638872007DAD500D83CA9 /* BlurImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = BlurImageProcessor.html; sourceTree = "<group>"; };
+		079638882007DAD500D83CA9 /* ResizingImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ResizingImageProcessor.html; sourceTree = "<group>"; };
+		079638892007DAD500D83CA9 /* AnyModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AnyModifier.html; sourceTree = "<group>"; };
+		0796388A2007DAD500D83CA9 /* FlipsForRightToLeftLayoutDirectionImageModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = FlipsForRightToLeftLayoutDirectionImageModifier.html; sourceTree = "<group>"; };
+		0796388B2007DAD500D83CA9 /* ImageResource.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageResource.html; sourceTree = "<group>"; };
+		0796388C2007DAD500D83CA9 /* DefaultImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = DefaultImageProcessor.html; sourceTree = "<group>"; };
+		0796388D2007DAD500D83CA9 /* RectCorner.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RectCorner.html; sourceTree = "<group>"; };
+		0796388E2007DAD500D83CA9 /* RetrieveImageDownloadTask.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RetrieveImageDownloadTask.html; sourceTree = "<group>"; };
+		0796388F2007DAD500D83CA9 /* BlackWhiteProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = BlackWhiteProcessor.html; sourceTree = "<group>"; };
+		079638902007DAD500D83CA9 /* DefaultCacheSerializer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = DefaultCacheSerializer.html; sourceTree = "<group>"; };
+		079638912007DAD500D83CA9 /* ColorControlsProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ColorControlsProcessor.html; sourceTree = "<group>"; };
+		079638922007DAD500D83CA9 /* AlignmentRectInsetsImageModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AlignmentRectInsetsImageModifier.html; sourceTree = "<group>"; };
+		079638932007DAD500D83CA9 /* CroppingImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CroppingImageProcessor.html; sourceTree = "<group>"; };
+		079638942007DAD500D83CA9 /* BlendImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = BlendImageProcessor.html; sourceTree = "<group>"; };
+		079638952007DAD500D83CA9 /* DefaultImageModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = DefaultImageModifier.html; sourceTree = "<group>"; };
+		079638962007DAD500D83CA9 /* AnyImageModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AnyImageModifier.html; sourceTree = "<group>"; };
+		079638972007DAD500D83CA9 /* TintImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TintImageProcessor.html; sourceTree = "<group>"; };
+		079638982007DAD500D83CA9 /* RoundCornerImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RoundCornerImageProcessor.html; sourceTree = "<group>"; };
+		079638992007DAD500D83CA9 /* OverlayImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = OverlayImageProcessor.html; sourceTree = "<group>"; };
+		0796389A2007DAD500D83CA9 /* Filter.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Filter.html; sourceTree = "<group>"; };
+		0796389B2007DAD500D83CA9 /* Classes.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Classes.html; sourceTree = "<group>"; };
+		0796389D2007DAD500D83CA9 /* Kingfisher.tgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kingfisher.tgz; sourceTree = "<group>"; };
+		0796389E2007DAD500D83CA9 /* Kingfisher.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Kingfisher.xml; sourceTree = "<group>"; };
+		0796389F2007DAD500D83CA9 /* Kingfisher.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Kingfisher.docset; sourceTree = "<group>"; };
+		079638A02007DAD500D83CA9 /* Typealiases.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Typealiases.html; sourceTree = "<group>"; };
+		079638A12007DAD500D83CA9 /* Protocols.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Protocols.html; sourceTree = "<group>"; };
+		079638A32007DAD500D83CA9 /* ImageModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageModifier.html; sourceTree = "<group>"; };
+		079638A42007DAD500D83CA9 /* ImageDownloadRequestModifier.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageDownloadRequestModifier.html; sourceTree = "<group>"; };
+		079638A52007DAD500D83CA9 /* CIImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CIImageProcessor.html; sourceTree = "<group>"; };
+		079638A62007DAD500D83CA9 /* AnimatedImageViewDelegate.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AnimatedImageViewDelegate.html; sourceTree = "<group>"; };
+		079638A72007DAD500D83CA9 /* Indicator.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Indicator.html; sourceTree = "<group>"; };
+		079638A82007DAD500D83CA9 /* Resource.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Resource.html; sourceTree = "<group>"; };
+		079638A92007DAD500D83CA9 /* KingfisherCompatible.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = KingfisherCompatible.html; sourceTree = "<group>"; };
+		079638AA2007DAD500D83CA9 /* Placeholder.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Placeholder.html; sourceTree = "<group>"; };
+		079638AB2007DAD500D83CA9 /* AuthenticationChallengeResponsable.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AuthenticationChallengeResponsable.html; sourceTree = "<group>"; };
+		079638AC2007DAD500D83CA9 /* CacheSerializer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = CacheSerializer.html; sourceTree = "<group>"; };
+		079638AD2007DAD500D83CA9 /* ImageDownloaderDelegate.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageDownloaderDelegate.html; sourceTree = "<group>"; };
+		079638AE2007DAD500D83CA9 /* ImageProcessor.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ImageProcessor.html; sourceTree = "<group>"; };
+		079638AF2007DAD500D83CA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		079638B12007DAD500D83CA9 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		079638B62007DAD500D83CA9 /* Nocilla-macOS-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nocilla-macOS-prefix.pch"; sourceTree = "<group>"; };
+		079638B72007DAD500D83CA9 /* Nocilla-macOS-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Nocilla-macOS-dummy.m"; sourceTree = "<group>"; };
+		079638B82007DAD500D83CA9 /* Nocilla-macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Nocilla-macOS.xcconfig"; sourceTree = "<group>"; };
+		079638BA2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-KingfisherTests-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		079638BB2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-KingfisherTests-tvOS-dummy.m"; sourceTree = "<group>"; };
+		079638BC2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KingfisherTests-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		079638BD2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-KingfisherTests-tvOS-frameworks.sh"; sourceTree = "<group>"; };
+		079638BE2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-KingfisherTests-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		079638BF2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KingfisherTests-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		079638C02007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-KingfisherTests-tvOS-resources.sh"; sourceTree = "<group>"; };
+		079638C22007DAD500D83CA9 /* Nocilla-tvOS-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nocilla-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		079638C32007DAD500D83CA9 /* Nocilla-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Nocilla-tvOS.xcconfig"; sourceTree = "<group>"; };
+		079638C42007DAD500D83CA9 /* Nocilla-tvOS-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Nocilla-tvOS-dummy.m"; sourceTree = "<group>"; };
+		079638C62007DAD500D83CA9 /* Pods-KingfisherTests-macOS.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KingfisherTests-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		079638C72007DAD500D83CA9 /* Pods-KingfisherTests-macOS.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KingfisherTests-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		079638C82007DAD500D83CA9 /* Pods-KingfisherTests-macOS-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-KingfisherTests-macOS-resources.sh"; sourceTree = "<group>"; };
+		079638C92007DAD500D83CA9 /* Pods-KingfisherTests-macOS-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-KingfisherTests-macOS-frameworks.sh"; sourceTree = "<group>"; };
+		079638CA2007DAD500D83CA9 /* Pods-KingfisherTests-macOS-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-KingfisherTests-macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		079638CB2007DAD500D83CA9 /* Pods-KingfisherTests-macOS-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-KingfisherTests-macOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		079638CC2007DAD500D83CA9 /* Pods-KingfisherTests-macOS-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-KingfisherTests-macOS-dummy.m"; sourceTree = "<group>"; };
+		079638CE2007DAD500D83CA9 /* Pods-KingfisherTests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-KingfisherTests-resources.sh"; sourceTree = "<group>"; };
+		079638CF2007DAD500D83CA9 /* Pods-KingfisherTests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KingfisherTests.release.xcconfig"; sourceTree = "<group>"; };
+		079638D02007DAD500D83CA9 /* Pods-KingfisherTests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KingfisherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		079638D12007DAD500D83CA9 /* Pods-KingfisherTests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-KingfisherTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		079638D22007DAD500D83CA9 /* Pods-KingfisherTests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-KingfisherTests-frameworks.sh"; sourceTree = "<group>"; };
+		079638D32007DAD500D83CA9 /* Pods-KingfisherTests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-KingfisherTests-dummy.m"; sourceTree = "<group>"; };
+		079638D42007DAD500D83CA9 /* Pods-KingfisherTests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-KingfisherTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		079638D62007DAD500D83CA9 /* Nocilla-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Nocilla-iOS.xcconfig"; sourceTree = "<group>"; };
+		079638D72007DAD500D83CA9 /* Nocilla-iOS-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nocilla-iOS-prefix.pch"; sourceTree = "<group>"; };
+		079638D82007DAD500D83CA9 /* Nocilla-iOS-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Nocilla-iOS-dummy.m"; sourceTree = "<group>"; };
+		079638D92007DAD500D83CA9 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		079638DB2007DAD500D83CA9 /* Nocilla.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Nocilla.podspec.json; sourceTree = "<group>"; };
+		079638DF2007DAD500D83CA9 /* LSMatcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMatcheable.h; sourceTree = "<group>"; };
+		079638E02007DAD500D83CA9 /* NSData+Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Nocilla.h"; sourceTree = "<group>"; };
+		079638E12007DAD500D83CA9 /* LSStubRequestDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubRequestDSL.h; sourceTree = "<group>"; };
+		079638E22007DAD500D83CA9 /* LSHTTPBody.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPBody.h; sourceTree = "<group>"; };
+		079638E32007DAD500D83CA9 /* Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nocilla.h; sourceTree = "<group>"; };
+		079638E42007DAD500D83CA9 /* LSStubResponseDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubResponseDSL.h; sourceTree = "<group>"; };
+		079638E52007DAD500D83CA9 /* NSRegularExpression+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+Matcheable.h"; sourceTree = "<group>"; };
+		079638E62007DAD500D83CA9 /* LSNocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNocilla.h; sourceTree = "<group>"; };
+		079638E72007DAD500D83CA9 /* NSString+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Matcheable.h"; sourceTree = "<group>"; };
+		079638E82007DAD500D83CA9 /* NSString+Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Nocilla.h"; sourceTree = "<group>"; };
+		079638E92007DAD500D83CA9 /* NSData+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Matcheable.h"; sourceTree = "<group>"; };
+		079638EC2007DAD500D83CA9 /* LSMatcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMatcheable.h; sourceTree = "<group>"; };
+		079638ED2007DAD500D83CA9 /* NSData+Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Nocilla.h"; sourceTree = "<group>"; };
+		079638EE2007DAD500D83CA9 /* LSMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMatcher.h; sourceTree = "<group>"; };
+		079638EF2007DAD500D83CA9 /* LSStubRequestDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubRequestDSL.h; sourceTree = "<group>"; };
+		079638F02007DAD500D83CA9 /* LSStringMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStringMatcher.h; sourceTree = "<group>"; };
+		079638F12007DAD500D83CA9 /* NSURLRequest+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+DSL.h"; sourceTree = "<group>"; };
+		079638F22007DAD500D83CA9 /* LSRegexMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSRegexMatcher.h; sourceTree = "<group>"; };
+		079638F32007DAD500D83CA9 /* LSASIHTTPRequestHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSASIHTTPRequestHook.h; sourceTree = "<group>"; };
+		079638F42007DAD500D83CA9 /* LSNSURLHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNSURLHook.h; sourceTree = "<group>"; };
+		079638F52007DAD500D83CA9 /* LSHTTPStubURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPStubURLProtocol.h; sourceTree = "<group>"; };
+		079638F62007DAD500D83CA9 /* LSHTTPBody.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPBody.h; sourceTree = "<group>"; };
+		079638F72007DAD500D83CA9 /* LSHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequest.h; sourceTree = "<group>"; };
+		079638F82007DAD500D83CA9 /* LSASIHTTPRequestAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSASIHTTPRequestAdapter.h; sourceTree = "<group>"; };
+		079638F92007DAD500D83CA9 /* LSNSURLSessionHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNSURLSessionHook.h; sourceTree = "<group>"; };
+		079638FA2007DAD500D83CA9 /* LSHTTPRequestDSLRepresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequestDSLRepresentation.h; sourceTree = "<group>"; };
+		079638FB2007DAD500D83CA9 /* NSURLRequest+LSHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+LSHTTPRequest.h"; sourceTree = "<group>"; };
+		079638FC2007DAD500D83CA9 /* LSHTTPClientHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPClientHook.h; sourceTree = "<group>"; };
+		079638FD2007DAD500D83CA9 /* Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nocilla.h; sourceTree = "<group>"; };
+		079638FE2007DAD500D83CA9 /* LSStubResponseDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubResponseDSL.h; sourceTree = "<group>"; };
+		079638FF2007DAD500D83CA9 /* NSRegularExpression+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+Matcheable.h"; sourceTree = "<group>"; };
+		079639002007DAD500D83CA9 /* LSNocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNocilla.h; sourceTree = "<group>"; };
+		079639012007DAD500D83CA9 /* LSHTTPRequestDiff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequestDiff.h; sourceTree = "<group>"; };
+		079639022007DAD500D83CA9 /* NSString+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Matcheable.h"; sourceTree = "<group>"; };
+		079639032007DAD500D83CA9 /* LSDataMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDataMatcher.h; sourceTree = "<group>"; };
+		079639042007DAD500D83CA9 /* LSStubResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubResponse.h; sourceTree = "<group>"; };
+		079639052007DAD500D83CA9 /* NSString+Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Nocilla.h"; sourceTree = "<group>"; };
+		079639062007DAD500D83CA9 /* asihttprequeststub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asihttprequeststub.h; sourceTree = "<group>"; };
+		079639072007DAD500D83CA9 /* NSData+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Matcheable.h"; sourceTree = "<group>"; };
+		079639082007DAD500D83CA9 /* LSStubRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubRequest.h; sourceTree = "<group>"; };
+		079639092007DAD500D83CA9 /* LSHTTPResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPResponse.h; sourceTree = "<group>"; };
+		0796390B2007DAD500D83CA9 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0796390C2007DAD500D83CA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0796390F2007DAD500D83CA9 /* LSStubRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSStubRequest.m; sourceTree = "<group>"; };
+		079639102007DAD500D83CA9 /* LSStubResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSStubResponse.m; sourceTree = "<group>"; };
+		079639112007DAD500D83CA9 /* LSStubResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubResponse.h; sourceTree = "<group>"; };
+		079639122007DAD500D83CA9 /* LSStubRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubRequest.h; sourceTree = "<group>"; };
+		079639132007DAD500D83CA9 /* LSNocilla.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNocilla.m; sourceTree = "<group>"; };
+		079639152007DAD500D83CA9 /* LSHTTPRequestDiff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSHTTPRequestDiff.m; sourceTree = "<group>"; };
+		079639162007DAD500D83CA9 /* LSHTTPRequestDiff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequestDiff.h; sourceTree = "<group>"; };
+		079639172007DAD500D83CA9 /* Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nocilla.h; sourceTree = "<group>"; };
+		079639192007DAD500D83CA9 /* LSHTTPClientHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSHTTPClientHook.m; sourceTree = "<group>"; };
+		0796391A2007DAD500D83CA9 /* LSHTTPClientHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPClientHook.h; sourceTree = "<group>"; };
+		0796391C2007DAD500D83CA9 /* NSURLRequest+LSHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+LSHTTPRequest.m"; sourceTree = "<group>"; };
+		0796391D2007DAD500D83CA9 /* NSURLRequest+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+DSL.h"; sourceTree = "<group>"; };
+		0796391E2007DAD500D83CA9 /* LSNSURLHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNSURLHook.h; sourceTree = "<group>"; };
+		0796391F2007DAD500D83CA9 /* LSHTTPStubURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPStubURLProtocol.h; sourceTree = "<group>"; };
+		079639202007DAD500D83CA9 /* NSURLRequest+LSHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+LSHTTPRequest.h"; sourceTree = "<group>"; };
+		079639212007DAD500D83CA9 /* LSNSURLHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNSURLHook.m; sourceTree = "<group>"; };
+		079639222007DAD500D83CA9 /* NSURLRequest+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+DSL.m"; sourceTree = "<group>"; };
+		079639232007DAD500D83CA9 /* LSHTTPStubURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSHTTPStubURLProtocol.m; sourceTree = "<group>"; };
+		079639252007DAD500D83CA9 /* LSASIHTTPRequestHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSASIHTTPRequestHook.h; sourceTree = "<group>"; };
+		079639262007DAD500D83CA9 /* ASIHTTPRequestStub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequestStub.m; sourceTree = "<group>"; };
+		079639272007DAD500D83CA9 /* LSASIHTTPRequestAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSASIHTTPRequestAdapter.h; sourceTree = "<group>"; };
+		079639282007DAD500D83CA9 /* LSASIHTTPRequestHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSASIHTTPRequestHook.m; sourceTree = "<group>"; };
+		079639292007DAD500D83CA9 /* LSASIHTTPRequestAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSASIHTTPRequestAdapter.m; sourceTree = "<group>"; };
+		0796392A2007DAD500D83CA9 /* ASIHTTPRequestStub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestStub.h; sourceTree = "<group>"; };
+		0796392C2007DAD500D83CA9 /* LSNSURLSessionHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNSURLSessionHook.h; sourceTree = "<group>"; };
+		0796392D2007DAD500D83CA9 /* LSNSURLSessionHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNSURLSessionHook.m; sourceTree = "<group>"; };
+		0796392F2007DAD500D83CA9 /* LSHTTPBody.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPBody.h; sourceTree = "<group>"; };
+		079639302007DAD500D83CA9 /* LSHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequest.h; sourceTree = "<group>"; };
+		079639312007DAD500D83CA9 /* LSHTTPResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPResponse.h; sourceTree = "<group>"; };
+		079639322007DAD500D83CA9 /* LSNocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNocilla.h; sourceTree = "<group>"; };
+		079639342007DAD500D83CA9 /* LSMatcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMatcheable.h; sourceTree = "<group>"; };
+		079639352007DAD500D83CA9 /* LSMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMatcher.h; sourceTree = "<group>"; };
+		079639362007DAD500D83CA9 /* LSStringMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStringMatcher.h; sourceTree = "<group>"; };
+		079639372007DAD500D83CA9 /* NSRegularExpression+Matcheable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+Matcheable.m"; sourceTree = "<group>"; };
+		079639382007DAD500D83CA9 /* LSRegexMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSRegexMatcher.h; sourceTree = "<group>"; };
+		079639392007DAD500D83CA9 /* NSString+Matcheable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Matcheable.m"; sourceTree = "<group>"; };
+		0796393A2007DAD500D83CA9 /* NSData+Matcheable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Matcheable.m"; sourceTree = "<group>"; };
+		0796393B2007DAD500D83CA9 /* LSDataMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSDataMatcher.m; sourceTree = "<group>"; };
+		0796393C2007DAD500D83CA9 /* LSMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSMatcher.m; sourceTree = "<group>"; };
+		0796393D2007DAD500D83CA9 /* LSRegexMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSRegexMatcher.m; sourceTree = "<group>"; };
+		0796393E2007DAD500D83CA9 /* NSRegularExpression+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+Matcheable.h"; sourceTree = "<group>"; };
+		0796393F2007DAD500D83CA9 /* LSStringMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSStringMatcher.m; sourceTree = "<group>"; };
+		079639402007DAD500D83CA9 /* NSString+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Matcheable.h"; sourceTree = "<group>"; };
+		079639412007DAD500D83CA9 /* LSDataMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDataMatcher.h; sourceTree = "<group>"; };
+		079639422007DAD500D83CA9 /* NSData+Matcheable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Matcheable.h"; sourceTree = "<group>"; };
+		079639442007DAD500D83CA9 /* NSData+Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Nocilla.h"; sourceTree = "<group>"; };
+		079639452007DAD500D83CA9 /* NSString+Nocilla.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Nocilla.m"; sourceTree = "<group>"; };
+		079639462007DAD500D83CA9 /* NSData+Nocilla.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Nocilla.m"; sourceTree = "<group>"; };
+		079639472007DAD500D83CA9 /* NSString+Nocilla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Nocilla.h"; sourceTree = "<group>"; };
+		079639492007DAD500D83CA9 /* LSHTTPRequestDSLRepresentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSHTTPRequestDSLRepresentation.m; sourceTree = "<group>"; };
+		0796394A2007DAD500D83CA9 /* LSStubRequestDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubRequestDSL.h; sourceTree = "<group>"; };
+		0796394B2007DAD500D83CA9 /* LSStubResponseDSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSStubResponseDSL.m; sourceTree = "<group>"; };
+		0796394C2007DAD500D83CA9 /* LSStubRequestDSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSStubRequestDSL.m; sourceTree = "<group>"; };
+		0796394D2007DAD500D83CA9 /* LSHTTPRequestDSLRepresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequestDSLRepresentation.h; sourceTree = "<group>"; };
+		0796394E2007DAD500D83CA9 /* LSStubResponseDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSStubResponseDSL.h; sourceTree = "<group>"; };
+		0796394F2007DAD500D83CA9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		079639502007DAD500D83CA9 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		079639522007DAD500D83CA9 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		079639542007DAD500D83CA9 /* sync_build_number_to_git.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = sync_build_number_to_git.rb; sourceTree = "<group>"; };
+		079639552007DAD500D83CA9 /* update_change_log.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = update_change_log.rb; sourceTree = "<group>"; };
+		079639562007DAD500D83CA9 /* git_commit_all.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = git_commit_all.rb; sourceTree = "<group>"; };
+		079639572007DAD500D83CA9 /* extract_current_change_log.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = extract_current_change_log.rb; sourceTree = "<group>"; };
+		079639592007DAD500D83CA9 /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
+		0796395A2007DAD500D83CA9 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		0796395C2007DAD500D83CA9 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		0796395D2007DAD500D83CA9 /* ThreadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
+		0796395E2007DAD500D83CA9 /* Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingfisher.swift; sourceTree = "<group>"; };
+		0796395F2007DAD500D83CA9 /* RequestModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModifier.swift; sourceTree = "<group>"; };
+		079639602007DAD500D83CA9 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		079639612007DAD500D83CA9 /* NSButton+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		079639622007DAD500D83CA9 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		079639632007DAD500D83CA9 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		079639642007DAD500D83CA9 /* CacheSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheSerializer.swift; sourceTree = "<group>"; };
+		079639652007DAD500D83CA9 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		079639662007DAD500D83CA9 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		079639672007DAD500D83CA9 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		079639682007DAD500D83CA9 /* Kingfisher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kingfisher.h; sourceTree = "<group>"; };
+		079639692007DAD500D83CA9 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		0796396A2007DAD500D83CA9 /* KingfisherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherManager.swift; sourceTree = "<group>"; };
+		0796396B2007DAD500D83CA9 /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
+		0796396C2007DAD500D83CA9 /* ImageTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		0796396D2007DAD500D83CA9 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		0796396E2007DAD500D83CA9 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		0796396F2007DAD500D83CA9 /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		079639702007DAD500D83CA9 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		079639712007DAD500D83CA9 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		079639722007DAD500D83CA9 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		079639732007DAD500D83CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079639742007DAD500D83CA9 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
+		079639752007DAD500D83CA9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		079639762007DAD500D83CA9 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		079639772007DAD500D83CA9 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		079639782007DAD500D83CA9 /* Kingfisher.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Kingfisher.xcworkspace; sourceTree = "<group>"; };
 		3ACC532C200711FF0000A5A9 /* UIButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACC532F200711FF0000A5A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ACC5331200711FF0000A5A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +550,6 @@
 		3ACC5345200714510000A5A9 /* UIView+ZYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ZYExtension.swift"; sourceTree = "<group>"; };
 		3ACC5346200714510000A5A9 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		3ACC534C200736F40000A5A9 /* UIButton+ZYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ZYExtension.swift"; sourceTree = "<group>"; };
-		47CDA09950C2ACE0B76DB020 /* Pods-UIButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButton/Pods-UIButton.release.xcconfig"; sourceTree = "<group>"; };
-		9E9CC6C04071CF6BB6A4EC4B /* Pods_UIButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE9937553DCDEB78F0206B64 /* Pods-UIButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIButton/Pods-UIButton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,19 +557,927 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1FDC4057AB158C5586BD086 /* Pods_UIButton.framework in Frameworks */,
+				079639AF2007DAE100D83CA9 /* Kingfisher.framework in Frameworks */,
+				079637E52007D94200D83CA9 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0796379A2007D93D00D83CA9 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				0796379B2007D93D00D83CA9 /* Documentation */,
+				0796379D2007D93D00D83CA9 /* .swift-version */,
+				0796379E2007D93D00D83CA9 /* Example-iOS */,
+				079637A82007D93D00D83CA9 /* LICENSE */,
+				079637A92007D93D00D83CA9 /* Source */,
+				079637CE2007D93D00D83CA9 /* Tests */,
+				079637D12007D93D00D83CA9 /* CodeSnippets */,
+				079637D42007D93D00D83CA9 /* README.md */,
+				079637D52007D93D00D83CA9 /* ISSUE_TEMPLATE.md */,
+				079637D62007D93D00D83CA9 /* .gitignore */,
+				079637D72007D93D00D83CA9 /* SnapKit.podspec */,
+				079637D82007D93D00D83CA9 /* CONTRIBUTING.md */,
+				079637D92007D93D00D83CA9 /* Package.swift */,
+				079637DA2007D93D00D83CA9 /* SnapKit.xcodeproj */,
+				079637DD2007D93D00D83CA9 /* SnapKit.xcworkspace */,
+				079637DE2007D93D00D83CA9 /* .travis.yml */,
+			);
+			name = SnapKit;
+			path = ../ThirdPartyLibrary/SnapKit;
+			sourceTree = "<group>";
+		};
+		0796379B2007D93D00D83CA9 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				0796379C2007D93D00D83CA9 /* SnapKit 3.0 Migration Guide.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		0796379E2007D93D00D83CA9 /* Example-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0796379F2007D93D00D83CA9 /* ListViewController.swift */,
+				079637A02007D93D00D83CA9 /* Assets.xcassets */,
+				079637A12007D93D00D83CA9 /* LaunchScreen.storyboard */,
+				079637A32007D93D00D83CA9 /* AppDelegate.swift */,
+				079637A42007D93D00D83CA9 /* demos */,
+				079637A72007D93D00D83CA9 /* Info.plist */,
+			);
+			path = "Example-iOS";
+			sourceTree = "<group>";
+		};
+		079637A42007D93D00D83CA9 /* demos */ = {
+			isa = PBXGroup;
+			children = (
+				079637A52007D93D00D83CA9 /* SimpleLayoutViewController.swift */,
+				079637A62007D93D00D83CA9 /* BasicUIScrollViewController.swift */,
+			);
+			path = demos;
+			sourceTree = "<group>";
+		};
+		079637A92007D93D00D83CA9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				079637AA2007D93D00D83CA9 /* ConstraintMultiplierTarget.swift */,
+				079637AB2007D93D00D83CA9 /* LayoutConstraintItem.swift */,
+				079637AC2007D93D00D83CA9 /* ConstraintDescription.swift */,
+				079637AD2007D93D00D83CA9 /* ConstraintMakerPriortizable.swift */,
+				079637AE2007D93D00D83CA9 /* ConstraintAttributes.swift */,
+				079637AF2007D93D00D83CA9 /* ConstraintViewDSL.swift */,
+				079637B02007D93D00D83CA9 /* ConstraintPriorityTarget.swift */,
+				079637B12007D93D00D83CA9 /* ConstraintInsets.swift */,
+				079637B22007D93D00D83CA9 /* ConstraintMakerFinalizable.swift */,
+				079637B32007D93D00D83CA9 /* ConstraintDSL.swift */,
+				079637B42007D93D00D83CA9 /* ConstraintMakerExtendable.swift */,
+				079637B52007D93D00D83CA9 /* ConstraintPriority.swift */,
+				079637B62007D93D00D83CA9 /* ConstraintInsetTarget.swift */,
+				079637B72007D93D00D83CA9 /* SnapKit.h */,
+				079637B82007D93D00D83CA9 /* ConstraintConfig.swift */,
+				079637B92007D93D00D83CA9 /* UILayoutSupport+Extensions.swift */,
+				079637BA2007D93D00D83CA9 /* ConstraintView.swift */,
+				079637BB2007D93D00D83CA9 /* ConstraintLayoutGuide.swift */,
+				079637BC2007D93D00D83CA9 /* ConstraintLayoutSupport.swift */,
+				079637BD2007D93D00D83CA9 /* Typealiases.swift */,
+				079637BE2007D93D00D83CA9 /* ConstraintConstantTarget.swift */,
+				079637BF2007D93D00D83CA9 /* ConstraintOffsetTarget.swift */,
+				079637C02007D93D00D83CA9 /* ConstraintMakerEditable.swift */,
+				079637C12007D93D00D83CA9 /* ConstraintMaker.swift */,
+				079637C22007D93D00D83CA9 /* ConstraintRelation.swift */,
+				079637C32007D93D00D83CA9 /* ConstraintLayoutGuideDSL.swift */,
+				079637C42007D93D00D83CA9 /* ConstraintView+Extensions.swift */,
+				079637C52007D93D00D83CA9 /* ConstraintItem.swift */,
+				079637C62007D93D00D83CA9 /* Constraint.swift */,
+				079637C72007D93D00D83CA9 /* Debugging.swift */,
+				079637C82007D93D00D83CA9 /* ConstraintRelatableTarget.swift */,
+				079637C92007D93D00D83CA9 /* Info.plist */,
+				079637CA2007D93D00D83CA9 /* LayoutConstraint.swift */,
+				079637CB2007D93D00D83CA9 /* ConstraintLayoutGuide+Extensions.swift */,
+				079637CC2007D93D00D83CA9 /* ConstraintLayoutSupportDSL.swift */,
+				079637CD2007D93D00D83CA9 /* ConstraintMakerRelatable.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		079637CE2007D93D00D83CA9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				079637CF2007D93D00D83CA9 /* Tests.swift */,
+				079637D02007D93D00D83CA9 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		079637D12007D93D00D83CA9 /* CodeSnippets */ = {
+			isa = PBXGroup;
+			children = (
+				079637D22007D93D00D83CA9 /* SnapKit Constraint Remake.codesnippet */,
+				079637D32007D93D00D83CA9 /* SnapKit Constraint Make.codesnippet */,
+			);
+			path = CodeSnippets;
+			sourceTree = "<group>";
+		};
+		079637DB2007D93D00D83CA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				079637E22007D93D00D83CA9 /* SnapKit.framework */,
+				079637E42007D93D00D83CA9 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		079638012007DAD500D83CA9 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				079638022007DAD500D83CA9 /* Demo */,
+				079638262007DAD500D83CA9 /* setup.sh */,
+				079638272007DAD500D83CA9 /* codecov.yml */,
+				079638282007DAD500D83CA9 /* .swift-version */,
+				079638292007DAD500D83CA9 /* LICENSE */,
+				0796382A2007DAD500D83CA9 /* CHANGELOG.md */,
+				0796382B2007DAD500D83CA9 /* Kingfisher.podspec */,
+				0796382C2007DAD500D83CA9 /* images */,
+				079638382007DAD500D83CA9 /* Tests */,
+				0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */,
+				079638522007DAD500D83CA9 /* docs */,
+				079638AF2007DAD500D83CA9 /* README.md */,
+				079638B02007DAD500D83CA9 /* Pods */,
+				0796394F2007DAD500D83CA9 /* .gitignore */,
+				079639502007DAD500D83CA9 /* CONTRIBUTING.md */,
+				079639512007DAD500D83CA9 /* fastlane */,
+				079639582007DAD500D83CA9 /* .github */,
+				0796395A2007DAD500D83CA9 /* Package.swift */,
+				0796395B2007DAD500D83CA9 /* Sources */,
+				079639752007DAD500D83CA9 /* Podfile */,
+				079639762007DAD500D83CA9 /* .travis.yml */,
+				079639772007DAD500D83CA9 /* Podfile.lock */,
+				079639782007DAD500D83CA9 /* Kingfisher.xcworkspace */,
+			);
+			name = Kingfisher;
+			path = ../ThirdPartyLibrary/Kingfisher;
+			sourceTree = "<group>";
+		};
+		079638022007DAD500D83CA9 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				079638032007DAD500D83CA9 /* Kingfisher-watchOS-Demo */,
+				079638082007DAD500D83CA9 /* Kingfisher-macOS-Demo */,
+				079638102007DAD500D83CA9 /* Kingfisher-Demo */,
+				0796381B2007DAD500D83CA9 /* Kingfisher-watchOS-Demo Extension */,
+				079638202007DAD500D83CA9 /* Kingfisher-tvOS-Demo */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		079638032007DAD500D83CA9 /* Kingfisher-watchOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				079638042007DAD500D83CA9 /* Assets.xcassets */,
+				079638052007DAD500D83CA9 /* Interface.storyboard */,
+				079638072007DAD500D83CA9 /* Info.plist */,
+			);
+			path = "Kingfisher-watchOS-Demo";
+			sourceTree = "<group>";
+		};
+		079638082007DAD500D83CA9 /* Kingfisher-macOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				079638092007DAD500D83CA9 /* ViewController.swift */,
+				0796380A2007DAD500D83CA9 /* Assets.xcassets */,
+				0796380B2007DAD500D83CA9 /* Main.storyboard */,
+				0796380D2007DAD500D83CA9 /* AppDelegate.swift */,
+				0796380E2007DAD500D83CA9 /* Info.plist */,
+				0796380F2007DAD500D83CA9 /* Cell.xib */,
+			);
+			path = "Kingfisher-macOS-Demo";
+			sourceTree = "<group>";
+		};
+		079638102007DAD500D83CA9 /* Kingfisher-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				079638112007DAD500D83CA9 /* ViewController.swift */,
+				079638122007DAD500D83CA9 /* CollectionViewCell.swift */,
+				079638132007DAD500D83CA9 /* LaunchScreen.xib */,
+				079638152007DAD500D83CA9 /* Main.storyboard */,
+				079638172007DAD500D83CA9 /* loader.gif */,
+				079638182007DAD500D83CA9 /* Images.xcassets */,
+				079638192007DAD500D83CA9 /* AppDelegate.swift */,
+				0796381A2007DAD500D83CA9 /* Info.plist */,
+			);
+			path = "Kingfisher-Demo";
+			sourceTree = "<group>";
+		};
+		0796381B2007DAD500D83CA9 /* Kingfisher-watchOS-Demo Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0796381C2007DAD500D83CA9 /* InterfaceController.swift */,
+				0796381D2007DAD500D83CA9 /* Assets.xcassets */,
+				0796381E2007DAD500D83CA9 /* ExtensionDelegate.swift */,
+				0796381F2007DAD500D83CA9 /* Info.plist */,
+			);
+			path = "Kingfisher-watchOS-Demo Extension";
+			sourceTree = "<group>";
+		};
+		079638202007DAD500D83CA9 /* Kingfisher-tvOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				079638212007DAD500D83CA9 /* Assets.xcassets */,
+				079638222007DAD500D83CA9 /* Main.storyboard */,
+				079638242007DAD500D83CA9 /* AppDelegate.swift */,
+				079638252007DAD500D83CA9 /* Info.plist */,
+			);
+			path = "Kingfisher-tvOS-Demo";
+			sourceTree = "<group>";
+		};
+		0796382C2007DAD500D83CA9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0796382D2007DAD500D83CA9 /* kingfisher-9.jpg */,
+				0796382E2007DAD500D83CA9 /* kingfisher-8.jpg */,
+				0796382F2007DAD500D83CA9 /* kingfisher-1.jpg */,
+				079638302007DAD500D83CA9 /* kingfisher-3.jpg */,
+				079638312007DAD500D83CA9 /* kingfisher-2.jpg */,
+				079638322007DAD500D83CA9 /* logo.png */,
+				079638332007DAD500D83CA9 /* kingfisher-6.jpg */,
+				079638342007DAD500D83CA9 /* kingfisher-7.jpg */,
+				079638352007DAD500D83CA9 /* kingfisher-5.jpg */,
+				079638362007DAD500D83CA9 /* kingfisher-4.jpg */,
+				079638372007DAD500D83CA9 /* kingfisher-10.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		079638382007DAD500D83CA9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				079638392007DAD500D83CA9 /* KingfisherTests */,
+				0796384B2007DAD500D83CA9 /* KingfisherTests-tvOS */,
+				0796384D2007DAD500D83CA9 /* KingfisherTests-macOS */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		079638392007DAD500D83CA9 /* KingfisherTests */ = {
+			isa = PBXGroup;
+			children = (
+				0796383A2007DAD500D83CA9 /* KingfisherTestHelper.swift */,
+				0796383B2007DAD500D83CA9 /* ImageModifierTests.swift */,
+				0796383C2007DAD500D83CA9 /* ImageDownloaderTests.swift */,
+				0796383D2007DAD500D83CA9 /* KingfisherManagerTests.swift */,
+				0796383E2007DAD500D83CA9 /* StringExtensionTests.swift */,
+				0796383F2007DAD500D83CA9 /* ImageCacheTests.swift */,
+				079638402007DAD500D83CA9 /* KingfisherTests-Bridging-Header.h */,
+				079638412007DAD500D83CA9 /* ImageExtensionTests.swift */,
+				079638422007DAD500D83CA9 /* NSButtonExtensionTests.swift */,
+				079638432007DAD500D83CA9 /* UIButtonExtensionTests.swift */,
+				079638442007DAD500D83CA9 /* dancing-banana.gif */,
+				079638452007DAD500D83CA9 /* KingfisherOptionsInfoTests.swift */,
+				079638462007DAD500D83CA9 /* ImageProcessorTests.swift */,
+				079638472007DAD500D83CA9 /* single-frame.gif */,
+				079638482007DAD500D83CA9 /* ImagePrefetcherTests.swift */,
+				079638492007DAD500D83CA9 /* ImageViewExtensionTests.swift */,
+				0796384A2007DAD500D83CA9 /* Info.plist */,
+			);
+			path = KingfisherTests;
+			sourceTree = "<group>";
+		};
+		0796384B2007DAD500D83CA9 /* KingfisherTests-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				0796384C2007DAD500D83CA9 /* Info.plist */,
+			);
+			path = "KingfisherTests-tvOS";
+			sourceTree = "<group>";
+		};
+		0796384D2007DAD500D83CA9 /* KingfisherTests-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				0796384E2007DAD500D83CA9 /* Info.plist */,
+			);
+			path = "KingfisherTests-macOS";
+			sourceTree = "<group>";
+		};
+		079638502007DAD500D83CA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				079639862007DAD600D83CA9 /* Kingfisher.framework */,
+				079639882007DAD600D83CA9 /* Kingfisher.framework */,
+				0796398A2007DAD600D83CA9 /* Kingfisher.framework */,
+				0796398C2007DAD600D83CA9 /* Kingfisher.framework */,
+				0796398E2007DAD600D83CA9 /* Kingfisher-Demo.app */,
+				079639902007DAD600D83CA9 /* Kingfisher-tvOS-Demo.app */,
+				079639922007DAD600D83CA9 /* Kingfisher-macOS-Demo.app */,
+				079639942007DAD600D83CA9 /* Kingfisher-watchOS-Demo.app */,
+				079639962007DAD600D83CA9 /* Kingfisher-watchOS-Demo Extension.appex */,
+				079639982007DAD600D83CA9 /* KingfisherTests.xctest */,
+				0796399A2007DAD600D83CA9 /* KingfisherTests-tvOS.xctest */,
+				0796399C2007DAD600D83CA9 /* KingfisherTests-macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		079638522007DAD500D83CA9 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				079638532007DAD500D83CA9 /* Structs.html */,
+				079638542007DAD500D83CA9 /* Enums.html */,
+				079638552007DAD500D83CA9 /* index.html */,
+				079638562007DAD500D83CA9 /* Functions.html */,
+				079638572007DAD500D83CA9 /* search.json */,
+				079638582007DAD500D83CA9 /* css */,
+				0796385B2007DAD500D83CA9 /* Classes */,
+				079638672007DAD500D83CA9 /* js */,
+				0796386A2007DAD500D83CA9 /* Enums */,
+				079638722007DAD500D83CA9 /* Global Variables.html */,
+				079638732007DAD500D83CA9 /* Extensions.html */,
+				079638742007DAD500D83CA9 /* Extensions */,
+				0796387D2007DAD500D83CA9 /* img */,
+				079638812007DAD500D83CA9 /* undocumented.json */,
+				079638822007DAD500D83CA9 /* badge.svg */,
+				079638832007DAD500D83CA9 /* Structs */,
+				0796389B2007DAD500D83CA9 /* Classes.html */,
+				0796389C2007DAD500D83CA9 /* docsets */,
+				079638A02007DAD500D83CA9 /* Typealiases.html */,
+				079638A12007DAD500D83CA9 /* Protocols.html */,
+				079638A22007DAD500D83CA9 /* Protocols */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		079638582007DAD500D83CA9 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				079638592007DAD500D83CA9 /* highlight.css */,
+				0796385A2007DAD500D83CA9 /* jazzy.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		0796385B2007DAD500D83CA9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0796385C2007DAD500D83CA9 /* Kingfisher.html */,
+				0796385D2007DAD500D83CA9 /* ImageDownloader.html */,
+				0796385E2007DAD500D83CA9 /* KingfisherManager.html */,
+				0796385F2007DAD500D83CA9 /* ImageCache */,
+				079638612007DAD500D83CA9 /* ImagePrefetcher.html */,
+				079638622007DAD500D83CA9 /* ImageCache.html */,
+				079638632007DAD500D83CA9 /* AnimatedImageView.html */,
+				079638642007DAD500D83CA9 /* AnimatedImageView */,
+				079638662007DAD500D83CA9 /* RetrieveImageTask.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0796385F2007DAD500D83CA9 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				079638602007DAD500D83CA9 /* CacheCheckResult.html */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		079638642007DAD500D83CA9 /* AnimatedImageView */ = {
+			isa = PBXGroup;
+			children = (
+				079638652007DAD500D83CA9 /* RepeatCount.html */,
+			);
+			path = AnimatedImageView;
+			sourceTree = "<group>";
+		};
+		079638672007DAD500D83CA9 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				079638682007DAD500D83CA9 /* jquery.min.js */,
+				079638692007DAD500D83CA9 /* jazzy.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		0796386A2007DAD500D83CA9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0796386B2007DAD500D83CA9 /* ContentMode.html */,
+				0796386C2007DAD500D83CA9 /* CacheType.html */,
+				0796386D2007DAD500D83CA9 /* IndicatorType.html */,
+				0796386E2007DAD500D83CA9 /* ImageProcessItem.html */,
+				0796386F2007DAD500D83CA9 /* KingfisherError.html */,
+				079638702007DAD500D83CA9 /* ImageTransition.html */,
+				079638712007DAD500D83CA9 /* KingfisherOptionsInfoItem.html */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		079638742007DAD500D83CA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				079638752007DAD500D83CA9 /* Collection.html */,
+				079638762007DAD500D83CA9 /* Notification */,
+				079638782007DAD500D83CA9 /* Notification.html */,
+				079638792007DAD500D83CA9 /* URL.html */,
+				0796387A2007DAD500D83CA9 /* Data.html */,
+				0796387B2007DAD500D83CA9 /* String.html */,
+				0796387C2007DAD500D83CA9 /* CGSize.html */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		079638762007DAD500D83CA9 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				079638772007DAD500D83CA9 /* Name.html */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		0796387D2007DAD500D83CA9 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				0796387E2007DAD500D83CA9 /* carat.png */,
+				0796387F2007DAD500D83CA9 /* dash.png */,
+				079638802007DAD500D83CA9 /* gh.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		079638832007DAD500D83CA9 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				079638842007DAD500D83CA9 /* FormatIndicatedCacheSerializer.html */,
+				079638852007DAD500D83CA9 /* CompositingImageProcessor.html */,
+				079638862007DAD500D83CA9 /* RenderingModeImageModifier.html */,
+				079638872007DAD500D83CA9 /* BlurImageProcessor.html */,
+				079638882007DAD500D83CA9 /* ResizingImageProcessor.html */,
+				079638892007DAD500D83CA9 /* AnyModifier.html */,
+				0796388A2007DAD500D83CA9 /* FlipsForRightToLeftLayoutDirectionImageModifier.html */,
+				0796388B2007DAD500D83CA9 /* ImageResource.html */,
+				0796388C2007DAD500D83CA9 /* DefaultImageProcessor.html */,
+				0796388D2007DAD500D83CA9 /* RectCorner.html */,
+				0796388E2007DAD500D83CA9 /* RetrieveImageDownloadTask.html */,
+				0796388F2007DAD500D83CA9 /* BlackWhiteProcessor.html */,
+				079638902007DAD500D83CA9 /* DefaultCacheSerializer.html */,
+				079638912007DAD500D83CA9 /* ColorControlsProcessor.html */,
+				079638922007DAD500D83CA9 /* AlignmentRectInsetsImageModifier.html */,
+				079638932007DAD500D83CA9 /* CroppingImageProcessor.html */,
+				079638942007DAD500D83CA9 /* BlendImageProcessor.html */,
+				079638952007DAD500D83CA9 /* DefaultImageModifier.html */,
+				079638962007DAD500D83CA9 /* AnyImageModifier.html */,
+				079638972007DAD500D83CA9 /* TintImageProcessor.html */,
+				079638982007DAD500D83CA9 /* RoundCornerImageProcessor.html */,
+				079638992007DAD500D83CA9 /* OverlayImageProcessor.html */,
+				0796389A2007DAD500D83CA9 /* Filter.html */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		0796389C2007DAD500D83CA9 /* docsets */ = {
+			isa = PBXGroup;
+			children = (
+				0796389D2007DAD500D83CA9 /* Kingfisher.tgz */,
+				0796389E2007DAD500D83CA9 /* Kingfisher.xml */,
+				0796389F2007DAD500D83CA9 /* Kingfisher.docset */,
+			);
+			path = docsets;
+			sourceTree = "<group>";
+		};
+		079638A22007DAD500D83CA9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				079638A32007DAD500D83CA9 /* ImageModifier.html */,
+				079638A42007DAD500D83CA9 /* ImageDownloadRequestModifier.html */,
+				079638A52007DAD500D83CA9 /* CIImageProcessor.html */,
+				079638A62007DAD500D83CA9 /* AnimatedImageViewDelegate.html */,
+				079638A72007DAD500D83CA9 /* Indicator.html */,
+				079638A82007DAD500D83CA9 /* Resource.html */,
+				079638A92007DAD500D83CA9 /* KingfisherCompatible.html */,
+				079638AA2007DAD500D83CA9 /* Placeholder.html */,
+				079638AB2007DAD500D83CA9 /* AuthenticationChallengeResponsable.html */,
+				079638AC2007DAD500D83CA9 /* CacheSerializer.html */,
+				079638AD2007DAD500D83CA9 /* ImageDownloaderDelegate.html */,
+				079638AE2007DAD500D83CA9 /* ImageProcessor.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		079638B02007DAD500D83CA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				079638B12007DAD500D83CA9 /* Pods.xcodeproj */,
+				079638B42007DAD500D83CA9 /* Target Support Files */,
+				079638D92007DAD500D83CA9 /* Manifest.lock */,
+				079638DA2007DAD500D83CA9 /* Local Podspecs */,
+				079638DC2007DAD500D83CA9 /* Headers */,
+				0796390A2007DAD500D83CA9 /* Nocilla */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		079638B22007DAD500D83CA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				079639A42007DAD600D83CA9 /* libNocilla-iOS.a */,
+				079639A62007DAD600D83CA9 /* libNocilla-macOS.a */,
+				079639A82007DAD600D83CA9 /* libNocilla-tvOS.a */,
+				079639AA2007DAD600D83CA9 /* libPods-KingfisherTests.a */,
+				079639AC2007DAD600D83CA9 /* libPods-KingfisherTests-macOS.a */,
+				079639AE2007DAD600D83CA9 /* libPods-KingfisherTests-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		079638B42007DAD500D83CA9 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				079638B52007DAD500D83CA9 /* Nocilla-macOS */,
+				079638B92007DAD500D83CA9 /* Pods-KingfisherTests-tvOS */,
+				079638C12007DAD500D83CA9 /* Nocilla-tvOS */,
+				079638C52007DAD500D83CA9 /* Pods-KingfisherTests-macOS */,
+				079638CD2007DAD500D83CA9 /* Pods-KingfisherTests */,
+				079638D52007DAD500D83CA9 /* Nocilla-iOS */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		079638B52007DAD500D83CA9 /* Nocilla-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				079638B62007DAD500D83CA9 /* Nocilla-macOS-prefix.pch */,
+				079638B72007DAD500D83CA9 /* Nocilla-macOS-dummy.m */,
+				079638B82007DAD500D83CA9 /* Nocilla-macOS.xcconfig */,
+			);
+			path = "Nocilla-macOS";
+			sourceTree = "<group>";
+		};
+		079638B92007DAD500D83CA9 /* Pods-KingfisherTests-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				079638BA2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-acknowledgements.markdown */,
+				079638BB2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-dummy.m */,
+				079638BC2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS.release.xcconfig */,
+				079638BD2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-frameworks.sh */,
+				079638BE2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-acknowledgements.plist */,
+				079638BF2007DAD500D83CA9 /* Pods-KingfisherTests-tvOS.debug.xcconfig */,
+				079638C02007DAD500D83CA9 /* Pods-KingfisherTests-tvOS-resources.sh */,
+			);
+			path = "Pods-KingfisherTests-tvOS";
+			sourceTree = "<group>";
+		};
+		079638C12007DAD500D83CA9 /* Nocilla-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				079638C22007DAD500D83CA9 /* Nocilla-tvOS-prefix.pch */,
+				079638C32007DAD500D83CA9 /* Nocilla-tvOS.xcconfig */,
+				079638C42007DAD500D83CA9 /* Nocilla-tvOS-dummy.m */,
+			);
+			path = "Nocilla-tvOS";
+			sourceTree = "<group>";
+		};
+		079638C52007DAD500D83CA9 /* Pods-KingfisherTests-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				079638C62007DAD500D83CA9 /* Pods-KingfisherTests-macOS.release.xcconfig */,
+				079638C72007DAD500D83CA9 /* Pods-KingfisherTests-macOS.debug.xcconfig */,
+				079638C82007DAD500D83CA9 /* Pods-KingfisherTests-macOS-resources.sh */,
+				079638C92007DAD500D83CA9 /* Pods-KingfisherTests-macOS-frameworks.sh */,
+				079638CA2007DAD500D83CA9 /* Pods-KingfisherTests-macOS-acknowledgements.markdown */,
+				079638CB2007DAD500D83CA9 /* Pods-KingfisherTests-macOS-acknowledgements.plist */,
+				079638CC2007DAD500D83CA9 /* Pods-KingfisherTests-macOS-dummy.m */,
+			);
+			path = "Pods-KingfisherTests-macOS";
+			sourceTree = "<group>";
+		};
+		079638CD2007DAD500D83CA9 /* Pods-KingfisherTests */ = {
+			isa = PBXGroup;
+			children = (
+				079638CE2007DAD500D83CA9 /* Pods-KingfisherTests-resources.sh */,
+				079638CF2007DAD500D83CA9 /* Pods-KingfisherTests.release.xcconfig */,
+				079638D02007DAD500D83CA9 /* Pods-KingfisherTests.debug.xcconfig */,
+				079638D12007DAD500D83CA9 /* Pods-KingfisherTests-acknowledgements.plist */,
+				079638D22007DAD500D83CA9 /* Pods-KingfisherTests-frameworks.sh */,
+				079638D32007DAD500D83CA9 /* Pods-KingfisherTests-dummy.m */,
+				079638D42007DAD500D83CA9 /* Pods-KingfisherTests-acknowledgements.markdown */,
+			);
+			path = "Pods-KingfisherTests";
+			sourceTree = "<group>";
+		};
+		079638D52007DAD500D83CA9 /* Nocilla-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				079638D62007DAD500D83CA9 /* Nocilla-iOS.xcconfig */,
+				079638D72007DAD500D83CA9 /* Nocilla-iOS-prefix.pch */,
+				079638D82007DAD500D83CA9 /* Nocilla-iOS-dummy.m */,
+			);
+			path = "Nocilla-iOS";
+			sourceTree = "<group>";
+		};
+		079638DA2007DAD500D83CA9 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+				079638DB2007DAD500D83CA9 /* Nocilla.podspec.json */,
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		079638DC2007DAD500D83CA9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				079638DD2007DAD500D83CA9 /* Public */,
+				079638EA2007DAD500D83CA9 /* Private */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		079638DD2007DAD500D83CA9 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				079638DE2007DAD500D83CA9 /* Nocilla */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		079638DE2007DAD500D83CA9 /* Nocilla */ = {
+			isa = PBXGroup;
+			children = (
+				079638DF2007DAD500D83CA9 /* LSMatcheable.h */,
+				079638E02007DAD500D83CA9 /* NSData+Nocilla.h */,
+				079638E12007DAD500D83CA9 /* LSStubRequestDSL.h */,
+				079638E22007DAD500D83CA9 /* LSHTTPBody.h */,
+				079638E32007DAD500D83CA9 /* Nocilla.h */,
+				079638E42007DAD500D83CA9 /* LSStubResponseDSL.h */,
+				079638E52007DAD500D83CA9 /* NSRegularExpression+Matcheable.h */,
+				079638E62007DAD500D83CA9 /* LSNocilla.h */,
+				079638E72007DAD500D83CA9 /* NSString+Matcheable.h */,
+				079638E82007DAD500D83CA9 /* NSString+Nocilla.h */,
+				079638E92007DAD500D83CA9 /* NSData+Matcheable.h */,
+			);
+			path = Nocilla;
+			sourceTree = "<group>";
+		};
+		079638EA2007DAD500D83CA9 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				079638EB2007DAD500D83CA9 /* Nocilla */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		079638EB2007DAD500D83CA9 /* Nocilla */ = {
+			isa = PBXGroup;
+			children = (
+				079638EC2007DAD500D83CA9 /* LSMatcheable.h */,
+				079638ED2007DAD500D83CA9 /* NSData+Nocilla.h */,
+				079638EE2007DAD500D83CA9 /* LSMatcher.h */,
+				079638EF2007DAD500D83CA9 /* LSStubRequestDSL.h */,
+				079638F02007DAD500D83CA9 /* LSStringMatcher.h */,
+				079638F12007DAD500D83CA9 /* NSURLRequest+DSL.h */,
+				079638F22007DAD500D83CA9 /* LSRegexMatcher.h */,
+				079638F32007DAD500D83CA9 /* LSASIHTTPRequestHook.h */,
+				079638F42007DAD500D83CA9 /* LSNSURLHook.h */,
+				079638F52007DAD500D83CA9 /* LSHTTPStubURLProtocol.h */,
+				079638F62007DAD500D83CA9 /* LSHTTPBody.h */,
+				079638F72007DAD500D83CA9 /* LSHTTPRequest.h */,
+				079638F82007DAD500D83CA9 /* LSASIHTTPRequestAdapter.h */,
+				079638F92007DAD500D83CA9 /* LSNSURLSessionHook.h */,
+				079638FA2007DAD500D83CA9 /* LSHTTPRequestDSLRepresentation.h */,
+				079638FB2007DAD500D83CA9 /* NSURLRequest+LSHTTPRequest.h */,
+				079638FC2007DAD500D83CA9 /* LSHTTPClientHook.h */,
+				079638FD2007DAD500D83CA9 /* Nocilla.h */,
+				079638FE2007DAD500D83CA9 /* LSStubResponseDSL.h */,
+				079638FF2007DAD500D83CA9 /* NSRegularExpression+Matcheable.h */,
+				079639002007DAD500D83CA9 /* LSNocilla.h */,
+				079639012007DAD500D83CA9 /* LSHTTPRequestDiff.h */,
+				079639022007DAD500D83CA9 /* NSString+Matcheable.h */,
+				079639032007DAD500D83CA9 /* LSDataMatcher.h */,
+				079639042007DAD500D83CA9 /* LSStubResponse.h */,
+				079639052007DAD500D83CA9 /* NSString+Nocilla.h */,
+				079639062007DAD500D83CA9 /* asihttprequeststub.h */,
+				079639072007DAD500D83CA9 /* NSData+Matcheable.h */,
+				079639082007DAD500D83CA9 /* LSStubRequest.h */,
+				079639092007DAD500D83CA9 /* LSHTTPResponse.h */,
+			);
+			path = Nocilla;
+			sourceTree = "<group>";
+		};
+		0796390A2007DAD500D83CA9 /* Nocilla */ = {
+			isa = PBXGroup;
+			children = (
+				0796390B2007DAD500D83CA9 /* LICENSE */,
+				0796390C2007DAD500D83CA9 /* README.md */,
+				0796390D2007DAD500D83CA9 /* Nocilla */,
+			);
+			path = Nocilla;
+			sourceTree = "<group>";
+		};
+		0796390D2007DAD500D83CA9 /* Nocilla */ = {
+			isa = PBXGroup;
+			children = (
+				0796390E2007DAD500D83CA9 /* Stubs */,
+				079639132007DAD500D83CA9 /* LSNocilla.m */,
+				079639142007DAD500D83CA9 /* Diff */,
+				079639172007DAD500D83CA9 /* Nocilla.h */,
+				079639182007DAD500D83CA9 /* Hooks */,
+				0796392E2007DAD500D83CA9 /* Model */,
+				079639322007DAD500D83CA9 /* LSNocilla.h */,
+				079639332007DAD500D83CA9 /* Matchers */,
+				079639432007DAD500D83CA9 /* Categories */,
+				079639482007DAD500D83CA9 /* DSL */,
+			);
+			path = Nocilla;
+			sourceTree = "<group>";
+		};
+		0796390E2007DAD500D83CA9 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0796390F2007DAD500D83CA9 /* LSStubRequest.m */,
+				079639102007DAD500D83CA9 /* LSStubResponse.m */,
+				079639112007DAD500D83CA9 /* LSStubResponse.h */,
+				079639122007DAD500D83CA9 /* LSStubRequest.h */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		079639142007DAD500D83CA9 /* Diff */ = {
+			isa = PBXGroup;
+			children = (
+				079639152007DAD500D83CA9 /* LSHTTPRequestDiff.m */,
+				079639162007DAD500D83CA9 /* LSHTTPRequestDiff.h */,
+			);
+			path = Diff;
+			sourceTree = "<group>";
+		};
+		079639182007DAD500D83CA9 /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				079639192007DAD500D83CA9 /* LSHTTPClientHook.m */,
+				0796391A2007DAD500D83CA9 /* LSHTTPClientHook.h */,
+				0796391B2007DAD500D83CA9 /* NSURLRequest */,
+				079639242007DAD500D83CA9 /* ASIHTTPRequest */,
+				0796392B2007DAD500D83CA9 /* NSURLSession */,
+			);
+			path = Hooks;
+			sourceTree = "<group>";
+		};
+		0796391B2007DAD500D83CA9 /* NSURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0796391C2007DAD500D83CA9 /* NSURLRequest+LSHTTPRequest.m */,
+				0796391D2007DAD500D83CA9 /* NSURLRequest+DSL.h */,
+				0796391E2007DAD500D83CA9 /* LSNSURLHook.h */,
+				0796391F2007DAD500D83CA9 /* LSHTTPStubURLProtocol.h */,
+				079639202007DAD500D83CA9 /* NSURLRequest+LSHTTPRequest.h */,
+				079639212007DAD500D83CA9 /* LSNSURLHook.m */,
+				079639222007DAD500D83CA9 /* NSURLRequest+DSL.m */,
+				079639232007DAD500D83CA9 /* LSHTTPStubURLProtocol.m */,
+			);
+			path = NSURLRequest;
+			sourceTree = "<group>";
+		};
+		079639242007DAD500D83CA9 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				079639252007DAD500D83CA9 /* LSASIHTTPRequestHook.h */,
+				079639262007DAD500D83CA9 /* ASIHTTPRequestStub.m */,
+				079639272007DAD500D83CA9 /* LSASIHTTPRequestAdapter.h */,
+				079639282007DAD500D83CA9 /* LSASIHTTPRequestHook.m */,
+				079639292007DAD500D83CA9 /* LSASIHTTPRequestAdapter.m */,
+				0796392A2007DAD500D83CA9 /* ASIHTTPRequestStub.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		0796392B2007DAD500D83CA9 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				0796392C2007DAD500D83CA9 /* LSNSURLSessionHook.h */,
+				0796392D2007DAD500D83CA9 /* LSNSURLSessionHook.m */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
+		0796392E2007DAD500D83CA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0796392F2007DAD500D83CA9 /* LSHTTPBody.h */,
+				079639302007DAD500D83CA9 /* LSHTTPRequest.h */,
+				079639312007DAD500D83CA9 /* LSHTTPResponse.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		079639332007DAD500D83CA9 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				079639342007DAD500D83CA9 /* LSMatcheable.h */,
+				079639352007DAD500D83CA9 /* LSMatcher.h */,
+				079639362007DAD500D83CA9 /* LSStringMatcher.h */,
+				079639372007DAD500D83CA9 /* NSRegularExpression+Matcheable.m */,
+				079639382007DAD500D83CA9 /* LSRegexMatcher.h */,
+				079639392007DAD500D83CA9 /* NSString+Matcheable.m */,
+				0796393A2007DAD500D83CA9 /* NSData+Matcheable.m */,
+				0796393B2007DAD500D83CA9 /* LSDataMatcher.m */,
+				0796393C2007DAD500D83CA9 /* LSMatcher.m */,
+				0796393D2007DAD500D83CA9 /* LSRegexMatcher.m */,
+				0796393E2007DAD500D83CA9 /* NSRegularExpression+Matcheable.h */,
+				0796393F2007DAD500D83CA9 /* LSStringMatcher.m */,
+				079639402007DAD500D83CA9 /* NSString+Matcheable.h */,
+				079639412007DAD500D83CA9 /* LSDataMatcher.h */,
+				079639422007DAD500D83CA9 /* NSData+Matcheable.h */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		079639432007DAD500D83CA9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				079639442007DAD500D83CA9 /* NSData+Nocilla.h */,
+				079639452007DAD500D83CA9 /* NSString+Nocilla.m */,
+				079639462007DAD500D83CA9 /* NSData+Nocilla.m */,
+				079639472007DAD500D83CA9 /* NSString+Nocilla.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		079639482007DAD500D83CA9 /* DSL */ = {
+			isa = PBXGroup;
+			children = (
+				079639492007DAD500D83CA9 /* LSHTTPRequestDSLRepresentation.m */,
+				0796394A2007DAD500D83CA9 /* LSStubRequestDSL.h */,
+				0796394B2007DAD500D83CA9 /* LSStubResponseDSL.m */,
+				0796394C2007DAD500D83CA9 /* LSStubRequestDSL.m */,
+				0796394D2007DAD500D83CA9 /* LSHTTPRequestDSLRepresentation.h */,
+				0796394E2007DAD500D83CA9 /* LSStubResponseDSL.h */,
+			);
+			path = DSL;
+			sourceTree = "<group>";
+		};
+		079639512007DAD500D83CA9 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				079639522007DAD500D83CA9 /* Fastfile */,
+				079639532007DAD500D83CA9 /* actions */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		079639532007DAD500D83CA9 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				079639542007DAD500D83CA9 /* sync_build_number_to_git.rb */,
+				079639552007DAD500D83CA9 /* update_change_log.rb */,
+				079639562007DAD500D83CA9 /* git_commit_all.rb */,
+				079639572007DAD500D83CA9 /* extract_current_change_log.rb */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		079639582007DAD500D83CA9 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				079639592007DAD500D83CA9 /* ISSUE_TEMPLATE.md */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		0796395B2007DAD500D83CA9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0796395C2007DAD500D83CA9 /* ImageCache.swift */,
+				0796395D2007DAD500D83CA9 /* ThreadHelper.swift */,
+				0796395E2007DAD500D83CA9 /* Kingfisher.swift */,
+				0796395F2007DAD500D83CA9 /* RequestModifier.swift */,
+				079639602007DAD500D83CA9 /* ImageView+Kingfisher.swift */,
+				079639612007DAD500D83CA9 /* NSButton+Kingfisher.swift */,
+				079639622007DAD500D83CA9 /* Image.swift */,
+				079639632007DAD500D83CA9 /* Indicator.swift */,
+				079639642007DAD500D83CA9 /* CacheSerializer.swift */,
+				079639652007DAD500D83CA9 /* UIButton+Kingfisher.swift */,
+				079639662007DAD500D83CA9 /* Resource.swift */,
+				079639672007DAD500D83CA9 /* ImageDownloader.swift */,
+				079639682007DAD500D83CA9 /* Kingfisher.h */,
+				079639692007DAD500D83CA9 /* ImageModifier.swift */,
+				0796396A2007DAD500D83CA9 /* KingfisherManager.swift */,
+				0796396B2007DAD500D83CA9 /* FormatIndicatedCacheSerializer.swift */,
+				0796396C2007DAD500D83CA9 /* ImageTransition.swift */,
+				0796396D2007DAD500D83CA9 /* AnimatedImageView.swift */,
+				0796396E2007DAD500D83CA9 /* String+MD5.swift */,
+				0796396F2007DAD500D83CA9 /* ImageProcessor.swift */,
+				079639702007DAD500D83CA9 /* Filter.swift */,
+				079639712007DAD500D83CA9 /* Placeholder.swift */,
+				079639722007DAD500D83CA9 /* KingfisherOptionsInfo.swift */,
+				079639732007DAD500D83CA9 /* Info.plist */,
+				079639742007DAD500D83CA9 /* ImagePrefetcher.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		3ACC5323200711FF0000A5A9 = {
 			isa = PBXGroup;
 			children = (
 				3ACC532E200711FF0000A5A9 /* UIButton */,
 				3ACC532D200711FF0000A5A9 /* Products */,
-				FF665C044F86405EA75C38A8 /* Pods */,
 				F014ECFF0C21D3861D1ACC18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -101,18 +1521,10 @@
 		F014ECFF0C21D3861D1ACC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E9CC6C04071CF6BB6A4EC4B /* Pods_UIButton.framework */,
+				079638012007DAD500D83CA9 /* Kingfisher */,
+				0796379A2007D93D00D83CA9 /* SnapKit */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF665C044F86405EA75C38A8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE9937553DCDEB78F0206B64 /* Pods-UIButton.debug.xcconfig */,
-				47CDA09950C2ACE0B76DB020 /* Pods-UIButton.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,12 +1534,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ACC533E200711FF0000A5A9 /* Build configuration list for PBXNativeTarget "UIButton" */;
 			buildPhases = (
-				10C197248DAAE0A150C7F3F3 /* [CP] Check Pods Manifest.lock */,
 				3ACC5328200711FF0000A5A9 /* Sources */,
 				3ACC5329200711FF0000A5A9 /* Frameworks */,
 				3ACC532A200711FF0000A5A9 /* Resources */,
-				FA412A3AF512D814B85F49EF /* [CP] Embed Pods Frameworks */,
-				9D202C0E26F1666EA39BC9FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,12 +1574,169 @@
 			mainGroup = 3ACC5323200711FF0000A5A9;
 			productRefGroup = 3ACC532D200711FF0000A5A9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 079638502007DAD500D83CA9 /* Products */;
+					ProjectRef = 0796384F2007DAD500D83CA9 /* Kingfisher.xcodeproj */;
+				},
+				{
+					ProductGroup = 079638B22007DAD500D83CA9 /* Products */;
+					ProjectRef = 079638B12007DAD500D83CA9 /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = 079637DB2007D93D00D83CA9 /* Products */;
+					ProjectRef = 079637DA2007D93D00D83CA9 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3ACC532B200711FF0000A5A9 /* UIButton */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		079637E22007D93D00D83CA9 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 079637E12007D93D00D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079637E42007D93D00D83CA9 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 079637E32007D93D00D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639862007DAD600D83CA9 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 079639852007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639882007DAD600D83CA9 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 079639872007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0796398A2007DAD600D83CA9 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 079639892007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0796398C2007DAD600D83CA9 /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 0796398B2007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0796398E2007DAD600D83CA9 /* Kingfisher-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-Demo.app";
+			remoteRef = 0796398D2007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639902007DAD600D83CA9 /* Kingfisher-tvOS-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-tvOS-Demo.app";
+			remoteRef = 0796398F2007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639922007DAD600D83CA9 /* Kingfisher-macOS-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-macOS-Demo.app";
+			remoteRef = 079639912007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639942007DAD600D83CA9 /* Kingfisher-watchOS-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-watchOS-Demo.app";
+			remoteRef = 079639932007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639962007DAD600D83CA9 /* Kingfisher-watchOS-Demo Extension.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = "Kingfisher-watchOS-Demo Extension.appex";
+			remoteRef = 079639952007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639982007DAD600D83CA9 /* KingfisherTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KingfisherTests.xctest;
+			remoteRef = 079639972007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0796399A2007DAD600D83CA9 /* KingfisherTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-tvOS.xctest";
+			remoteRef = 079639992007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0796399C2007DAD600D83CA9 /* KingfisherTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-macOS.xctest";
+			remoteRef = 0796399B2007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639A42007DAD600D83CA9 /* libNocilla-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libNocilla-iOS.a";
+			remoteRef = 079639A32007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639A62007DAD600D83CA9 /* libNocilla-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libNocilla-macOS.a";
+			remoteRef = 079639A52007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639A82007DAD600D83CA9 /* libNocilla-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libNocilla-tvOS.a";
+			remoteRef = 079639A72007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639AA2007DAD600D83CA9 /* libPods-KingfisherTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-KingfisherTests.a";
+			remoteRef = 079639A92007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639AC2007DAD600D83CA9 /* libPods-KingfisherTests-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-KingfisherTests-macOS.a";
+			remoteRef = 079639AB2007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		079639AE2007DAD600D83CA9 /* libPods-KingfisherTests-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-KingfisherTests-tvOS.a";
+			remoteRef = 079639AD2007DAD600D83CA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3ACC532A200711FF0000A5A9 /* Resources */ = {
@@ -185,62 +1751,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		10C197248DAAE0A150C7F3F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UIButton-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D202C0E26F1666EA39BC9FE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButton/Pods-UIButton-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA412A3AF512D814B85F49EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-UIButton/Pods-UIButton-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButton/Pods-UIButton-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3ACC5328200711FF0000A5A9 /* Sources */ = {
@@ -260,6 +1770,54 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		079637A12007D93D00D83CA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079637A22007D93D00D83CA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		079638052007DAD500D83CA9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079638062007DAD500D83CA9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		0796380B2007DAD500D83CA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0796380C2007DAD500D83CA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		079638132007DAD500D83CA9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079638142007DAD500D83CA9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		079638152007DAD500D83CA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079638162007DAD500D83CA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		079638222007DAD500D83CA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079638232007DAD500D83CA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		3ACC5333200711FF0000A5A9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -388,7 +1946,6 @@
 		};
 		3ACC533F200711FF0000A5A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE9937553DCDEB78F0206B64 /* Pods-UIButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,7 +1961,6 @@
 		};
 		3ACC5340200711FF0000A5A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47CDA09950C2ACE0B76DB020 /* Pods-UIButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
