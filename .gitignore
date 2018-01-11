@@ -20,7 +20,6 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
-UIKit/ThirdPartyLibrary/
 
 ## Obj-C/Swift specific
 *.hmap
