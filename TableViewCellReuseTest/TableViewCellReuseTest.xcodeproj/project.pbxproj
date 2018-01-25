@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07438C512019F7770051F76C /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 07438C4F2019F7760051F76C /* UIColor+Hex.m */; };
+		07438C552019F9990051F76C /* UILabel+LableType.m in Sources */ = {isa = PBXBuildFile; fileRef = 07438C532019F9990051F76C /* UILabel+LableType.m */; };
+		07438C582019FAAA0051F76C /* KSUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 07438C572019FAAA0051F76C /* KSUserDefaults.m */; };
+		07438C5D2019FF700051F76C /* UIView+ZYExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 07438C5A2019FF700051F76C /* UIView+ZYExtention.m */; };
+		07438C5E2019FF700051F76C /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07438C5C2019FF700051F76C /* ArrayDataSource.m */; };
+		07438C612019FFE30051F76C /* UIButton+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 07438C5F2019FFE30051F76C /* UIButton+Custom.m */; };
+		07DCD4A92019EF4F0090230E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4A82019EF4F0090230E /* AppDelegate.m */; };
+		07DCD4AC2019EF4F0090230E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4AB2019EF4F0090230E /* ViewController.m */; };
+		07DCD4AF2019EF4F0090230E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD4AD2019EF4F0090230E /* Main.storyboard */; };
+		07DCD4B12019EF4F0090230E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD4B02019EF4F0090230E /* Assets.xcassets */; };
+		07DCD4B42019EF4F0090230E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD4B22019EF4F0090230E /* LaunchScreen.storyboard */; };
+		07DCD4B72019EF4F0090230E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4B62019EF4F0090230E /* main.m */; };
+		07DCD4C82019F0A40090230E /* PCDSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4BD2019F0A30090230E /* PCDSelectViewController.m */; };
+		07DCD4C92019F0A40090230E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4BE2019F0A40090230E /* City.m */; };
+		07DCD4CA2019F0A40090230E /* Province-City-District.json in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD4BF2019F0A40090230E /* Province-City-District.json */; };
+		07DCD4CB2019F0A40090230E /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4C12019F0A40090230E /* CityTableViewCell.m */; };
+		07DCD4CD2019F0A40090230E /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4C72019F0A40090230E /* Model.m */; };
+		07DCD4D02019F3420090230E /* NSString+ChineseCharactersToSpelling.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4CF2019F3420090230E /* NSString+ChineseCharactersToSpelling.m */; };
+		902AE81ABB0D6BD15D1F53AE /* libPods-TableViewCellReuseTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC60D54B838B9056469FCF4E /* libPods-TableViewCellReuseTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07438C4F2019F7760051F76C /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		07438C502019F7770051F76C /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		07438C522019F79C0051F76C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		07438C532019F9990051F76C /* UILabel+LableType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LableType.m"; sourceTree = "<group>"; };
+		07438C542019F9990051F76C /* UILabel+LableType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LableType.h"; sourceTree = "<group>"; };
+		07438C562019FAAA0051F76C /* KSUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSUserDefaults.h; sourceTree = "<group>"; };
+		07438C572019FAAA0051F76C /* KSUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSUserDefaults.m; sourceTree = "<group>"; };
+		07438C592019FF700051F76C /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		07438C5A2019FF700051F76C /* UIView+ZYExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYExtention.m"; sourceTree = "<group>"; };
+		07438C5B2019FF700051F76C /* UIView+ZYExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYExtention.h"; sourceTree = "<group>"; };
+		07438C5C2019FF700051F76C /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		07438C5F2019FFE30051F76C /* UIButton+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Custom.m"; sourceTree = "<group>"; };
+		07438C602019FFE30051F76C /* UIButton+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Custom.h"; sourceTree = "<group>"; };
+		07DCD4A42019EF4F0090230E /* TableViewCellReuseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellReuseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DCD4A72019EF4F0090230E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07DCD4A82019EF4F0090230E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07DCD4AA2019EF4F0090230E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		07DCD4AB2019EF4F0090230E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07DCD4AE2019EF4F0090230E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07DCD4B02019EF4F0090230E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07DCD4B32019EF4F0090230E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07DCD4B52019EF4F0090230E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DCD4B62019EF4F0090230E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07DCD4BD2019F0A30090230E /* PCDSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDSelectViewController.m; sourceTree = "<group>"; };
+		07DCD4BE2019F0A40090230E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		07DCD4BF2019F0A40090230E /* Province-City-District.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Province-City-District.json"; sourceTree = "<group>"; };
+		07DCD4C02019F0A40090230E /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		07DCD4C12019F0A40090230E /* CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewCell.m; sourceTree = "<group>"; };
+		07DCD4C22019F0A40090230E /* PCDSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDSelectViewController.h; sourceTree = "<group>"; };
+		07DCD4C32019F0A40090230E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		07DCD4C52019F0A40090230E /* CityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewCell.h; sourceTree = "<group>"; };
+		07DCD4C72019F0A40090230E /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		07DCD4CE2019F3420090230E /* NSString+ChineseCharactersToSpelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ChineseCharactersToSpelling.h"; sourceTree = "<group>"; };
+		07DCD4CF2019F3420090230E /* NSString+ChineseCharactersToSpelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChineseCharactersToSpelling.m"; sourceTree = "<group>"; };
+		07DCD4D12019F3C30090230E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		A94FB4B39623D9F8208292A9 /* Pods-TableViewCellReuseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewCellReuseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewCellReuseTest/Pods-TableViewCellReuseTest.release.xcconfig"; sourceTree = "<group>"; };
+		AC60D54B838B9056469FCF4E /* libPods-TableViewCellReuseTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableViewCellReuseTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E61A71412E815C32814574E4 /* Pods-TableViewCellReuseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewCellReuseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewCellReuseTest/Pods-TableViewCellReuseTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07DCD4A12019EF4F0090230E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				902AE81ABB0D6BD15D1F53AE /* libPods-TableViewCellReuseTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07DCD49B2019EF4F0090230E = {
+			isa = PBXGroup;
+			children = (
+				07DCD4A62019EF4F0090230E /* TableViewCellReuseTest */,
+				07DCD4A52019EF4F0090230E /* Products */,
+				FDCAF4AFD8B8EF78DB25367C /* Pods */,
+				20C6B751BF1E35529C9EFD41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07DCD4A52019EF4F0090230E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07DCD4A42019EF4F0090230E /* TableViewCellReuseTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07DCD4A62019EF4F0090230E /* TableViewCellReuseTest */ = {
+			isa = PBXGroup;
+			children = (
+				07438C602019FFE30051F76C /* UIButton+Custom.h */,
+				07438C5F2019FFE30051F76C /* UIButton+Custom.m */,
+				07438C592019FF700051F76C /* ArrayDataSource.h */,
+				07438C5C2019FF700051F76C /* ArrayDataSource.m */,
+				07438C5B2019FF700051F76C /* UIView+ZYExtention.h */,
+				07438C5A2019FF700051F76C /* UIView+ZYExtention.m */,
+				07438C562019FAAA0051F76C /* KSUserDefaults.h */,
+				07438C572019FAAA0051F76C /* KSUserDefaults.m */,
+				07438C542019F9990051F76C /* UILabel+LableType.h */,
+				07438C532019F9990051F76C /* UILabel+LableType.m */,
+				07438C502019F7770051F76C /* UIColor+Hex.h */,
+				07438C4F2019F7760051F76C /* UIColor+Hex.m */,
+				07DCD4CE2019F3420090230E /* NSString+ChineseCharactersToSpelling.h */,
+				07DCD4CF2019F3420090230E /* NSString+ChineseCharactersToSpelling.m */,
+				07DCD4C32019F0A40090230E /* City.h */,
+				07DCD4BE2019F0A40090230E /* City.m */,
+				07DCD4C52019F0A40090230E /* CityTableViewCell.h */,
+				07DCD4C12019F0A40090230E /* CityTableViewCell.m */,
+				07DCD4C02019F0A40090230E /* Model.h */,
+				07DCD4C72019F0A40090230E /* Model.m */,
+				07DCD4C22019F0A40090230E /* PCDSelectViewController.h */,
+				07DCD4BD2019F0A30090230E /* PCDSelectViewController.m */,
+				07DCD4BF2019F0A40090230E /* Province-City-District.json */,
+				07DCD4A72019EF4F0090230E /* AppDelegate.h */,
+				07DCD4A82019EF4F0090230E /* AppDelegate.m */,
+				07DCD4AA2019EF4F0090230E /* ViewController.h */,
+				07DCD4AB2019EF4F0090230E /* ViewController.m */,
+				07DCD4AD2019EF4F0090230E /* Main.storyboard */,
+				07DCD4B02019EF4F0090230E /* Assets.xcassets */,
+				07DCD4B22019EF4F0090230E /* LaunchScreen.storyboard */,
+				07DCD4B52019EF4F0090230E /* Info.plist */,
+				07DCD4B62019EF4F0090230E /* main.m */,
+				07DCD4D12019F3C30090230E /* Header.h */,
+				07438C522019F79C0051F76C /* PrefixHeader.pch */,
+			);
+			path = TableViewCellReuseTest;
+			sourceTree = "<group>";
+		};
+		20C6B751BF1E35529C9EFD41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC60D54B838B9056469FCF4E /* libPods-TableViewCellReuseTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDCAF4AFD8B8EF78DB25367C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E61A71412E815C32814574E4 /* Pods-TableViewCellReuseTest.debug.xcconfig */,
+				A94FB4B39623D9F8208292A9 /* Pods-TableViewCellReuseTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07DCD4A32019EF4F0090230E /* TableViewCellReuseTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DCD4BA2019EF4F0090230E /* Build configuration list for PBXNativeTarget "TableViewCellReuseTest" */;
+			buildPhases = (
+				137BBBD3B9FC46A1A189DD1D /* [CP] Check Pods Manifest.lock */,
+				07DCD4A02019EF4F0090230E /* Sources */,
+				07DCD4A12019EF4F0090230E /* Frameworks */,
+				07DCD4A22019EF4F0090230E /* Resources */,
+				6CCD28E8161675E2CF50174E /* [CP] Embed Pods Frameworks */,
+				04E768A2F529532CB94CAACC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewCellReuseTest;
+			productName = TableViewCellReuseTest;
+			productReference = 07DCD4A42019EF4F0090230E /* TableViewCellReuseTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07DCD49C2019EF4F0090230E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "ari 李";
+				TargetAttributes = {
+					07DCD4A32019EF4F0090230E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 07DCD49F2019EF4F0090230E /* Build configuration list for PBXProject "TableViewCellReuseTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07DCD49B2019EF4F0090230E;
+			productRefGroup = 07DCD4A52019EF4F0090230E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07DCD4A32019EF4F0090230E /* TableViewCellReuseTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07DCD4A22019EF4F0090230E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DCD4B42019EF4F0090230E /* LaunchScreen.storyboard in Resources */,
+				07DCD4B12019EF4F0090230E /* Assets.xcassets in Resources */,
+				07DCD4CA2019F0A40090230E /* Province-City-District.json in Resources */,
+				07DCD4AF2019EF4F0090230E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E768A2F529532CB94CAACC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewCellReuseTest/Pods-TableViewCellReuseTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		137BBBD3B9FC46A1A189DD1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableViewCellReuseTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CCD28E8161675E2CF50174E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewCellReuseTest/Pods-TableViewCellReuseTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07DCD4A02019EF4F0090230E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DCD4C92019F0A40090230E /* City.m in Sources */,
+				07438C552019F9990051F76C /* UILabel+LableType.m in Sources */,
+				07438C5E2019FF700051F76C /* ArrayDataSource.m in Sources */,
+				07438C512019F7770051F76C /* UIColor+Hex.m in Sources */,
+				07DCD4D02019F3420090230E /* NSString+ChineseCharactersToSpelling.m in Sources */,
+				07438C582019FAAA0051F76C /* KSUserDefaults.m in Sources */,
+				07DCD4AC2019EF4F0090230E /* ViewController.m in Sources */,
+				07438C5D2019FF700051F76C /* UIView+ZYExtention.m in Sources */,
+				07438C612019FFE30051F76C /* UIButton+Custom.m in Sources */,
+				07DCD4CB2019F0A40090230E /* CityTableViewCell.m in Sources */,
+				07DCD4CD2019F0A40090230E /* Model.m in Sources */,
+				07DCD4B72019EF4F0090230E /* main.m in Sources */,
+				07DCD4C82019F0A40090230E /* PCDSelectViewController.m in Sources */,
+				07DCD4A92019EF4F0090230E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07DCD4AD2019EF4F0090230E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DCD4AE2019EF4F0090230E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07DCD4B22019EF4F0090230E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DCD4B32019EF4F0090230E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07DCD4B82019EF4F0090230E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07DCD4B92019EF4F0090230E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07DCD4BB2019EF4F0090230E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61A71412E815C32814574E4 /* Pods-TableViewCellReuseTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/TableViewCellReuseTest/PrefixHeader.pch";
+				INFOPLIST_FILE = TableViewCellReuseTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lesta.TableViewCellReuseTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07DCD4BC2019EF4F0090230E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A94FB4B39623D9F8208292A9 /* Pods-TableViewCellReuseTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD6H32NYXJ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/TableViewCellReuseTest/PrefixHeader.pch";
+				INFOPLIST_FILE = TableViewCellReuseTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lesta.TableViewCellReuseTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07DCD49F2019EF4F0090230E /* Build configuration list for PBXProject "TableViewCellReuseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DCD4B82019EF4F0090230E /* Debug */,
+				07DCD4B92019EF4F0090230E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DCD4BA2019EF4F0090230E /* Build configuration list for PBXNativeTarget "TableViewCellReuseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DCD4BB2019EF4F0090230E /* Debug */,
+				07DCD4BC2019EF4F0090230E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07DCD49C2019EF4F0090230E /* Project object */;
+}
