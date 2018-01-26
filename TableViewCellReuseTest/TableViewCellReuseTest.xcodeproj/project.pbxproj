@@ -25,6 +25,7 @@
 		07DCD4CB2019F0A40090230E /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4C12019F0A40090230E /* CityTableViewCell.m */; };
 		07DCD4CD2019F0A40090230E /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4C72019F0A40090230E /* Model.m */; };
 		07DCD4D02019F3420090230E /* NSString+ChineseCharactersToSpelling.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD4CF2019F3420090230E /* NSString+ChineseCharactersToSpelling.m */; };
+		3A539AC6201AD1E900BB4DED /* NSString+PinYin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A539AC5201AD1E900BB4DED /* NSString+PinYin.m */; };
 		902AE81ABB0D6BD15D1F53AE /* libPods-TableViewCellReuseTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC60D54B838B9056469FCF4E /* libPods-TableViewCellReuseTest.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		07DCD4CE2019F3420090230E /* NSString+ChineseCharactersToSpelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ChineseCharactersToSpelling.h"; sourceTree = "<group>"; };
 		07DCD4CF2019F3420090230E /* NSString+ChineseCharactersToSpelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChineseCharactersToSpelling.m"; sourceTree = "<group>"; };
 		07DCD4D12019F3C30090230E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		3A539AC4201AD1E900BB4DED /* NSString+PinYin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin.h"; sourceTree = "<group>"; };
+		3A539AC5201AD1E900BB4DED /* NSString+PinYin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin.m"; sourceTree = "<group>"; };
 		A94FB4B39623D9F8208292A9 /* Pods-TableViewCellReuseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewCellReuseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewCellReuseTest/Pods-TableViewCellReuseTest.release.xcconfig"; sourceTree = "<group>"; };
 		AC60D54B838B9056469FCF4E /* libPods-TableViewCellReuseTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableViewCellReuseTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61A71412E815C32814574E4 /* Pods-TableViewCellReuseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewCellReuseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewCellReuseTest/Pods-TableViewCellReuseTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 		07DCD4A62019EF4F0090230E /* TableViewCellReuseTest */ = {
 			isa = PBXGroup;
 			children = (
+				3A539AC4201AD1E900BB4DED /* NSString+PinYin.h */,
+				3A539AC5201AD1E900BB4DED /* NSString+PinYin.m */,
 				07438C602019FFE30051F76C /* UIButton+Custom.h */,
 				07438C5F2019FFE30051F76C /* UIButton+Custom.m */,
 				07438C592019FF700051F76C /* ArrayDataSource.h */,
@@ -292,6 +297,7 @@
 				07DCD4AC2019EF4F0090230E /* ViewController.m in Sources */,
 				07438C5D2019FF700051F76C /* UIView+ZYExtention.m in Sources */,
 				07438C612019FFE30051F76C /* UIButton+Custom.m in Sources */,
+				3A539AC6201AD1E900BB4DED /* NSString+PinYin.m in Sources */,
 				07DCD4CB2019F0A40090230E /* CityTableViewCell.m in Sources */,
 				07DCD4CD2019F0A40090230E /* Model.m in Sources */,
 				07DCD4B72019EF4F0090230E /* main.m in Sources */,
@@ -436,6 +442,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/TableViewCellReuseTest/PrefixHeader.pch";
 				INFOPLIST_FILE = TableViewCellReuseTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lesta.TableViewCellReuseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +460,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/TableViewCellReuseTest/PrefixHeader.pch";
 				INFOPLIST_FILE = TableViewCellReuseTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lesta.TableViewCellReuseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,7 +7,6 @@
 //
 
 #import "City.h"
-#import "NSString+ChineseCharactersToSpelling.h"
 @implementation Province
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
@@ -22,12 +21,6 @@
     }
 }
 
-- (NSString *)lowerCase {
-    if (!_lowerCase) {
-        _lowerCase = [NSString lowercaseSpellingWithChineseCharacters:self.name];
-    }
-    return  _lowerCase;
-}
 
 - (instancetype)initWithCode:(NSString*)code name:(NSString*)name {
     self = [super init];
@@ -53,12 +46,6 @@
     }
 }
 
-- (NSString *)lowerCase {
-    if (!_lowerCase) {
-        _lowerCase = [NSString lowercaseSpellingWithChineseCharacters:self.name];
-    }
-    return  _lowerCase;
-}
 
 
 
@@ -75,7 +62,7 @@
 - (NSArray<Area*> *)areas {
     if (!_areas) {
         _areas = [self.areas sortedArrayUsingComparator:^NSComparisonResult(Area*  _Nonnull obj1, Area*  _Nonnull obj2) {
-            return [obj1.lowerCase compare:obj2.lowerCase] == NSOrderedDescending;
+            return [obj1.name localizedCompare:obj2.name] == NSOrderedDescending;
         }];
     }
     return _areas;
@@ -92,11 +79,5 @@
     return self;
 }
 
-- (NSString *)lowerCase {
-    if (!_lowerCase) {
-        _lowerCase = [NSString lowercaseSpellingWithChineseCharacters:self.name];
-    }
-    return  _lowerCase;
-}
 
 @end

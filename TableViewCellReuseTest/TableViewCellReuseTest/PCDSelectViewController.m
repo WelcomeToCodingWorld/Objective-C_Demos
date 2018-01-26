@@ -8,7 +8,6 @@
 
 #import "PCDSelectViewController.h"
 #import "ArrayDataSource.h"
-#import "NSString+ChineseCharactersToSpelling.h"
 #import "CityTableViewCell.h"
 //#import "UIView+ZYExtention.h"
 @interface PCDSelectViewController ()<UITableViewDelegate>
@@ -64,7 +63,7 @@ static NSString* ProvinceHeaderID = @"ProvinceSectionHeader";
     
     
     NSArray* sortedProvinceArr = [tempArr sortedArrayUsingComparator:^NSComparisonResult(Province*  _Nonnull obj1, Province*  _Nonnull obj2) {
-        return [obj1.lowerCase compare:obj2.lowerCase] == NSOrderedDescending;
+        return [obj1.name localizedCompare:obj2.name] == NSOrderedDescending;
     }];
     self.values = [NSMutableArray arrayWithCapacity:sortedProvinceArr.count];
     for (int i = 0; i<sortedProvinceArr.count; i ++) {
@@ -203,7 +202,7 @@ static NSString* ProvinceHeaderID = @"ProvinceSectionHeader";
     [headerView configureToggleBlock:^(Province *province,BOOL open) {
         if ([weakSelf.values objectAtIndex:section].count == 0) {
             [weakSelf.values replaceObjectAtIndex:section withObject:[province.cities sortedArrayUsingComparator:^NSComparisonResult(City*  _Nonnull obj1, City*  _Nonnull obj2) {
-                return [obj1.lowerCase compare:obj2.lowerCase] == NSOrderedDescending;
+                return [obj1.name localizedCompare:obj2.name] == NSOrderedDescending;
             }]];
         }
         province.selected = open;

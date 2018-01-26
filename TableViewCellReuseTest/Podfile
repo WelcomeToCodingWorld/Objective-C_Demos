@@ -8,4 +8,5 @@ target 'TableViewCellReuseTest' do
   # Pods for TableViewCellReuseTest
 #
 pod 'SDAutoLayout'
+pod 'UITableView+FDTemplateLayoutCell'
 end

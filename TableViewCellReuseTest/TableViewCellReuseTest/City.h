@@ -11,7 +11,6 @@
 @interface City : Model
 @property (nonatomic,copy)NSString* code;
 @property (nonatomic,copy)NSString* name;
-@property (nonatomic,copy)NSString* lowerCase;
 - (instancetype)initWithCode:(NSString*)code name:(NSString*)name;
 @property (nonatomic,copy)NSString* provinceCode;
 @property (nonatomic,assign)NSInteger leves;
@@ -23,7 +22,6 @@
 @interface Area : Model
 @property (nonatomic,copy)NSString* code;
 @property (nonatomic,copy)NSString *name;
-@property (nonatomic,copy)NSString* lowerCase;
 - (instancetype)initWithCode:(NSString*)code name:(NSString*)name;
 @property (nonatomic,assign)NSInteger leves;
 @property (nonatomic,copy)NSString* cityCode;
@@ -32,7 +30,6 @@
 @interface Province:Model
 @property (nonatomic,copy)NSString* name;
 @property (nonatomic,copy)NSString* code;
-@property (nonatomic,copy)NSString* lowerCase;
 @property (nonatomic,copy)NSArray<City*>* cities;
 - (instancetype)initWithCode:(NSString*)code name:(NSString*)name;
 @property (nonatomic,assign)BOOL selected;

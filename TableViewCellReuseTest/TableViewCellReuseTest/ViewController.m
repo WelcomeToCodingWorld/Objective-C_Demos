@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "NSString+ChineseCharactersToSpelling.h"
+#import "NSString+PinYin.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self testZH2PY];
+}
+
+- (void)testZH2PY {
+    NSString* zh = @"重庆";
+    KSLog(@"%f",[[NSDate date] timeIntervalSinceReferenceDate]);
+    NSString* py = [NSString lowercaseSpellingWithChineseCharacters:zh];
+    KSLog(@"%f",[[NSDate date] timeIntervalSinceReferenceDate]);
+    py = [zh getFirstLetter];
+    KSLog(@"%f",[[NSDate date] timeIntervalSinceReferenceDate]);
+    KSLog(@"%@",py);
 }
 
 

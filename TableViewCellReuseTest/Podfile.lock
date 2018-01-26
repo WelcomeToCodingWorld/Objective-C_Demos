@@ -1,12 +1,15 @@
 PODS:
   - SDAutoLayout (2.2.0)
+  - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
   - SDAutoLayout
+  - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 6acb3025753bb527d848ba0c8655284564cb59a2
+PODFILE CHECKSUM: 8eebb0c89ab73f29e08c0ea566ea605c7fa1ec29
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.4.0.rc.1
